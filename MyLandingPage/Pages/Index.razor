@@ -1,0 +1,55 @@
+﻿@page "/"
+@page "/{culture}"
+
+@using Microsoft.JSInterop
+@using Microsoft.Extensions.Localization
+@using System.Globalization
+@using Microsoft.AspNetCore.Components
+@using MyLandingPage.Shared
+
+@inject IStringLocalizer<Pages.Index> L
+@inject IJSRuntime JS
+@inject NavigationManager NavigationManager
+
+<h1>@L["Hero_Title"]</h1>
+
+<button class="btn btn-primary"
+        @onclick='() => JS.InvokeVoidAsync("scrollToSection", "contacts")'>
+    @L["Hero_Button"]
+</button>
+
+<ProgramsSection />
+
+<div id="contacts" style="margin-top: 100vh;">
+    <h2>@L["Contacts_Header"]</h2>
+    <!-- Ваш контент раздела «Контакты» -->
+</div>
+
+@code {
+    [Parameter]
+    public string? culture { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        // 1) Если решили зайти без сегмента (/), сразу кидаем на "/en"
+        if (string.IsNullOrEmpty(culture))
+        {
+            // "en" — относительный путь, Blazor подставит правильный домен/порт
+            // true: форсируем полную перезагрузку (т. е. чтобы Context заново инициализировался)
+            NavigationManager.NavigateTo("en", forceLoad: true);
+            return;
+        }
+
+        // 2) Если пришёл "/ru" или "/en", то просто переключаем CultureInfo
+        try
+        {
+            var ci = new CultureInfo(culture);
+            CultureInfo.DefaultThreadCurrentCulture = ci;
+            CultureInfo.DefaultThreadCurrentUICulture = ci;
+        }
+        catch
+        {
+            // Некорректный код культуры (например, "/xyz") — можно проигнорировать и оставить default
+        }
+    }
+}

@@ -1,0 +1,80 @@
+﻿@namespace MyLandingPage.Shared
+@using Microsoft.AspNetCore.Components
+@using Microsoft.Extensions.Localization
+@inject NavigationManager NavigationManager
+@inject IStringLocalizer<Shared.NavMenu> L
+
+<!-- Нижняя часть шапки: меню (Home, About, Contact) + селектор языка -->
+<section class="header-nav">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg p-0">
+            <!-- Если вам нужно в меню дублировать маленький логотип, раскомментируйте: -->
+            <a class="navbar-brand" href="@NavigationManager.BaseUri">
+                <img src="images/logo-small.png" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero-section">@L["Nav_Hero"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">@L["Nav_About"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programs-section">@L["Nav_Programs"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">@L["Nav_Contacts"]</a>
+                    </li>
+                </ul>
+
+                <!-- Селектор языка -->
+                <select class="form-select form-select-sm w-auto language-select" @bind="CurrentCulture">
+                    <option value="ru">Рус</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </nav>
+    </div>
+</section>
+
+@code {
+    private string currentCulture = "en";
+    public string CurrentCulture
+    {
+        get => currentCulture;
+        set
+        {
+            if (value == currentCulture) return;
+            currentCulture = value;
+            ChangeCultureAndNavigate(currentCulture);
+        }
+    }
+
+    private void ChangeCultureAndNavigate(string culture)
+    {
+        if (string.IsNullOrEmpty(culture)) return;
+        var uri = new Uri(NavigationManager.Uri);
+        var segments = uri.AbsolutePath.Trim('/').Split('/', StringSplitOptions.RemoveEmptyEntries);
+
+        if (segments.Length > 0 && (segments[0] == "ru" || segments[0] == "en"))
+            segments[0] = culture;
+        else
+            segments = new[] { culture }.Concat(segments).ToArray();
+
+        var newPath = string.Join('/', segments);
+        NavigationManager.NavigateTo($"/{newPath}{uri.Query}", forceLoad: true);
+    }
+
+    protected override void OnInitialized()
+    {
+        var uri = new Uri(NavigationManager.Uri);
+        var segments = uri.AbsolutePath.Trim('/').Split('/', StringSplitOptions.RemoveEmptyEntries);
+        if (segments.Length > 0 && (segments[0] == "ru" || segments[0] == "en"))
+            currentCulture = segments[0];
+    }
+}

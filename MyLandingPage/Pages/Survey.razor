@@ -1,0 +1,187 @@
+﻿@page "/{culture}/survey/{program}"
+@page "/survey/{program}"
+
+@using System.Globalization
+@using Microsoft.AspNetCore.Components.Forms
+@using System.ComponentModel.DataAnnotations
+@inject IStringLocalizer<Pages.Survey> L
+@inject NavigationManager NavigationManager
+
+<div class="container py-5">
+    <h1 class="mb-4">@L["Survey_Header", GetProgramDisplayName(program)]</h1>
+    <p class="lead mb-5">@L["Survey_Intro"]</p>
+
+    @* ===== Шаг 1 ===== *@
+    @if (step == 1)
+    {
+        <EditForm Model="m1" OnValidSubmit="GoToStep2">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <h4>@L["Step1_Title"]</h4>
+            <p>@L["Step1_Question"]</p>
+            <InputText @bind-Value="m1.Experience" class="form-control mb-2" />
+            <ValidationMessage For="@(() => m1.Experience)" />
+
+            <button type="submit" class="btn btn-primary mt-3">@L["Next"] ➔</button>
+        </EditForm>
+    }
+    @* ===== Шаг 2 ===== *@
+    else if (step == 2)
+    {
+        <EditForm Model="m2" OnValidSubmit="GoToStep3">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <h4>@L["Step2_Title"]</h4>
+            <p>@L["Step2_Question"]</p>
+            <InputText @bind-Value="m2.Goals" class="form-control mb-2" />
+            <ValidationMessage For="@(() => m2.Goals)" />
+
+            <div class="mt-3">
+                <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep1">← @L["Back"]</button>
+                <button type="submit" class="btn btn-primary">@L["Next"] ➔</button>
+            </div>
+        </EditForm>
+    }
+    @* ===== Шаг 3 ===== *@
+    else if (step == 3)
+    {
+        <EditForm Model="m3" OnValidSubmit="GoToStep4">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <h4>@L["Step3_Title"]</h4>
+            <p>@L["Step3_Question"]</p>
+            <InputText @bind-Value="m3.Dates" class="form-control mb-2" />
+            <ValidationMessage For="@(() => m3.Dates)" />
+
+            <div class="mt-3">
+                <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep2">← @L["Back"]</button>
+                <button type="submit" class="btn btn-primary">@L["Next"] ➔</button>
+            </div>
+        </EditForm>
+    }
+    @* ===== Шаг 4 ===== *@
+    else if (step == 4)
+    {
+        <EditForm Model="m4" OnValidSubmit="GoToStep5">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <h4>@L["Step4_Title"]</h4>
+            <p>@L["Step4_Question"]</p>
+            <InputText @bind-Value="m4.GroupSize" class="form-control mb-2" />
+            <ValidationMessage For="@(() => m4.GroupSize)" />
+
+            <div class="mt-3">
+                <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep3">← @L["Back"]</button>
+                <button type="submit" class="btn btn-primary">@L["Next"] ➔</button>
+            </div>
+        </EditForm>
+    }
+    @* ===== Шаг 5 ===== *@
+    else if (step == 5)
+    {
+        <EditForm Model="m5" OnValidSubmit="Submit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <h4>@L["Step5_Title"]</h4>
+            <p>@L["Step5_Question"]</p>
+            <InputText @bind-Value="m5.ContactInfo" class="form-control mb-2" />
+            <ValidationMessage For="@(() => m5.ContactInfo)" />
+
+            <div class="mt-3">
+                <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep4">← @L["Back"]</button>
+                <button type="submit" class="btn btn-success">✔ @L["Submit"]</button>
+            </div>
+        </EditForm>
+    }
+    @* ===== Спасибо! ===== *@
+    else
+    {
+        <div class="text-center mt-5">
+            <h4 class="text-success">@L["ThankYou"]</h4>
+            <p>@L["Survey_Complete"]</p>
+            <button class="btn btn-outline-primary" @onclick="GoHome">@L["GoHome"]</button>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public string? culture { get; set; }
+    [Parameter] public string program { get; set; } = "";
+
+    int step = 1;
+
+    // Отдельные модели для каждого шага:
+    Step1Model m1 = new();
+    Step2Model m2 = new();
+    Step3Model m3 = new();
+    Step4Model m4 = new();
+    Step5Model m5 = new();
+
+    protected override void OnParametersSet()
+    {
+        if (string.IsNullOrEmpty(culture))
+        {
+            NavigationManager.NavigateTo($"en/survey/{program}", forceLoad: true);
+            return;
+        }
+        var ci = new CultureInfo(culture);
+        CultureInfo.DefaultThreadCurrentCulture = ci;
+        CultureInfo.DefaultThreadCurrentUICulture = ci;
+    }
+
+    void GoToStep1() => step = 1;
+    void GoToStep2() => step = 2;
+    void GoToStep3() => step = 3;
+    void GoToStep4() => step = 4;
+    void GoToStep5() => step = 5;
+
+    void Submit()
+    {
+        // Здесь вы можете собрать данные из m1…m5 и отправить
+        step = 6;
+    }
+
+    void GoHome() => NavigationManager.NavigateTo($"{culture}", false);
+
+    string GetProgramDisplayName(string key) => key switch
+    {
+        "sail" => L["Programs_ConfidentStart_Title"],
+        "power" => L["Programs_Power_Title"],
+        "catamaran" => L["Programs_Catamaran_Title"],
+        "sailpower" => L["Programs_SailPower_Title"],
+        "personal" => L["Programs_Individual_Title"],
+        "levelup" => L["Programs_LevelUp_Title"],
+        _ => key
+    };
+
+    public class Step1Model
+    {
+        [Required(ErrorMessage = "Please tell us your experience")]
+        public string Experience { get; set; } = "";
+    }
+    public class Step2Model
+    {
+        [Required(ErrorMessage = "Please specify your goals")]
+        public string Goals { get; set; } = "";
+    }
+    public class Step3Model
+    {
+        [Required(ErrorMessage = "Please choose your dates")]
+        public string Dates { get; set; } = "";
+    }
+    public class Step4Model
+    {
+        [Required(ErrorMessage = "Please specify group size")]
+        public string GroupSize { get; set; } = "";
+    }
+    public class Step5Model
+    {
+        [Required(ErrorMessage = "Please leave contact info")]
+        public string ContactInfo { get; set; } = "";
+    }
+}

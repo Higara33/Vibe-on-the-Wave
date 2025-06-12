@@ -1,0 +1,57 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Shared.InfoModal> L
+
+@if (IsOpen)
+{
+    <div class="modal fade show" tabindex="-1" style="display:block;" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@L[$"{Program}_Title"]</h5>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">@L[$"{Program}_Subtitle"]</p>
+
+                    <h5>@L["Options_Header"]</h5>
+                    <ul>
+                        <li>@L[$"{Program}_Option1"]</li>
+                        <li>@L[$"{Program}_Option2"]</li>
+                        <li>@L[$"{Program}_Option3"]</li>
+                    </ul>
+
+                    <h6 class="mt-4">@L["Details_Header"]</h6>
+                    <dl class="row">
+                        <dt class="col-sm-4">@L["Duration_Label"]</dt>
+                        <dd class="col-sm-8">@L[$"{Program}_Duration"]</dd>
+
+                        <dt class="col-sm-4">@L["Price_Label"]</dt>
+                        <dd class="col-sm-8">@L[$"{Program}_Price"]</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="Close">
+                        ✕ @L["Close"]
+                    </button>
+                    <NavLink class="btn btn-primary"
+                             href="@($"survey/{BaseProgram}")">
+                        @L["Programs_SelectCourse"]
+                    </NavLink>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    [Parameter] public string Program { get; set; } = "";
+    [Parameter] public bool IsOpen { get; set; }
+    [Parameter] public EventCallback<bool> IsOpenChanged { get; set; }
+
+    // Программа без суффикса
+    string BaseProgram => Program.Split('_')[0];
+
+    Task Close() => IsOpenChanged.InvokeAsync(false);
+}

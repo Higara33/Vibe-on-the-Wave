@@ -1,0 +1,24 @@
+﻿@using Microsoft.Extensions.Localization
+@inherits LayoutComponentBase
+@inject IStringLocalizer<Shared.MainLayout> L
+@inject NavigationManager NavigationManager
+
+<PageTitle>@L["PageTitle_Home"]</PageTitle>
+<HeadContent>
+    <meta name="description" content="@L["Meta_Description_Home"]" />
+</HeadContent>
+
+<div class="d-flex flex-column min-vh-100">
+    <header>
+        <Header />      @* <-- вставили компонент Header *@
+        <NavMenu />     @* компонент с меню (якорные ссылки + переключатель языка) *@
+    </header>
+    <main class="flex-fill">
+        @Body
+    </main>
+    <footer class="bg-light py-3 text-center">
+        <div class="container">
+            <small>&copy; 2025 MyLandingPage. Все права защищены.</small>
+        </div>
+    </footer>
+</div>

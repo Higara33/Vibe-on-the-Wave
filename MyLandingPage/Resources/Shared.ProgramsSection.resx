@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Programs_CatamaranAdvanced_Alt" xml:space="preserve">
+    <value>Catamaran Advanced Training</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Duration" xml:space="preserve">
+    <value>7 days</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Price" xml:space="preserve">
+    <value>1 350 €</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Text" xml:space="preserve">
+    <value>Learn to comfortably sail catamarans and dock them without stress.</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Title" xml:space="preserve">
+    <value>Bareboat Skipper Catamaran Advanced</value>
+  </data>
+  <data name="Programs_Catamaran_Alt" xml:space="preserve">
+    <value>Catamaran Training</value>
+  </data>
+  <data name="Programs_Catamaran_Duration" xml:space="preserve">
+    <value>10 days</value>
+  </data>
+  <data name="Programs_Catamaran_GroupSize" xml:space="preserve">
+    <value>up to 5 students per group</value>
+  </data>
+  <data name="Programs_Catamaran_Price" xml:space="preserve">
+    <value>1 650 €</value>
+  </data>
+  <data name="Programs_Catamaran_Text" xml:space="preserve">
+    <value>Spacious living under sail. Two hulls give more room and reduce heel in the sea.</value>
+  </data>
+  <data name="Programs_Catamaran_Title" xml:space="preserve">
+    <value>Bareboat Skipper Catamaran IYT</value>
+  </data>
+  <data name="Programs_ConfidentStart_Description" xml:space="preserve">
+    <value>Group programs from zero on one type of yacht</value>
+  </data>
+  <data name="Programs_ConfidentStart_Title" xml:space="preserve">
+    <value>CONFIDENT START</value>
+  </data>
+  <data name="Programs_FurtherGrowth_Description" xml:space="preserve">
+    <value>Open new categories or refresh your skills</value>
+  </data>
+  <data name="Programs_FurtherGrowth_Title" xml:space="preserve">
+    <value>FURTHER GROWTH</value>
+  </data>
+  <data name="Programs_Individual_Alt" xml:space="preserve">
+    <value>Individual Training</value>
+  </data>
+  <data name="Programs_Individual_Text" xml:space="preserve">
+    <value>Any IYT category, completely personalized program at your own pace.</value>
+  </data>
+  <data name="Programs_Individual_Title" xml:space="preserve">
+    <value>Individual Training</value>
+  </data>
+  <data name="Programs_InfoLink" xml:space="preserve">
+    <value>INFO</value>
+  </data>
+  <data name="Programs_LevelUp_Coastal_Alt" xml:space="preserve">
+    <value>Yachtmaster Coastal Sail IYT Course</value>
+  </data>
+  <data name="Programs_LevelUp_Coastal_Duration" xml:space="preserve">
+    <value>7 days</value>
+  </data>
+  <data name="Programs_LevelUp_Coastal_Price" xml:space="preserve">
+    <value>1 150 €</value>
+  </data>
+  <data name="Programs_LevelUp_Coastal_Text" xml:space="preserve">
+    <value>Advance to the next level of certification and prepare for long-distance sailing voyages.</value>
+  </data>
+  <data name="Programs_LevelUp_Coastal_TitleCard" xml:space="preserve">
+    <value>Yachtmaster Coastal Course</value>
+  </data>
+  <data name="Programs_LevelUp_Description" xml:space="preserve">
+    <value>Intensive workshops to refine your sailing skills and confidence</value>
+  </data>
+  <data name="Programs_LevelUp_Ocean_Alt" xml:space="preserve">
+    <value>Atlantic Passage Training</value>
+  </data>
+  <data name="Programs_LevelUp_Ocean_Duration" xml:space="preserve">
+    <value>3 weeks</value>
+  </data>
+  <data name="Programs_LevelUp_Ocean_Price" xml:space="preserve">
+    <value>2 750 €</value>
+  </data>
+  <data name="Programs_LevelUp_Ocean_Text" xml:space="preserve">
+    <value>Historic ocean passage: Balearics – Gibraltar – Madeira – Canary Islands.</value>
+  </data>
+  <data name="Programs_LevelUp_Ocean_TitleCard" xml:space="preserve">
+    <value>Atlantic Ocean Voyage</value>
+  </data>
+  <data name="Programs_LevelUp_Title" xml:space="preserve">
+    <value>LEVEL UP</value>
+  </data>
+  <data name="Programs_LevelUp_Weekend_Alt" xml:space="preserve">
+    <value>Weekend Sailing Workshops</value>
+  </data>
+  <data name="Programs_LevelUp_Weekend_Duration" xml:space="preserve">
+    <value>4 hours</value>
+  </data>
+  <data name="Programs_LevelUp_Weekend_Price" xml:space="preserve">
+    <value>70 €</value>
+  </data>
+  <data name="Programs_LevelUp_Weekend_Text" xml:space="preserve">
+    <value>Learn new techniques or perfect your skills in short, focused sessions.</value>
+  </data>
+  <data name="Programs_LevelUp_Weekend_TitleCard" xml:space="preserve">
+    <value>Weekend Workshops</value>
+  </data>
+  <data name="Programs_PersonalStart_Description" xml:space="preserve">
+    <value>All types of programs in an individual format</value>
+  </data>
+  <data name="Programs_PersonalStart_Title" xml:space="preserve">
+    <value>PERSONAL START</value>
+  </data>
+  <data name="Programs_PowerAdvanced_Alt" xml:space="preserve">
+    <value>Power Advanced Training</value>
+  </data>
+  <data name="Programs_PowerAdvanced_Duration" xml:space="preserve">
+    <value>3 days</value>
+  </data>
+  <data name="Programs_PowerAdvanced_Price" xml:space="preserve">
+    <value>850 €</value>
+  </data>
+  <data name="Programs_PowerAdvanced_Text" xml:space="preserve">
+    <value>Master power yachts and make docking predictable, not a gamble.</value>
+  </data>
+  <data name="Programs_PowerAdvanced_Title" xml:space="preserve">
+    <value>Bareboat Skipper Power Advanced</value>
+  </data>
+  <data name="Programs_Power_Alt" xml:space="preserve">
+    <value>Power Yachts Training</value>
+  </data>
+  <data name="Programs_Power_Duration" xml:space="preserve">
+    <value>6 days</value>
+  </data>
+  <data name="Programs_Power_GroupSize" xml:space="preserve">
+    <value>up to 4 students per group</value>
+  </data>
+  <data name="Programs_Power_Price" xml:space="preserve">
+    <value>1 350 €</value>
+  </data>
+  <data name="Programs_Power_Text" xml:space="preserve">
+    <value>Maximum speed and independence from wind. Perfect for those who want to get comfortable fast.</value>
+  </data>
+  <data name="Programs_Power_Title" xml:space="preserve">
+    <value>Bareboat Skipper Power IYT</value>
+  </data>
+  <data name="Programs_PracticalStart_Description" xml:space="preserve">
+    <value>Group programs from zero on two types of yachts</value>
+  </data>
+  <data name="Programs_PracticalStart_Title" xml:space="preserve">
+    <value>PRACTICAL START</value>
+  </data>
+  <data name="Programs_SailAdvanced_Alt" xml:space="preserve">
+    <value>Sail Advanced Training</value>
+  </data>
+  <data name="Programs_SailAdvanced_Duration" xml:space="preserve">
+    <value>7 days</value>
+  </data>
+  <data name="Programs_SailAdvanced_Price" xml:space="preserve">
+    <value>1 150 €</value>
+  </data>
+  <data name="Programs_SailAdvanced_Text" xml:space="preserve">
+    <value>Upgrade your skills on sailing yachts and prepare for independent charters.</value>
+  </data>
+  <data name="Programs_SailAdvanced_Title" xml:space="preserve">
+    <value>Bareboat Skipper Sail Advanced</value>
+  </data>
+  <data name="Programs_SailPower_Alt" xml:space="preserve">
+    <value>Sail &amp;amp; Power Training</value>
+  </data>
+  <data name="Programs_SailPower_Duration" xml:space="preserve">
+    <value>13 days</value>
+  </data>
+  <data name="Programs_SailPower_GroupSize" xml:space="preserve">
+    <value>up to 5 students per group</value>
+  </data>
+  <data name="Programs_SailPower_Price" xml:space="preserve">
+    <value>2 300 €</value>
+  </data>
+  <data name="Programs_SailPower_Text" xml:space="preserve">
+    <value>Combined program for a universal license on both sail and power yachts.</value>
+  </data>
+  <data name="Programs_SailPower_Title" xml:space="preserve">
+    <value>Bareboat Skipper Power &amp;amp; Sail IYT</value>
+  </data>
+  <data name="Programs_Sail_Alt" xml:space="preserve">
+    <value>Sailing Yachts Training</value>
+  </data>
+  <data name="Programs_Sail_Duration" xml:space="preserve">
+    <value>10 days</value>
+  </data>
+  <data name="Programs_Sail_GroupSize" xml:space="preserve">
+    <value>up to 5 students per group</value>
+  </data>
+  <data name="Programs_Sail_Price" xml:space="preserve">
+    <value>1 450 €</value>
+  </data>
+  <data name="Programs_Sail_Text" xml:space="preserve">
+    <value>The most popular and universal segment for beginner skippers. Best way to start.</value>
+  </data>
+  <data name="Programs_Sail_Title" xml:space="preserve">
+    <value>Bareboat Skipper Sail IYT</value>
+  </data>
+  <data name="Programs_SelectCourse" xml:space="preserve">
+    <value>Select course</value>
+  </data>
+  <data name="Programs_Subtitle" xml:space="preserve">
+    <value>Types of Training at Sail Band Sailing School</value>
+  </data>
+  <data name="Programs_Title" xml:space="preserve">
+    <value>PROGRAMS OF STUDY</value>
+  </data>
+  <data name="Programs_Variant_MotorPlus_Label" xml:space="preserve">
+    <value>Motor+</value>
+  </data>
+  <data name="Programs_Variant_Standard_Label" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Programs_Variant_VIP_Label" xml:space="preserve">
+    <value>VIP</value>
+  </data>
+</root>

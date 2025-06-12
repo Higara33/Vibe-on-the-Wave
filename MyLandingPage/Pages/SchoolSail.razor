@@ -1,0 +1,58 @@
+﻿@page "/{culture}/school/sail"
+@page "/school/sail"
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.Extensions.Localization
+@using System.Globalization
+@inject IStringLocalizer<Pages.SchoolSail> L
+@inject NavigationManager Nav
+
+@code {
+  [Parameter] public string? culture { get; set; }
+  protected override void OnParametersSet()
+  {
+    if (!string.IsNullOrEmpty(culture))
+    {
+      var ci = new CultureInfo(culture);
+      CultureInfo.DefaultThreadCurrentCulture   = ci;
+      CultureInfo.DefaultThreadCurrentUICulture = ci;
+    }
+  }
+}
+
+<div class="container py-5">
+  <h1 class="mb-4">@L["Title"]</h1>
+  <p class="lead mb-5">@L["Subtitle"]</p>
+
+  <section class="mb-5">
+    <h2>@L["WhatYouLearn_Title"]</h2>
+    <ul>
+      <li>@L["WhatYouLearn_Item1"]</li>
+      <li>@L["WhatYouLearn_Item2"]</li>
+      <li>@L["WhatYouLearn_Item3"]</li>
+    </ul>
+  </section>
+
+  <section class="mb-5">
+    <h2>@L["ProgramDetails_Title"]</h2>
+    <p>@L["ProgramDetails_Text"]</p>
+    <dl class="row">
+      <dt class="col-sm-3">@L["ProgramDetails_PriceLabel"]</dt>
+      <dd class="col-sm-9">@L["ProgramDetails_Price"]</dd>
+
+      <dt class="col-sm-3">@L["ProgramDetails_DurationLabel"]</dt>
+      <dd class="col-sm-9">@L["ProgramDetails_Duration"]</dd>
+
+      <dt class="col-sm-3">@L["ProgramDetails_LevelLabel"]</dt>
+      <dd class="col-sm-9">@L["ProgramDetails_Level"]</dd>
+    </dl>
+  </section>
+
+  <section class="text-center">
+    <NavLink class="btn btn-primary btn-lg me-3" href="survey/sail">
+      @L["Programs_SelectCourse"]
+    </NavLink>
+    <NavLink class="btn btn-outline-secondary btn-lg" href="/">
+      @L["GoHome"]
+    </NavLink>
+  </section>
+</div>

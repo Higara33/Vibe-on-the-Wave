@@ -1,0 +1,346 @@
+﻿@namespace MyLandingPage.Shared
+@using Microsoft.Extensions.Localization
+@using Microsoft.AspNetCore.Components.Routing
+@inject IStringLocalizer<Shared.ProgramsSection> L
+
+<section id="programs-section" class="py-5">
+    <div class="container">
+        <!-- Заголовок блока -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">@L["Programs_Title"]</h2>
+            <p class="lead text-secondary">@L["Programs_Subtitle"]</p>
+        </div>
+
+        <!-- Первая группа: «Уверенный старт» -->
+        <div class="mb-4">
+            <h3 class="h4 text-primary mb-3">@L["Programs_ConfidentStart_Title"] ➾</h3>
+            <p class="mb-4 text-muted">@L["Programs_ConfidentStart_Description"]</p>
+            <div class="row g-4">
+                <!-- Карточка 1: Парусные яхты -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/sail.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_Sail_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_Sail_Title"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_Sail_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_Sail_Duration"]</div>
+                            <div class="mb-3 text-muted">@L["Programs_Sail_GroupSize"]</div>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_Sail_Text"]</p>
+
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <!-- Кнопка Info ➾ -->
+                                    <button class="btn btn-link p-0 text-decoration-none"
+                                            @onclick="() => showVariants_sail = !showVariants_sail">
+                                        @L["Programs_InfoLink"] ➾
+                                    </button>
+
+                                    <!-- Кнопка Select course -->
+                                    <NavLink class="btn btn-primary" href="survey/sail">
+                                        @L["Programs_SelectCourse"]
+                                    </NavLink>
+                                </div>
+
+                                @if (showVariants_sail)
+                                {
+                                    <div class="mt-2 d-flex gap-2">
+                                        <!-- Вариант Standard -->
+                                        <button class="btn btn-outline-secondary flex-fill"
+                                                @onclick="() => isInfoOpen_sail_standard = true">
+                                            @L["Programs_Variant_Standard_Label"]
+                                        </button>
+                                        <!-- Вариант VIP -->
+                                        <button class="btn btn-outline-secondary flex-fill"
+                                                @onclick="() => isInfoOpen_sail_vip = true">
+                                            @L["Programs_Variant_VIP_Label"]
+                                        </button>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                        <!-- Модальные окна для каждого варианта -->
+                        <InfoModal Program="sail_standard"
+                                   @bind-IsOpen="isInfoOpen_sail_standard" />
+                        <InfoModal Program="sail_vip"
+                                   @bind-IsOpen="isInfoOpen_sail_vip" />
+                    </div>
+                </div>
+
+                <!-- Карточка 2: Моторные яхты -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/power.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_Power_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_Power_Title"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_Power_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_Power_Duration"]</div>
+                            <div class="mb-3 text-muted">@L["Programs_Power_GroupSize"]</div>
+                            <p class="card-text text-secondary flex-fill">
+                                @L["Programs_Power_Text"]
+                            </p>
+
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <!-- Кнопка Info ➾ -->
+                                    <button class="btn btn-link p-0 text-decoration-none"
+                                            @onclick="() => showVariants_power = !showVariants_power">
+                                        @L["Programs_InfoLink"] ➾
+                                    </button>
+
+                                    <!-- Кнопка «Подобрать курс» -->
+                                    <NavLink class="btn btn-primary" href="survey/power">
+                                        @L["Programs_SelectCourse"]
+                                    </NavLink>
+                                </div>
+
+                                @if (showVariants_power)
+                                {
+                                    <div class="mt-2 d-flex gap-2">
+                                        <!-- Вариант Standard -->
+                                        <button class="btn btn-outline-secondary flex-fill"
+                                                @onclick="() => isInfoOpen_power_standard = true">
+                                            @L["Programs_Variant_Standard_Label"]
+                                        </button>
+                                        <!-- Вариант Motor+ -->
+                                        <button class="btn btn-outline-secondary flex-fill"
+                                                @onclick="() => isInfoOpen_power_motorplus = true">
+                                            @L["Programs_Variant_MotorPlus_Label"]
+                                        </button>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                        <!-- Модальные окна для каждого варианта -->
+                        <InfoModal Program="power_standard"
+                                   @bind-IsOpen="isInfoOpen_power_standard" />
+                        <InfoModal Program="power_motorplus"
+                                   @bind-IsOpen="isInfoOpen_power_motorplus" />
+                    </div>
+                </div>
+
+                <!-- Карточка 3: Катамараны -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/catamaran.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_Catamaran_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_Catamaran_Title"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_Catamaran_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_Catamaran_Duration"]</div>
+                            <div class="mb-3 text-muted">@L["Programs_Catamaran_GroupSize"]</div>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_Catamaran_Text"]</p>
+                            <div class="d-flex justify-content-between mt-3">
+                                <!-- левая кнопка «Info» -->
+                                <NavLink class="btn btn-link p-0 text-decoration-none"
+                                         href="school/catamaran">
+                                    @L["Programs_InfoLink"] ➾
+                                </NavLink>
+
+                                <!-- правая кнопка «Подобрать курс» -->
+                                <NavLink class="btn btn-primary"
+                                         href="survey/catamaran">
+                                    @L["Programs_SelectCourse"]
+                                </NavLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Вторая группа: «Практичный старт» -->
+        <div class="mb-4">
+            <h3 class="h4 text-primary mb-3">@L["Programs_PracticalStart_Title"] ➾</h3>
+            <p class="mb-4 text-muted">@L["Programs_PracticalStart_Description"]</p>
+            <div class="row g-4">
+                <!-- Карточка: Парус + мотор -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/sail_power.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_SailPower_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_SailPower_Title"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_SailPower_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_SailPower_Duration"]</div>
+                            <div class="mb-3 text-muted">@L["Programs_SailPower_GroupSize"]</div>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_SailPower_Text"]</p>
+                            <a href="#"
+                               class="btn btn-outline-primary mt-2 align-self-start">
+                                @L["Programs_InfoLink"] ➾
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- (Если нужны ещё карточки — добавьте col-12 col-md-6 col-lg-4) -->
+            </div>
+        </div>
+
+        <!-- Третья группа: «Персональный старт» -->
+        <div class="mb-4">
+            <h3 class="h4 text-primary mb-3">@L["Programs_PersonalStart_Title"] ➾</h3>
+            <p class="mb-4 text-muted">@L["Programs_PersonalStart_Description"]</p>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/individual.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_Individual_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_Individual_Title"]</h5>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_Individual_Text"]</p>
+                            <a href="#"
+                               class="btn btn-outline-primary mt-auto align-self-start">
+                                @L["Programs_InfoLink"] ➾
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Четвёртая группа: «Дальнейший рост» -->
+        <div class="mb-4">
+            <h3 class="h4 text-primary mb-3">@L["Programs_FurtherGrowth_Title"] ➾</h3>
+            <p class="mb-4 text-muted">@L["Programs_FurtherGrowth_Description"]</p>
+            <div class="row g-4">
+                <!-- Карточка «Доучивание на парусные яхты» -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/sail_advanced.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_SailAdvanced_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_SailAdvanced_Title"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_SailAdvanced_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_SailAdvanced_Duration"]</div>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_SailAdvanced_Text"]</p>
+                            <a href="#"
+                               class="btn btn-outline-primary mt-2 align-self-start">
+                                @L["Programs_InfoLink"] ➾
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка «Доучивание на моторные яхты» -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/power_advanced.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_PowerAdvanced_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_PowerAdvanced_Title"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_PowerAdvanced_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_PowerAdvanced_Duration"]</div>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_PowerAdvanced_Text"]</p>
+                            <a href="#"
+                               class="btn btn-outline-primary mt-2 align-self-start">
+                                @L["Programs_InfoLink"] ➾
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка «Доучивание на катамараны» -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/catamaran_advanced.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_CatamaranAdvanced_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_CatamaranAdvanced_Title"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_CatamaranAdvanced_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_CatamaranAdvanced_Duration"]</div>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_CatamaranAdvanced_Text"]</p>
+                            <a href="#"
+                               class="btn btn-outline-primary mt-2 align-self-start">
+                                @L["Programs_InfoLink"] ➾
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* ===== 5-я группа: «Повышение уровня» ===== *@
+        <div class="mb-4">
+            <h3 class="h4 text-primary mb-3">@L["Programs_LevelUp_Title"] ➾</h3>
+            <p class="mb-4 text-muted">@L["Programs_LevelUp_Description"]</p>
+            <div class="row g-4">
+                <!-- Карточка 1: Курс Yachtmaster Coastal -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/level_coastal.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_LevelUp_Coastal_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_LevelUp_Coastal_TitleCard"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_LevelUp_Coastal_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_LevelUp_Coastal_Duration"]</div>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_LevelUp_Coastal_Text"]</p>
+                            <a href="#"
+                               class="btn btn-outline-primary mt-2 align-self-start">
+                                @L["Programs_InfoLink"] ➾
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 2: Океанская прокачка -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/level_ocean.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_LevelUp_Ocean_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_LevelUp_Ocean_TitleCard"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_LevelUp_Ocean_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_LevelUp_Ocean_Duration"]</div>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_LevelUp_Ocean_Text"]</p>
+                            <a href="#"
+                               class="btn btn-outline-primary mt-2 align-self-start">
+                                @L["Programs_InfoLink"] ➾
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 3: Тренировки по выходным -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/programs/level_weekend.jpg"
+                             class="card-img-top programs-img"
+                             alt="@L["Programs_LevelUp_Weekend_Alt"]" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@L["Programs_LevelUp_Weekend_TitleCard"]</h5>
+                            <div class="mb-2 text-primary fw-bold">@L["Programs_LevelUp_Weekend_Price"]</div>
+                            <div class="mb-2 text-muted">@L["Programs_LevelUp_Weekend_Duration"]</div>
+                            <p class="card-text text-secondary flex-fill">@L["Programs_LevelUp_Weekend_Text"]</p>
+                            <a href="#"
+                               class="btn btn-outline-primary mt-2 align-self-start">
+                                @L["Programs_InfoLink"] ➾
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@code {
+    bool showVariants_sail;
+    bool isInfoOpen_sail_standard;
+    bool isInfoOpen_sail_vip;
+
+    bool showVariants_power;
+    bool isInfoOpen_power_standard;
+    bool isInfoOpen_power_motorplus;
+}
