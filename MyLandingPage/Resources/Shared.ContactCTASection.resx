@@ -117,52 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Title" xml:space="preserve">
-    <value>Confident Start — Powerboats</value>
+  <data name="CTA_Button" xml:space="preserve">
+    <value>Learn more</value>
   </data>
-  <data name="Subtitle" xml:space="preserve">
-    <value>Master throttle and handling of motor yachts</value>
+  <data name="CTA_Subtitle" xml:space="preserve">
+    <value>Leave your request and we’ll tailor the perfect course for you.</value>
   </data>
-  <data name="WhatYouLearn_Title" xml:space="preserve">
-    <value>What you’ll learn</value>
-  </data>
-  <data name="WhatYouLearn_Item1" xml:space="preserve">
-    <value>Engine operation and safety checks</value>
-  </data>
-  <data name="WhatYouLearn_Item2" xml:space="preserve">
-    <value>Docking and manoeuvring in tight spaces</value>
-  </data>
-  <data name="WhatYouLearn_Item3" xml:space="preserve">
-    <value>Basic navigation and chart reading</value>
-  </data>
-  <data name="ProgramDetails_Title" xml:space="preserve">
-    <value>Course details</value>
-  </data>
-  <data name="ProgramDetails_Text" xml:space="preserve">
-    <value>This 3-day intensive will give you confidence behind the wheel of a motor yacht.</value>
-  </data>
-  <data name="ProgramDetails_PriceLabel" xml:space="preserve">
-    <value>Price</value>
-  </data>
-  <data name="ProgramDetails_Price" xml:space="preserve">
-    <value>850 €</value>
-  </data>
-  <data name="ProgramDetails_DurationLabel" xml:space="preserve">
-    <value>Duration</value>
-  </data>
-  <data name="ProgramDetails_Duration" xml:space="preserve">
-    <value>3 days</value>
-  </data>
-  <data name="ProgramDetails_LevelLabel" xml:space="preserve">
-    <value>Level</value>
-  </data>
-  <data name="ProgramDetails_Level" xml:space="preserve">
-    <value>Beginner</value>
-  </data>
-  <data name="GoHome" xml:space="preserve">
-    <value>Back to home</value>
-  </data>
-  <data name="Programs_SelectCourse" xml:space="preserve">
-    <value>Select course</value>
+  <data name="CTA_Title" xml:space="preserve">
+    <value>Ready to Become a Captain?</value>
   </data>
 </root>

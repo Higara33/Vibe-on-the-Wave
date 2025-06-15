@@ -217,3 +217,63 @@ a {
 #programs-section .mb-4 {
     margin-bottom: 2.5rem !important;
 }
+
+/* Ограничиваем размер иконок услуг */
+#services img {
+    width: 80px; /* одинаковая ширина */
+    height: auto; /* сохраняем пропорции */
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+#services img {
+    max-width: 100%;
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+/* Размер и отступ для иконок из спрайта */
+#services i.bi {
+    font-size: 2.5rem; /* масштаб под дизайн */
+    margin-bottom: 1rem;
+    color: #0d6efd; /* если хотите под основной цвет */
+}
+
+#services h5 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+#services p {
+    font-size: 0.9rem;
+}
+
+/* Фон + тёмная полупрозрачная маска */
+#contact-cta {
+    position: relative;
+    background: url('images/cta-bg.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+    #contact-cta::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 0;
+    }
+
+    #contact-cta .container {
+        position: relative;
+        z-index: 1;
+    }
+    /* Тень для текста (опционально) */
+    #contact-cta h2,
+    #contact-cta p {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    }

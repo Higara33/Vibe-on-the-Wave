@@ -1,0 +1,24 @@
+﻿@inject IStringLocalizer<Shared.AboutSection> L
+
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">@L["About_Title"]</h2>
+        <div class="row gy-4">
+            <div class="col-md-4 text-center">
+                <i class="bi bi-award fs-1 text-primary mb-2"></i>
+                <h5>@L["About_Item1_Title"]</h5>
+                <p>@L["About_Item1_Text"]</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-people fs-1 text-primary mb-2"></i>
+                <h5>@L["About_Item2_Title"]</h5>
+                <p>@L["About_Item2_Text"]</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-ship fs-1 text-primary mb-2"></i>
+                <h5>@L["About_Item3_Title"]</h5>
+                <p>@L["About_Item3_Text"]</p>
+            </div>
+        </div>
+    </div>
+</section>

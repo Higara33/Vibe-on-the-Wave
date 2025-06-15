@@ -117,52 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="GoHome" xml:space="preserve">
-    <value>На главную</value>
+  <data name="About_Title" xml:space="preserve">
+    <value>Весь яхтинг в одном месте</value>
   </data>
-  <data name="ProgramDetails_Duration" xml:space="preserve">
-    <value>7 дней</value>
+  <data name="About_Item1_Title" xml:space="preserve">
+    <value>IYT-лицензии для капитанов</value>
   </data>
-  <data name="ProgramDetails_DurationLabel" xml:space="preserve">
-    <value>Длительность</value>
+  <data name="About_Item1_Text" xml:space="preserve">
+    <value>Профессиональное обучение и международная сертификация IYT для шкиперов.</value>
   </data>
-  <data name="ProgramDetails_Level" xml:space="preserve">
-    <value>Для новичков</value>
+  <data name="About_Item2_Title" xml:space="preserve">
+    <value>Поддержка выпускников</value>
   </data>
-  <data name="ProgramDetails_LevelLabel" xml:space="preserve">
-    <value>Уровень</value>
+  <data name="About_Item2_Text" xml:space="preserve">
+    <value>Учебные флотилии и постоянное сопровождение наших выпускников.</value>
   </data>
-  <data name="ProgramDetails_Price" xml:space="preserve">
-    <value>1 150 €</value>
+  <data name="About_Item3_Title" xml:space="preserve">
+    <value>Аренда и брокераж</value>
   </data>
-  <data name="ProgramDetails_PriceLabel" xml:space="preserve">
-    <value>Цена</value>
-  </data>
-  <data name="ProgramDetails_Text" xml:space="preserve">
-    <value>Интенсивный 7-дневный курс для уверенного управления яхтой у берега.</value>
-  </data>
-  <data name="ProgramDetails_Title" xml:space="preserve">
-    <value>Детали курса</value>
-  </data>
-  <data name="Programs_SelectCourse" xml:space="preserve">
-    <value>Подобрать курс</value>
-  </data>
-  <data name="Subtitle" xml:space="preserve">
-    <value>От новичка до капитана: первые шаги под парусом</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Уверенный старт — Парусные яхты</value>
-  </data>
-  <data name="WhatYouLearn_Item1" xml:space="preserve">
-    <value>Управление парусами и их настройка</value>
-  </data>
-  <data name="WhatYouLearn_Item2" xml:space="preserve">
-    <value>Безопасная швартовка и якорная стоянка</value>
-  </data>
-  <data name="WhatYouLearn_Item3" xml:space="preserve">
-    <value>Основы прибрежной навигации</value>
-  </data>
-  <data name="WhatYouLearn_Title" xml:space="preserve">
-    <value>Чему вы научитесь</value>
+  <data name="About_Item3_Text" xml:space="preserve">
+    <value>Аренда яхт, брокерские услуги и комплексный менеджмент.</value>
   </data>
 </root>

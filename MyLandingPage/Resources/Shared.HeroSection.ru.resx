@@ -117,52 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Title" xml:space="preserve">
-    <value>Уверенный старт — Моторные яхты</value>
+  <data name="Hero_Headline" xml:space="preserve">
+    <value>Больше, чем просто яхт-школа</value>
   </data>
-  <data name="Subtitle" xml:space="preserve">
-    <value>Освойте управление моторной яхтой</value>
+  <data name="Hero_Subheadline" xml:space="preserve">
+    <value>Ваш проводник в мир яхтинга: от первых шагов до собственной яхты</value>
   </data>
-  <data name="WhatYouLearn_Title" xml:space="preserve">
-    <value>Чему вы научитесь</value>
-  </data>
-  <data name="WhatYouLearn_Item1" xml:space="preserve">
-    <value>Работа с двигателем и проверки безопасности</value>
-  </data>
-  <data name="WhatYouLearn_Item2" xml:space="preserve">
-    <value>Швартовка и маневрирование в узких местах</value>
-  </data>
-  <data name="WhatYouLearn_Item3" xml:space="preserve">
-    <value>Основы навигации и чтения карт</value>
-  </data>
-  <data name="ProgramDetails_Title" xml:space="preserve">
-    <value>Детали курса</value>
-  </data>
-  <data name="ProgramDetails_Text" xml:space="preserve">
-    <value>Интенсивный 3-дневный курс для уверенного управления моторной яхтой.</value>
-  </data>
-  <data name="ProgramDetails_PriceLabel" xml:space="preserve">
-    <value>Цена</value>
-  </data>
-  <data name="ProgramDetails_Price" xml:space="preserve">
-    <value>850 €</value>
-  </data>
-  <data name="ProgramDetails_DurationLabel" xml:space="preserve">
-    <value>Длительность</value>
-  </data>
-  <data name="ProgramDetails_Duration" xml:space="preserve">
-    <value>3 дня</value>
-  </data>
-  <data name="ProgramDetails_LevelLabel" xml:space="preserve">
-    <value>Уровень</value>
-  </data>
-  <data name="ProgramDetails_Level" xml:space="preserve">
-    <value>Для новичков</value>
-  </data>
-  <data name="GoHome" xml:space="preserve">
-    <value>На главную</value>
-  </data>
-  <data name="Programs_SelectCourse" xml:space="preserve">
-    <value>Подобрать курс</value>
+  <data name="Hero_CTA" xml:space="preserve">
+    <value>Выберите ваш путь</value>
   </data>
 </root>

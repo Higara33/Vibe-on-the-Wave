@@ -1,0 +1,33 @@
+﻿@page "/programs"
+@page "/{culture}/programs"
+
+@using MyLandingPage.Shared
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Pages.Programs> L
+@inject NavigationManager NavigationManager
+
+@code {
+    [Parameter] public string? culture { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        // Если заходят без сегмента культуры — редирект на en/programs
+        if (string.IsNullOrEmpty(culture))
+        {
+            NavigationManager.NavigateTo("en/programs", forceLoad: true);
+            return;
+        }
+        // Устанавливаем культуру
+        try
+        {
+            var ci = new CultureInfo(culture);
+            CultureInfo.DefaultThreadCurrentCulture = ci;
+            CultureInfo.DefaultThreadCurrentUICulture = ci;
+        }
+        catch { }
+    }
+}
+
+<div class="container py-5">
+    <ProgramsSection />
+</div>

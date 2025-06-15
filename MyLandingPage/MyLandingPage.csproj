@@ -36,25 +36,30 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Pages.Index.resx</DependentUpon>
 	  </Compile>
-	  <Compile Update="Resources\Pages.SchoolPower.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>Pages.SchoolPower.resx</DependentUpon>
-	  </Compile>
-	  <Compile Update="Resources\Pages.SchoolSail.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>Pages.SchoolSail.resx</DependentUpon>
-	  </Compile>
 	  <Compile Update="Resources\Pages.Survey.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Pages.Survey.resx</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Shared.AboutSection.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.AboutSection.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Shared.ContactCTASection.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.ContactCTASection.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Shared.Header.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Shared.Header.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Shared.HeroSection.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.HeroSection.resx</DependentUpon>
 	  </Compile>
 	  <Compile Update="Resources\Shared.InfoModal.Designer.cs">
 	    <DesignTime>True</DesignTime>
@@ -71,6 +76,16 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Shared.ProgramsSection.resx</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Shared.ServicesSection.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.ServicesSection.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Shared.TestimonialsSection.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.TestimonialsSection.resx</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -80,13 +95,16 @@
 	  <EmbeddedResource Update="Resources\Pages.Index.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
-	  <EmbeddedResource Update="Resources\Pages.SchoolPower.ru.resx">
-	    <Generator></Generator>
-	  </EmbeddedResource>
-	  <EmbeddedResource Update="Resources\Pages.SchoolSail.ru.resx">
-	    <Generator></Generator>
-	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Pages.Survey.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.AboutSection.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.ContactCTASection.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.HeroSection.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.InfoModal.ru.resx">
@@ -96,6 +114,12 @@
 	    <Generator>ResXFileCodeGenerator</Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.NavMenu.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.ServicesSection.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.TestimonialsSection.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	</ItemGroup>

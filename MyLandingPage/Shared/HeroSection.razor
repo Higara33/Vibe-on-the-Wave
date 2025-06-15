@@ -1,0 +1,15 @@
+﻿@using Microsoft.JSInterop
+@using Microsoft.AspNetCore.Components
+@inject IStringLocalizer<Shared.HeroSection> L
+@inject NavigationManager NavigationManager
+
+<section id="hero" class="hero d-flex align-items-center">
+    <div class="container text-center text-white">
+        <h1 class="display-4 fw-bold">@L["Hero_Headline"]</h1>
+        <p class="lead mt-3">@L["Hero_Subheadline"]</p>
+        <button class="btn btn-primary btn-lg mt-4"
+                @onclick='() => NavigationManager.NavigateTo(" programs")'>
+            @L["Hero_CTA"]
+        </button>
+    </div>
+</section>

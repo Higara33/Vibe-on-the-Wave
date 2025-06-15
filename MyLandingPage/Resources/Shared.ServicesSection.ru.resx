@@ -117,52 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="GoHome" xml:space="preserve">
-    <value>Back to home</value>
+  <data name="Services_Title" xml:space="preserve">
+    <value>Что мы предлагаем</value>
   </data>
-  <data name="ProgramDetails_Duration" xml:space="preserve">
-    <value>7 days</value>
-  </data>
-  <data name="ProgramDetails_DurationLabel" xml:space="preserve">
-    <value>Duration</value>
-  </data>
-  <data name="ProgramDetails_Level" xml:space="preserve">
-    <value>Beginner</value>
-  </data>
-  <data name="ProgramDetails_LevelLabel" xml:space="preserve">
-    <value>Level</value>
-  </data>
-  <data name="ProgramDetails_Price" xml:space="preserve">
-    <value>1 150 €</value>
-  </data>
-  <data name="ProgramDetails_PriceLabel" xml:space="preserve">
-    <value>Price</value>
-  </data>
-  <data name="ProgramDetails_Text" xml:space="preserve">
-    <value>This intensive 7-day course takes you from absolute beginner to confident helm.</value>
-  </data>
-  <data name="ProgramDetails_Title" xml:space="preserve">
-    <value>Course details</value>
-  </data>
-  <data name="Programs_SelectCourse" xml:space="preserve">
-    <value>Select course</value>
-  </data>
-  <data name="Subtitle" xml:space="preserve">
-    <value>From zero to skipper: your first steps under sail</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Confident Start — Sailing Yachts</value>
-  </data>
-  <data name="WhatYouLearn_Item1" xml:space="preserve">
-    <value>Basic sail handling and trimming</value>
-  </data>
-  <data name="WhatYouLearn_Item2" xml:space="preserve">
-    <value>Safe mooring and anchoring</value>
-  </data>
-  <data name="WhatYouLearn_Item3" xml:space="preserve">
-    <value>Fundamentals of coastal navigation</value>
-  </data>
-  <data name="WhatYouLearn_Title" xml:space="preserve">
-    <value>What you’ll learn</value>
+  <data name="Services_List" xml:space="preserve">
+    <value>
+      school::Яхт-школа::Обучение парусу и мотору.|
+      flotilla::Учебные флотилии::Безопасные выходы для новичков.|
+      charter::Аренда яхт::Bareboat и с капитаном по всему миру.|
+      montenegro::Яхтинг в Черногории::Дневные и многодневные маршруты.|
+      broker::Независимый брокер::Покупка, переоформление и перегон.|
+      management::Менеджмент::Полный сервис и обслуживание яхт.
+    </value>
   </data>
 </root>

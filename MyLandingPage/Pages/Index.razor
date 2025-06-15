@@ -1,6 +1,12 @@
 ﻿@page "/"
 @page "/{culture}"
 
+<HeroSection />
+<AboutSection />
+<ServicesSection />
+@* <TestimonialsSection />  пока что без отзывов *@
+<ContactCTASection />
+
 @using Microsoft.JSInterop
 @using Microsoft.Extensions.Localization
 @using System.Globalization
@@ -10,15 +16,6 @@
 @inject IStringLocalizer<Pages.Index> L
 @inject IJSRuntime JS
 @inject NavigationManager NavigationManager
-
-<h1>@L["Hero_Title"]</h1>
-
-<button class="btn btn-primary"
-        @onclick='() => JS.InvokeVoidAsync("scrollToSection", "contacts")'>
-    @L["Hero_Button"]
-</button>
-
-<ProgramsSection />
 
 <div id="contacts" style="margin-top: 100vh;">
     <h2>@L["Contacts_Header"]</h2>
