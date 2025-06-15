@@ -177,18 +177,225 @@
   <data name="Programs_SelectCourse" xml:space="preserve">
     <value>Выбрать курс</value>
   </data>
-  <data name="power_standard_Title"       xml:space="preserve"><value>ПРОГРАММА “STANDARD”</value></data>
-<data name="power_standard_Subtitle"    xml:space="preserve"><value>Базовый курс управления моторной яхтой и безопасность</value></data>
-<data name="power_standard_Option1"     xml:space="preserve"><value>3 дня интенсивного обучения</value></data>
-<data name="power_standard_Option2"     xml:space="preserve"><value>Работа с двигателем и тренировки по безопасности</value></data>
-<data name="power_standard_Option3"     xml:space="preserve"><value>Практика швартовки и манёвров</value></data>
-<data name="power_standard_Duration"    xml:space="preserve"><value>3 дня</value></data>
-<data name="power_standard_Price"       xml:space="preserve"><value>850 €</value></data>
-<data name="power_motorplus_Title"      xml:space="preserve"><value>ПРОГРАММА “MOTOR+”</value></data>
-<data name="power_motorplus_Subtitle"   xml:space="preserve"><value>Расширенный курс с продвинутыми манёврами</value></data>
-<data name="power_motorplus_Option1"    xml:space="preserve"><value>5 дней интенсивного обучения</value></data>
-<data name="power_motorplus_Option2"    xml:space="preserve"><value>Продвинутая швартовка и управление в ограниченном пространстве</value></data>
-<data name="power_motorplus_Option3"    xml:space="preserve"><value>Индивидуальные занятия</value></data>
-<data name="power_motorplus_Duration"   xml:space="preserve"><value>5 дней</value></data>
-<data name="power_motorplus_Price"      xml:space="preserve"><value>1 200 €</value></data>
+  <data name="power_standard_Title" xml:space="preserve">
+    <value>ПРОГРАММА “STANDARD”</value>
+  </data>
+  <data name="power_standard_Subtitle" xml:space="preserve">
+    <value>Базовый курс управления моторной яхтой и безопасность</value>
+  </data>
+  <data name="power_standard_Option1" xml:space="preserve">
+    <value>3 дня интенсивного обучения</value>
+  </data>
+  <data name="power_standard_Option2" xml:space="preserve">
+    <value>Работа с двигателем и тренировки по безопасности</value>
+  </data>
+  <data name="power_standard_Option3" xml:space="preserve">
+    <value>Практика швартовки и манёвров</value>
+  </data>
+  <data name="power_standard_Duration" xml:space="preserve">
+    <value>3 дня</value>
+  </data>
+  <data name="power_standard_Price" xml:space="preserve">
+    <value>1 350 €</value>
+  </data>
+  <data name="power_motorplus_Title" xml:space="preserve">
+    <value>ПРОГРАММА “MOTOR+”</value>
+  </data>
+  <data name="power_motorplus_Subtitle" xml:space="preserve">
+    <value>Расширенный курс с продвинутыми манёврами</value>
+  </data>
+  <data name="power_motorplus_Option1" xml:space="preserve">
+    <value>5 дней интенсивного обучения</value>
+  </data>
+  <data name="power_motorplus_Option2" xml:space="preserve">
+    <value>Продвинутая швартовка и управление в ограниченном пространстве</value>
+  </data>
+  <data name="power_motorplus_Option3" xml:space="preserve">
+    <value>Индивидуальные занятия</value>
+  </data>
+  <data name="power_motorplus_Duration" xml:space="preserve">
+    <value>5 дней</value>
+  </data>
+  <data name="power_motorplus_Price" xml:space="preserve">
+    <value>850 €</value>
+  </data>
+  <data name="sailpower_standard_Title" xml:space="preserve">
+    <value>ПРОГРАММА «ПАРУС + МОТОР»</value>
+  </data>
+  <data name="sailpower_standard_Subtitle" xml:space="preserve">
+    <value>Расширенная IYT-программа с ночными и офшорными выходами</value>
+  </data>
+  <data name="sailpower_standard_Option1" xml:space="preserve">
+    <value>13 дней интенсивного обучения</value>
+  </data>
+  <data name="sailpower_standard_Option2" xml:space="preserve">
+    <value>Опыт не требуется</value>
+  </data>
+  <data name="sailpower_standard_Option3" xml:space="preserve">
+    <value>Теория в процессе практики</value>
+  </data>
+  <data name="sailpower_standard_Duration" xml:space="preserve">
+    <value>13 дней</value>
+  </data>
+  <data name="sailpower_standard_Price" xml:space="preserve">
+    <value>2 300 €</value>
+  </data>
+  <data name="sailpower_vip_Title" xml:space="preserve">
+    <value>ПРОГРАММА «ПАРУС + МОТОР VIP»</value>
+  </data>
+  <data name="sailpower_vip_Subtitle" xml:space="preserve">
+    <value>Индивидуальное и очень интенсивное обучение</value>
+  </data>
+  <data name="sailpower_vip_Option1" xml:space="preserve">
+    <value>10 дней интенсивного обучения</value>
+  </data>
+  <data name="sailpower_vip_Option2" xml:space="preserve">
+    <value>Теория обязательна к изучению заранее</value>
+  </data>
+  <data name="sailpower_vip_Option3" xml:space="preserve">
+    <value>Только вы и ваши спутники</value>
+  </data>
+  <data name="sailpower_vip_Duration" xml:space="preserve">
+    <value>10 дней</value>
+  </data>
+  <data name="sailpower_vip_Price" xml:space="preserve">
+    <value>8 060 €</value>
+  </data>
+  <data name="sail_advanced_Title" xml:space="preserve">
+    <value>ПРОГРАММА «ПАРУС+»</value>
+  </data>
+  <data name="sail_advanced_Subtitle" xml:space="preserve">
+    <value>Углублённое обучение: дневные и ночные выходы</value>
+  </data>
+  <data name="sail_advanced_Option1" xml:space="preserve">
+    <value>7 дней интенсивного обучения</value>
+  </data>
+  <data name="sail_advanced_Option2" xml:space="preserve">
+    <value>Продвинутое управление парусами</value>
+  </data>
+  <data name="sail_advanced_Option3" xml:space="preserve">
+    <value>Ночная навигация</value>
+  </data>
+  <data name="sail_advanced_Duration" xml:space="preserve">
+    <value>7 дней</value>
+  </data>
+  <data name="sail_advanced_Price" xml:space="preserve">
+    <value>1 150 €</value>
+  </data>
+  <data name="power_advanced_Title" xml:space="preserve">
+    <value>ПРОГРАММА «MOTOR+»</value>
+  </data>
+  <data name="power_advanced_Subtitle" xml:space="preserve">
+    <value>Расширенное обучение продвинутым манёврам</value>
+  </data>
+  <data name="power_advanced_Option1" xml:space="preserve">
+    <value>5 дней интенсивного обучения</value>
+  </data>
+  <data name="power_advanced_Option2" xml:space="preserve">
+    <value>Продвинутая швартовка</value>
+  </data>
+  <data name="power_advanced_Option3" xml:space="preserve">
+    <value>Индивидуальные занятия</value>
+  </data>
+  <data name="power_advanced_Duration" xml:space="preserve">
+    <value>5 дней</value>
+  </data>
+  <data name="power_advanced_Price" xml:space="preserve">
+    <value>850 €</value>
+  </data>
+  <data name="catamaran_comingsoon_Title" xml:space="preserve">
+    <value>Скоро будет</value>
+  </data>
+  <data name="catamaran_comingsoon_Subtitle" xml:space="preserve">
+    <value>Мы работаем над этим курсом. Пожалуйста, зайдите позже.</value>
+  </data>
+  <data name="catamaran_comingsoon_Option1" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="catamaran_comingsoon_Option2" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="catamaran_comingsoon_Option3" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="catamaran_comingsoon_Duration" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="catamaran_comingsoon_Price" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="individual_comingsoon_Title" xml:space="preserve">
+    <value>Скоро будет</value>
+  </data>
+  <data name="individual_comingsoon_Subtitle" xml:space="preserve">
+    <value>Мы работаем над этим курсом. Пожалуйста, зайдите позже.</value>
+  </data>
+  <data name="individual_comingsoon_Option1" xml:space="preserve"><value>—</value></data>
+  <data name="individual_comingsoon_Option2" xml:space="preserve"><value>—</value></data>
+  <data name="individual_comingsoon_Option3" xml:space="preserve"><value>—</value></data>
+  <data name="individual_comingsoon_Duration" xml:space="preserve"><value>—</value></data>
+  <data name="individual_comingsoon_Price" xml:space="preserve"><value>—</value></data>
+  <data name="level_coastal_Title" xml:space="preserve">
+    <value>Курс Yachtmaster Coastal</value>
+  </data>
+  <data name="level_coastal_Subtitle" xml:space="preserve">
+    <value>Переход на следующий уровень лицензии и подготовка к большим путешествиям под парусом.</value>
+  </data>
+  <data name="level_coastal_Option1" xml:space="preserve">
+    <value>7 дней обучения</value>
+  </data>
+  <data name="level_coastal_Option2" xml:space="preserve">
+    <value>240 морских миль</value>
+  </data>
+  <data name="level_coastal_Option3" xml:space="preserve">
+    <value>Для опытных</value>
+  </data>
+  <data name="level_coastal_Duration" xml:space="preserve">
+    <value>7 дней</value>
+  </data>
+  <data name="level_coastal_Price" xml:space="preserve">
+    <value>1 150 €</value>
+  </data>
+  <data name="level_ocean_Title" xml:space="preserve">
+    <value>Океанская прокачка в Атлантике</value>
+  </data>
+  <data name="level_ocean_Subtitle" xml:space="preserve">
+    <value>Большой поход по маршруту: Балеары – Гибралтар – Мадейра – Канары.</value>
+  </data>
+  <data name="level_ocean_Option1" xml:space="preserve">
+    <value>3 недели в море</value>
+  </data>
+  <data name="level_ocean_Option2" xml:space="preserve">
+    <value>300+ морских миль</value>
+  </data>
+  <data name="level_ocean_Option3" xml:space="preserve">
+    <value>Для искателей приключений</value>
+  </data>
+  <data name="level_ocean_Duration" xml:space="preserve">
+    <value>3 недели</value>
+  </data>
+  <data name="level_ocean_Price" xml:space="preserve">
+    <value>2 750 €</value>
+  </data>
+  <data name="level_weekend_Title" xml:space="preserve">
+    <value>Тренировки по выходным</value>
+  </data>
+  <data name="level_weekend_Subtitle" xml:space="preserve">
+    <value>Короткие интенсивные сессии для оттачивания навыков.</value>
+  </data>
+  <data name="level_weekend_Option1" xml:space="preserve">
+    <value>4 часа интенсивно</value>
+  </data>
+  <data name="level_weekend_Option2" xml:space="preserve">
+    <value>Практические упражнения</value>
+  </data>
+  <data name="level_weekend_Option3" xml:space="preserve">
+    <value>Для всех желающих</value>
+  </data>
+  <data name="level_weekend_Duration" xml:space="preserve">
+    <value>4 часа</value>
+  </data>
+  <data name="level_weekend_Price" xml:space="preserve">
+    <value>70 €</value>
+  </data>
 </root>

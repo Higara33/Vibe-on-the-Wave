@@ -70,7 +70,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 10 days.
+        ///   Ищет локализованную строку, похожую на —.
         /// </summary>
         internal static string Programs_Catamaran_Duration {
             get {
@@ -79,7 +79,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на up to 5 students per group.
+        ///   Ищет локализованную строку, похожую на —.
         /// </summary>
         internal static string Programs_Catamaran_GroupSize {
             get {
@@ -88,7 +88,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 1 650 €.
+        ///   Ищет локализованную строку, похожую на —.
         /// </summary>
         internal static string Programs_Catamaran_Price {
             get {
@@ -97,7 +97,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Spacious living under sail. Two hulls give more room and reduce heel in the sea..
+        ///   Ищет локализованную строку, похожую на —.
         /// </summary>
         internal static string Programs_Catamaran_Text {
             get {
@@ -115,7 +115,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Catamaran Advanced Training.
+        ///   Ищет локализованную строку, похожую на Catamaran upskill image.
         /// </summary>
         internal static string Programs_CatamaranAdvanced_Alt {
             get {
@@ -124,7 +124,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 7 days.
+        ///   Ищет локализованную строку, похожую на —.
         /// </summary>
         internal static string Programs_CatamaranAdvanced_Duration {
             get {
@@ -133,7 +133,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 1 350 €.
+        ///   Ищет локализованную строку, похожую на —.
         /// </summary>
         internal static string Programs_CatamaranAdvanced_Price {
             get {
@@ -142,7 +142,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Learn to comfortably sail catamarans and dock them without stress..
+        ///   Ищет локализованную строку, похожую на Information coming soon..
         /// </summary>
         internal static string Programs_CatamaranAdvanced_Text {
             get {
@@ -151,7 +151,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bareboat Skipper Catamaran Advanced.
+        ///   Ищет локализованную строку, похожую на Catamaran+.
         /// </summary>
         internal static string Programs_CatamaranAdvanced_Title {
             get {
@@ -205,7 +205,34 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Any IYT category, completely personalized program at your own pace..
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string Programs_Individual_Duration {
+            get {
+                return ResourceManager.GetString("Programs_Individual_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string Programs_Individual_GroupSize {
+            get {
+                return ResourceManager.GetString("Programs_Individual_GroupSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string Programs_Individual_Price {
+            get {
+                return ResourceManager.GetString("Programs_Individual_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
         /// </summary>
         internal static string Programs_Individual_Text {
             get {
@@ -466,7 +493,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 3 days.
+        ///   Ищет локализованную строку, похожую на 5 days.
         /// </summary>
         internal static string Programs_PowerAdvanced_Duration {
             get {
@@ -493,7 +520,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bareboat Skipper Power Advanced.
+        ///   Ищет локализованную строку, похожую на Motor+.
         /// </summary>
         internal static string Programs_PowerAdvanced_Title {
             get {
@@ -664,7 +691,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bareboat Skipper Power &amp;amp; Sail IYT.
+        ///   Ищет локализованную строку, похожую на Bareboat Skipper Power &amp; Sail IYT.
         /// </summary>
         internal static string Programs_SailPower_Title {
             get {

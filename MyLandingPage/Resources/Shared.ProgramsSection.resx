@@ -117,35 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Programs_CatamaranAdvanced_Alt" xml:space="preserve">
-    <value>Catamaran Advanced Training</value>
-  </data>
-  <data name="Programs_CatamaranAdvanced_Duration" xml:space="preserve">
-    <value>7 days</value>
-  </data>
-  <data name="Programs_CatamaranAdvanced_Price" xml:space="preserve">
-    <value>1 350 €</value>
-  </data>
-  <data name="Programs_CatamaranAdvanced_Text" xml:space="preserve">
-    <value>Learn to comfortably sail catamarans and dock them without stress.</value>
-  </data>
-  <data name="Programs_CatamaranAdvanced_Title" xml:space="preserve">
-    <value>Bareboat Skipper Catamaran Advanced</value>
-  </data>
   <data name="Programs_Catamaran_Alt" xml:space="preserve">
     <value>Catamaran Training</value>
   </data>
   <data name="Programs_Catamaran_Duration" xml:space="preserve">
-    <value>10 days</value>
+    <value>—</value>
   </data>
   <data name="Programs_Catamaran_GroupSize" xml:space="preserve">
-    <value>up to 5 students per group</value>
+    <value>—</value>
   </data>
   <data name="Programs_Catamaran_Price" xml:space="preserve">
-    <value>1 650 €</value>
+    <value>—</value>
   </data>
   <data name="Programs_Catamaran_Text" xml:space="preserve">
-    <value>Spacious living under sail. Two hulls give more room and reduce heel in the sea.</value>
+    <value>—</value>
   </data>
   <data name="Programs_Catamaran_Title" xml:space="preserve">
     <value>Bareboat Skipper Catamaran IYT</value>
@@ -166,7 +151,7 @@
     <value>Individual Training</value>
   </data>
   <data name="Programs_Individual_Text" xml:space="preserve">
-    <value>Any IYT category, completely personalized program at your own pace.</value>
+    <value>—</value>
   </data>
   <data name="Programs_Individual_Title" xml:space="preserve">
     <value>Individual Training</value>
@@ -235,7 +220,7 @@
     <value>Power Advanced Training</value>
   </data>
   <data name="Programs_PowerAdvanced_Duration" xml:space="preserve">
-    <value>3 days</value>
+    <value>5 days</value>
   </data>
   <data name="Programs_PowerAdvanced_Price" xml:space="preserve">
     <value>850 €</value>
@@ -244,7 +229,7 @@
     <value>Master power yachts and make docking predictable, not a gamble.</value>
   </data>
   <data name="Programs_PowerAdvanced_Title" xml:space="preserve">
-    <value>Bareboat Skipper Power Advanced</value>
+    <value>Motor+</value>
   </data>
   <data name="Programs_Power_Alt" xml:space="preserve">
     <value>Power Yachts Training</value>
@@ -301,7 +286,7 @@
     <value>Combined program for a universal license on both sail and power yachts.</value>
   </data>
   <data name="Programs_SailPower_Title" xml:space="preserve">
-    <value>Bareboat Skipper Power &amp;amp; Sail IYT</value>
+    <value>Bareboat Skipper Power &amp; Sail IYT</value>
   </data>
   <data name="Programs_Sail_Alt" xml:space="preserve">
     <value>Sailing Yachts Training</value>
@@ -338,5 +323,29 @@
   </data>
   <data name="Programs_Variant_VIP_Label" xml:space="preserve">
     <value>VIP</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Alt" xml:space="preserve">
+    <value>Catamaran upskill image</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Title" xml:space="preserve">
+    <value>Catamaran+</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Price" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Duration" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Text" xml:space="preserve">
+    <value>Information coming soon.</value>
+  </data>
+  <data name="Programs_Individual_Price" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="Programs_Individual_Duration" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="Programs_Individual_GroupSize" xml:space="preserve">
+    <value>—</value>
   </data>
 </root>

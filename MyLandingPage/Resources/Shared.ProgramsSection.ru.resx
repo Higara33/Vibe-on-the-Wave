@@ -117,35 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Programs_CatamaranAdvanced_Alt" xml:space="preserve">
-    <value>Доучивание на катамараны</value>
-  </data>
-  <data name="Programs_CatamaranAdvanced_Duration" xml:space="preserve">
-    <value>7 дней</value>
-  </data>
-  <data name="Programs_CatamaranAdvanced_Price" xml:space="preserve">
-    <value>1 350 €</value>
-  </data>
-  <data name="Programs_CatamaranAdvanced_Text" xml:space="preserve">
-    <value>Научимся уверенно управлять катамараном и швартовать без стресса.</value>
-  </data>
-  <data name="Programs_CatamaranAdvanced_Title" xml:space="preserve">
-    <value>Bareboat Skipper Catamaran Advanced</value>
-  </data>
   <data name="Programs_Catamaran_Alt" xml:space="preserve">
     <value>Обучение на катамараны</value>
   </data>
   <data name="Programs_Catamaran_Duration" xml:space="preserve">
-    <value>10 дней</value>
+    <value>—</value>
   </data>
   <data name="Programs_Catamaran_GroupSize" xml:space="preserve">
-    <value>до 5 студентов в группе</value>
+    <value>—</value>
   </data>
   <data name="Programs_Catamaran_Price" xml:space="preserve">
-    <value>1 650 €</value>
+    <value>—</value>
   </data>
   <data name="Programs_Catamaran_Text" xml:space="preserve">
-    <value>Простор и комфорт под парусом. Два корпуса дают больше места и снижают крен в море.</value>
+    <value>—</value>
   </data>
   <data name="Programs_Catamaran_Title" xml:space="preserve">
     <value>Bareboat Skipper Catamaran IYT</value>
@@ -166,7 +151,7 @@
     <value>Индивидуальное обучение</value>
   </data>
   <data name="Programs_Individual_Text" xml:space="preserve">
-    <value>Любые категории IYT, программа под вас и ваш темп.</value>
+    <value>—</value>
   </data>
   <data name="Programs_Individual_Title" xml:space="preserve">
     <value>Индивидуальное обучение</value>
@@ -235,7 +220,7 @@
     <value>Доучивание на моторные яхты</value>
   </data>
   <data name="Programs_PowerAdvanced_Duration" xml:space="preserve">
-    <value>3 дня</value>
+    <value>5 дней</value>
   </data>
   <data name="Programs_PowerAdvanced_Price" xml:space="preserve">
     <value>850 €</value>
@@ -244,7 +229,7 @@
     <value>Оттачиваем навыки работы на моторных яхтах, швартовки станут предсказуемыми.</value>
   </data>
   <data name="Programs_PowerAdvanced_Title" xml:space="preserve">
-    <value>Bareboat Skipper Power Advanced</value>
+    <value>Мотор+</value>
   </data>
   <data name="Programs_Power_Alt" xml:space="preserve">
     <value>Обучение на моторные яхты</value>
@@ -301,7 +286,7 @@
     <value>Совмещённая программа для универсальной лицензии на парус и мотор.</value>
   </data>
   <data name="Programs_SailPower_Title" xml:space="preserve">
-    <value>Bareboat Skipper Power &amp;amp; Sail IYT</value>
+    <value>Bareboat Skipper Power &amp; Sail IYT</value>
   </data>
   <data name="Programs_Sail_Alt" xml:space="preserve">
     <value>Обучение на парусные яхты</value>
@@ -338,5 +323,29 @@
   </data>
   <data name="Programs_Variant_VIP_Label" xml:space="preserve">
     <value>VIP</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Alt" xml:space="preserve">
+    <value>Изображение катамарана</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Title" xml:space="preserve">
+    <value>КАТАМАРАН+</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Price" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Duration" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="Programs_CatamaranAdvanced_Text" xml:space="preserve">
+    <value>Информация скоро появится.</value>
+  </data>
+  <data name="Programs_Individual_Price" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="Programs_Individual_Duration" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="Programs_Individual_GroupSize" xml:space="preserve">
+    <value>—</value>
   </data>
 </root>

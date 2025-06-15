@@ -97,6 +97,195 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на 5 days.
+        /// </summary>
+        internal static string power_advanced_Duration {
+            get {
+                return ResourceManager.GetString("power_advanced_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 5 days intensive.
+        /// </summary>
+        internal static string power_advanced_Option1 {
+            get {
+                return ResourceManager.GetString("power_advanced_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Advanced docking techniques.
+        /// </summary>
+        internal static string power_advanced_Option2 {
+            get {
+                return ResourceManager.GetString("power_advanced_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Individual coaching sessions.
+        /// </summary>
+        internal static string power_advanced_Option3 {
+            get {
+                return ResourceManager.GetString("power_advanced_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 850 €.
+        /// </summary>
+        internal static string power_advanced_Price {
+            get {
+                return ResourceManager.GetString("power_advanced_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Extended powerboat training with advanced manoeuvres.
+        /// </summary>
+        internal static string power_advanced_Subtitle {
+            get {
+                return ResourceManager.GetString("power_advanced_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Program “Motor+”.
+        /// </summary>
+        internal static string power_advanced_Title {
+            get {
+                return ResourceManager.GetString("power_advanced_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 5 days.
+        /// </summary>
+        internal static string power_motorplus_Duration {
+            get {
+                return ResourceManager.GetString("power_motorplus_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 5 days intensive.
+        /// </summary>
+        internal static string power_motorplus_Option1 {
+            get {
+                return ResourceManager.GetString("power_motorplus_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Advanced docking &amp; close-quarters handling.
+        /// </summary>
+        internal static string power_motorplus_Option2 {
+            get {
+                return ResourceManager.GetString("power_motorplus_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Individual coaching sessions.
+        /// </summary>
+        internal static string power_motorplus_Option3 {
+            get {
+                return ResourceManager.GetString("power_motorplus_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 850 €.
+        /// </summary>
+        internal static string power_motorplus_Price {
+            get {
+                return ResourceManager.GetString("power_motorplus_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Extended course with advanced manoeuvres.
+        /// </summary>
+        internal static string power_motorplus_Subtitle {
+            get {
+                return ResourceManager.GetString("power_motorplus_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Program “Motor+”.
+        /// </summary>
+        internal static string power_motorplus_Title {
+            get {
+                return ResourceManager.GetString("power_motorplus_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 3 days.
+        /// </summary>
+        internal static string power_standard_Duration {
+            get {
+                return ResourceManager.GetString("power_standard_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 3 days intensive.
+        /// </summary>
+        internal static string power_standard_Option1 {
+            get {
+                return ResourceManager.GetString("power_standard_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Engine operation and safety drills.
+        /// </summary>
+        internal static string power_standard_Option2 {
+            get {
+                return ResourceManager.GetString("power_standard_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Docking and manoeuvring practice.
+        /// </summary>
+        internal static string power_standard_Option3 {
+            get {
+                return ResourceManager.GetString("power_standard_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 1 350 €.
+        /// </summary>
+        internal static string power_standard_Price {
+            get {
+                return ResourceManager.GetString("power_standard_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Basic powerboat handling and safety course.
+        /// </summary>
+        internal static string power_standard_Subtitle {
+            get {
+                return ResourceManager.GetString("power_standard_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Program “Standard”.
+        /// </summary>
+        internal static string power_standard_Title {
+            get {
+                return ResourceManager.GetString("power_standard_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Price.
         /// </summary>
         internal static string Price_Label {
@@ -111,6 +300,69 @@ namespace MyLandingPage.Resources {
         internal static string Programs_SelectCourse {
             get {
                 return ResourceManager.GetString("Programs_SelectCourse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 7 days.
+        /// </summary>
+        internal static string sail_advanced_Duration {
+            get {
+                return ResourceManager.GetString("sail_advanced_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 7 days intensive.
+        /// </summary>
+        internal static string sail_advanced_Option1 {
+            get {
+                return ResourceManager.GetString("sail_advanced_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Advanced sail handling.
+        /// </summary>
+        internal static string sail_advanced_Option2 {
+            get {
+                return ResourceManager.GetString("sail_advanced_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Night navigation practice.
+        /// </summary>
+        internal static string sail_advanced_Option3 {
+            get {
+                return ResourceManager.GetString("sail_advanced_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 1 150 €.
+        /// </summary>
+        internal static string sail_advanced_Price {
+            get {
+                return ResourceManager.GetString("sail_advanced_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Enhance your sailing skills with advanced day and night passages.
+        /// </summary>
+        internal static string sail_advanced_Subtitle {
+            get {
+                return ResourceManager.GetString("sail_advanced_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Program “Sail+”.
+        /// </summary>
+        internal static string sail_advanced_Title {
+            get {
+                return ResourceManager.GetString("sail_advanced_Title", resourceCulture);
             }
         }
         
@@ -237,6 +489,132 @@ namespace MyLandingPage.Resources {
         internal static string sail_vip_Title {
             get {
                 return ResourceManager.GetString("sail_vip_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 13 days.
+        /// </summary>
+        internal static string sailpower_standard_Duration {
+            get {
+                return ResourceManager.GetString("sailpower_standard_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 13 days intensive.
+        /// </summary>
+        internal static string sailpower_standard_Option1 {
+            get {
+                return ResourceManager.GetString("sailpower_standard_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на No prior experience required.
+        /// </summary>
+        internal static string sailpower_standard_Option2 {
+            get {
+                return ResourceManager.GetString("sailpower_standard_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Theory integrated with practice.
+        /// </summary>
+        internal static string sailpower_standard_Option3 {
+            get {
+                return ResourceManager.GetString("sailpower_standard_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 2 300 €.
+        /// </summary>
+        internal static string sailpower_standard_Price {
+            get {
+                return ResourceManager.GetString("sailpower_standard_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Extended IYT program with night and offshore passages.
+        /// </summary>
+        internal static string sailpower_standard_Subtitle {
+            get {
+                return ResourceManager.GetString("sailpower_standard_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Program “Power + Sail” Standard.
+        /// </summary>
+        internal static string sailpower_standard_Title {
+            get {
+                return ResourceManager.GetString("sailpower_standard_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 10 days.
+        /// </summary>
+        internal static string sailpower_vip_Duration {
+            get {
+                return ResourceManager.GetString("sailpower_vip_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 10 days intensive.
+        /// </summary>
+        internal static string sailpower_vip_Option1 {
+            get {
+                return ResourceManager.GetString("sailpower_vip_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Theory required beforehand.
+        /// </summary>
+        internal static string sailpower_vip_Option2 {
+            get {
+                return ResourceManager.GetString("sailpower_vip_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Private or small group.
+        /// </summary>
+        internal static string sailpower_vip_Option3 {
+            get {
+                return ResourceManager.GetString("sailpower_vip_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 8 060 €.
+        /// </summary>
+        internal static string sailpower_vip_Price {
+            get {
+                return ResourceManager.GetString("sailpower_vip_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Individual and highly intensive training.
+        /// </summary>
+        internal static string sailpower_vip_Subtitle {
+            get {
+                return ResourceManager.GetString("sailpower_vip_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Program “Power + Sail VIP”.
+        /// </summary>
+        internal static string sailpower_vip_Title {
+            get {
+                return ResourceManager.GetString("sailpower_vip_Title", resourceCulture);
             }
         }
     }
