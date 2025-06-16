@@ -1,0 +1,14 @@
+﻿.load-page-img {
+    width: 6em;
+    animation: 4s linear 0s normal none infinite running animation-rotate;
+    -webkit-animation: 4s linear 0s normal none infinite running animation-rotate;
+}
+
+@keyframes animation-rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
