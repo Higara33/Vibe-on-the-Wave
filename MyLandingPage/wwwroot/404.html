@@ -5,12 +5,11 @@
     <script>
         (function () {
             var b = document.createElement('base');
-            // Если мы на GitHub Pages (подпапка репо)
-            if (location.host.endsWith('github.io') &&
-                location.pathname.startsWith('/Vibe-on-the-Wave/')) {
+            if (location.host.endsWith('github.io')) {
+                // на Pages — всегда ваша подпапка
                 b.href = '/Vibe-on-the-Wave/';
             } else {
-                // локальный режим dotnet run или любой другой хостинг на корне
+                // локально dotnet run или любой другой хостинг на корне
                 b.href = '/';
             }
             document.head.appendChild(b);
