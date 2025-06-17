@@ -1,10 +1,10 @@
 name: Build & Deploy Blazor to GitHub Pages
 
-# Триггер: всё, что пушится в main
+# Триггер: всё, что пушится в master
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
