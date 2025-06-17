@@ -8,7 +8,14 @@
 		<BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
 	</PropertyGroup>
 
-  <ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<StaticWebAssetBasePath>/Vibe-on-the-Wave/</StaticWebAssetBasePath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'!='Release'">
+		<StaticWebAssetBasePath>/</StaticWebAssetBasePath>
+	</PropertyGroup>
+
+	<ItemGroup>
     <PackageReference Include="MailKit" Version="4.12.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.16" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.16" PrivateAssets="all" />
