@@ -139,7 +139,7 @@ a {
 
 /* Hero (главный экран) — если понадобится */
 #hero {
-    background: url('/images/home/home_panel_background.jpg') center center no-repeat;
+    background: url('../images/home/home_panel_background.jpg') center center no-repeat;
     background-size: cover;
     height: 100vh;
     color: white;
