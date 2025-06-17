@@ -7,13 +7,7 @@
 		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
 		<BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
 	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)'=='Release'">
-		<StaticWebAssetBasePath>/Vibe-on-the-Wave/</StaticWebAssetBasePath>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)'!='Release'">
-		<StaticWebAssetBasePath>/</StaticWebAssetBasePath>
-	</PropertyGroup>
+	
 
 	<ItemGroup>
     <PackageReference Include="MailKit" Version="4.12.1" />
