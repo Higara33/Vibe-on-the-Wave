@@ -1,0 +1,129 @@
+﻿@page "/{culture}/fleet"
+@page "/fleet"
+@using Microsoft.JSInterop
+@inject IStringLocalizer<Pages.Fleet> L
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+
+<section id="fleet" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">@L["Fleet_Title"]</h2>
+            <p class="lead text-secondary">@L["Fleet_Subtitle"]</p>
+        </div>
+
+        <!-- Jeanneau Sun Odyssey 439 -->
+        <div class="row align-items-start mb-5">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <!-- Bootstrap-карусель -->
+                <div id="carouselJeanneau" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false" data-bs-wrap="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/fleet/jeanneau-outside.jpg" class="d-block w-100 rounded" alt="Outside view">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/fleet/jeanneau-interior.jpg" class="d-block w-100 rounded" alt="Interior view">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/fleet/jeanneau-layout.jpg" class="d-block w-100 rounded" alt="Deck plan">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselJeanneau" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselJeanneau" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-primary mb-3">@L["Fleet_Jeanneau_Name"]</h3>
+                <p>@L["Fleet_Jeanneau_Desc"]</p>
+                <ul class="list-unstyled">
+                    <li>@L["Fleet_Jeanneau_Length"]</li>
+                    <li>@L["Fleet_Jeanneau_Draft"]</li>
+                    <li>@L["Fleet_Jeanneau_Cabins"]</li>
+                    <li>@L["Fleet_Jeanneau_WC"]</li>
+                    <li>@L["Fleet_Jeanneau_SailArea"]</li>
+                    <li>@L["Fleet_Jeanneau_BowThruster"]</li>
+                    <li>@L["Fleet_Jeanneau_Equipment"]</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Beneteau Antares 32 -->
+        <div class="row align-items-start">
+            <div class="col-md-6 order-md-2 mb-3 mb-md-0">
+                <div id="carouselBeneteau" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false" data-bs-wrap="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/fleet/beneteau-outside.jpg" class="d-block w-100 rounded" alt="Outside view">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/fleet/beneteau-interior.jpg" class="d-block w-100 rounded" alt="Interior view">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/fleet/beneteau-engines.jpg" class="d-block w-100 rounded" alt="Engine room">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBeneteau" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBeneteau" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3 class="text-primary mb-3">@L["Fleet_Beneteau_Name"]</h3>
+                <p>@L["Fleet_Beneteau_Desc"]</p>
+                <ul class="list-unstyled">
+                    <li>@L["Fleet_Beneteau_Length"]</li>
+                    <li>@L["Fleet_Beneteau_Engines"]</li>
+                    <li>@L["Fleet_Beneteau_Cabins"]</li>
+                    <li>@L["Fleet_Beneteau_WC"]</li>
+                    <li>@L["Fleet_Beneteau_Flybridge"]</li>
+                    <li>@L["Fleet_Beneteau_Electronics"]</li>
+                    <li>@L["Fleet_Beneteau_BowThruster"]</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@code {
+    [Parameter] public string? culture { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        // Если сегмент культуры не указан, перенаправляем на страницу с дефолтной культурой (например, "en")
+        if (string.IsNullOrEmpty(culture))
+        {
+            NavigationManager.NavigateTo("en/fleet", forceLoad: true);
+            return;
+        }
+        // Устанавливаем культуру текущего потока в соответствии с сегментом URL
+        try
+        {
+            var ci = new CultureInfo(culture);
+            CultureInfo.DefaultThreadCurrentCulture = ci;
+            CultureInfo.DefaultThreadCurrentUICulture = ci;
+        }
+        catch { /* Игнорируем неверный код культуры */ }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Запускаем обе карусели сразу же, без первого клика
+            await JS.InvokeVoidAsync("startCarousel", "carouselJeanneau");
+            await JS.InvokeVoidAsync("startCarousel", "carouselBeneteau");
+        }
+    }
+}

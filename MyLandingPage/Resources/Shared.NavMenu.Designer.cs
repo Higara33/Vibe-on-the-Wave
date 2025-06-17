@@ -79,11 +79,29 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Our fleet.
+        /// </summary>
+        internal static string Nav_Fleet {
+            get {
+                return ResourceManager.GetString("Nav_Fleet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Home.
         /// </summary>
         internal static string Nav_Hero {
             get {
                 return ResourceManager.GetString("Nav_Hero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Programs.
+        /// </summary>
+        internal static string Nav_Programs {
+            get {
+                return ResourceManager.GetString("Nav_Programs", resourceCulture);
             }
         }
     }

@@ -117,19 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Nav_About" xml:space="preserve">
-    <value>About</value>
+  <data name="Fleet_Title" xml:space="preserve">
+    <value>Наш флот</value>
   </data>
-  <data name="Nav_Contacts" xml:space="preserve">
-    <value>Contact</value>
+  <data name="Fleet_Subtitle" xml:space="preserve">
+    <value>Мы учим на новых современных парусных и моторных яхтах, таких же, которые можно взять в аренду по всему миру. Учиться нужно на том, на чём собираетесь ходить.</value>
   </data>
-  <data name="Nav_Fleet" xml:space="preserve">
-    <value>Our fleet</value>
+  <data name="Fleet_Jeanneau_Name" xml:space="preserve">
+    <value>Парусная яхта Jeanneau Sun Odyssey 439</value>
   </data>
-  <data name="Nav_Hero" xml:space="preserve">
-    <value>Home</value>
+  <data name="Fleet_Jeanneau_Desc" xml:space="preserve">
+    <value>Современная 13-метровая крейсерская парусная яхта с 4 каютами. Топовая комплектация Premier обеспечивает максимальный комфорт и полный набор оборудования для обучения. Большая парусность (100 м² + 125 м² геннакер) позволяет отрабатывать различные режимы под парусом, а наличие носового подруливающего устройства облегчает швартовки.</value>
   </data>
-  <data name="Nav_Programs" xml:space="preserve">
-    <value>Programs</value>
+  <data name="Fleet_Jeanneau_Length" xml:space="preserve">
+    <value>Длина: 43 фута (13 м)</value>
+  </data>
+  <data name="Fleet_Jeanneau_Draft" xml:space="preserve">
+    <value>Осадка: 2,2 м</value>
+  </data>
+  <data name="Fleet_Jeanneau_Cabins" xml:space="preserve">
+    <value>Кают: 4 (8 спальных мест)</value>
+  </data>
+  <data name="Fleet_Jeanneau_WC" xml:space="preserve">
+    <value>Горячая вода и туалет: есть</value>
+  </data>
+  <data name="Fleet_Jeanneau_SailArea" xml:space="preserve">
+    <value>Парусность: 100 м² (+ геннакер 125 м²)</value>
+  </data>
+  <data name="Fleet_Jeanneau_BowThruster" xml:space="preserve">
+    <value>Носовое подруливающее устройство: есть</value>
+  </data>
+  <data name="Fleet_Jeanneau_Equipment" xml:space="preserve">
+    <value>Комплектация: Premier</value>
+  </data>
+  <data name="Fleet_Beneteau_Name" xml:space="preserve">
+    <value>Моторная яхта Beneteau Antares 32</value>
+  </data>
+  <data name="Fleet_Beneteau_Desc" xml:space="preserve">
+    <value>Современная 10-метровая моторная яхта с двумя мощными дизельными двигателями. Оснащена всем необходимым для комфортного плавания: 2 каюты, горячая вода, туалет, флайбридж с дублирующим постом управления. Наличие носового подруливающего устройства и современной электроники Raymarine (радар, автопилот, картплоттер) делает обучение управлению такой яхтой максимально приближенным к реальным условиям чартерного плавания.</value>
+  </data>
+  <data name="Fleet_Beneteau_Length" xml:space="preserve">
+    <value>Длина: 32 фута (10 м)</value>
+  </data>
+  <data name="Fleet_Beneteau_Engines" xml:space="preserve">
+    <value>Двигатели: 2 × 200 л. с. (дизель)</value>
+  </data>
+  <data name="Fleet_Beneteau_Cabins" xml:space="preserve">
+    <value>Кают: 2 (4 спальных места)</value>
+  </data>
+  <data name="Fleet_Beneteau_WC" xml:space="preserve">
+    <value>Горячая вода и туалет: есть</value>
+  </data>
+  <data name="Fleet_Beneteau_Flybridge" xml:space="preserve">
+    <value>Флайбридж с постом управления: есть</value>
+  </data>
+  <data name="Fleet_Beneteau_Electronics" xml:space="preserve">
+    <value>Радар, автопилот, картплоттер (Raymarine): есть</value>
+  </data>
+  <data name="Fleet_Beneteau_BowThruster" xml:space="preserve">
+    <value>Носовое подруливающее устройство: есть</value>
   </data>
 </root>

@@ -277,3 +277,34 @@ a {
     #contact-cta p {
         text-shadow: 0 2px 4px rgba(0,0,0,0.7);
     }
+
+.fleet-img {
+    height: 300px;
+    object-fit: cover; /* масштабирование с обрезкой по центру */
+    width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    /* делаем иконку белой и чуть больше */
+    filter: invert(1) brightness(2);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 100%, 100%;
+}
+
+#fleet .carousel-item img {
+    width: 100%;
+    height: 300px; /* фиксированная высота */
+    object-fit: cover; /* обрезка по центру, без искажений */
+}

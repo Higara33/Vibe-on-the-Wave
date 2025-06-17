@@ -123,6 +123,9 @@
   <data name="Nav_Contacts" xml:space="preserve">
     <value>Контакты</value>
   </data>
+  <data name="Nav_Fleet" xml:space="preserve">
+    <value>Наш флот</value>
+  </data>
   <data name="Nav_Hero" xml:space="preserve">
     <value>Главная</value>
   </data>

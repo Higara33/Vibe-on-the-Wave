@@ -117,19 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Nav_About" xml:space="preserve">
-    <value>About</value>
+  <data name="Fleet_Title" xml:space="preserve">
+    <value>Our Fleet</value>
   </data>
-  <data name="Nav_Contacts" xml:space="preserve">
-    <value>Contact</value>
+  <data name="Fleet_Subtitle" xml:space="preserve">
+    <value>We train on new, modern sailing and motor yachts, just like those you can charter anywhere in the world. You should learn on the type of boat you plan to sail.</value>
   </data>
-  <data name="Nav_Fleet" xml:space="preserve">
-    <value>Our fleet</value>
+  <data name="Fleet_Jeanneau_Name" xml:space="preserve">
+    <value>Sailing Yacht Jeanneau Sun Odyssey 439</value>
   </data>
-  <data name="Nav_Hero" xml:space="preserve">
-    <value>Home</value>
+  <data name="Fleet_Jeanneau_Desc" xml:space="preserve">
+    <value>A modern 13-meter cruising sailing yacht with 4 cabins. The top-tier Premier equipment package offers maximum comfort and a full set of gear for training. The large sail area (100 m² + 125 m² gennaker) is great for practicing various sailing techniques, and the bow thruster makes docking easier.</value>
   </data>
-  <data name="Nav_Programs" xml:space="preserve">
-    <value>Programs</value>
+  <data name="Fleet_Jeanneau_Length" xml:space="preserve">
+    <value>Length: 43 ft (13 m)</value>
+  </data>
+  <data name="Fleet_Jeanneau_Draft" xml:space="preserve">
+    <value>Draft: 2.2 m</value>
+  </data>
+  <data name="Fleet_Jeanneau_Cabins" xml:space="preserve">
+    <value>Cabins: 4 (8 berths)</value>
+  </data>
+  <data name="Fleet_Jeanneau_WC" xml:space="preserve">
+    <value>Hot water &amp; WC: Yes</value>
+  </data>
+  <data name="Fleet_Jeanneau_SailArea" xml:space="preserve">
+    <value>Sail area: 100 m² (+ gennaker 125 m²)</value>
+  </data>
+  <data name="Fleet_Jeanneau_BowThruster" xml:space="preserve">
+    <value>Bow thruster: Yes</value>
+  </data>
+  <data name="Fleet_Jeanneau_Equipment" xml:space="preserve">
+    <value>Equipment: Premier</value>
+  </data>
+  <data name="Fleet_Beneteau_Name" xml:space="preserve">
+    <value>Motor Yacht Beneteau Antares 32</value>
+  </data>
+  <data name="Fleet_Beneteau_Desc" xml:space="preserve">
+    <value>A modern 10-meter motor yacht with two powerful diesel engines. It has everything needed for comfortable cruising: 2 cabins, hot water, a toilet, and a flybridge with a second helm station. The presence of a bow thruster and modern Raymarine electronics (radar, autopilot, chartplotter) makes training on this yacht very close to real charter conditions.</value>
+  </data>
+  <data name="Fleet_Beneteau_Length" xml:space="preserve">
+    <value>Length: 32 ft (10 m)</value>
+  </data>
+  <data name="Fleet_Beneteau_Engines" xml:space="preserve">
+    <value>Engines: 2 × 200 HP (diesel)</value>
+  </data>
+  <data name="Fleet_Beneteau_Cabins" xml:space="preserve">
+    <value>Cabins: 2 (4 berths)</value>
+  </data>
+  <data name="Fleet_Beneteau_WC" xml:space="preserve">
+    <value>Hot water &amp; WC: Yes</value>
+  </data>
+  <data name="Fleet_Beneteau_Flybridge" xml:space="preserve">
+    <value>Flybridge with helm: Yes</value>
+  </data>
+  <data name="Fleet_Beneteau_Electronics" xml:space="preserve">
+    <value>Radar, autopilot, chartplotter (Raymarine): Yes</value>
+  </data>
+  <data name="Fleet_Beneteau_BowThruster" xml:space="preserve">
+    <value>Bow thruster: Yes</value>
   </data>
 </root>
