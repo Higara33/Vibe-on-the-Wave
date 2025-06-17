@@ -4,15 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
         (function () {
-            var b = document.createElement('base');
-            // Если мы на GitHub Pages (подпапка репо)
-            if (location.host.endsWith('github.io') &&
-                location.pathname.startsWith('/Vibe-on-the-Wave/')) {
-                b.href = '/Vibe-on-the-Wave/';
-            } else {
-                // локальный режим dotnet run или любой другой хостинг на корне
-                b.href = '/';
+            var repo = 'Vibe-on-the-Wave';
+            var parts = location.pathname.split('/');
+            // найдём, на каком индексе в путях лежит имя репо
+            var idx = parts.indexOf(repo);
+            var baseHref = '/';
+            if (idx !== -1) {
+                // собираем всё до и включая имя репо
+                baseHref = parts.slice(0, idx + 1).join('/') + '/';
             }
+            // создаём <base>
+            var b = document.createElement('base');
+            b.href = baseHref;
             document.head.appendChild(b);
         })();
     </script>

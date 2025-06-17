@@ -253,7 +253,7 @@ a {
 /* Фон + тёмная полупрозрачная маска */
 #contact-cta {
     position: relative;
-    background: url('/images/home/home_panel_background_1.jpg') center/cover no-repeat;
+    background: url('images/home/home_panel_background_1.jpg') center/cover no-repeat;
     overflow: hidden;
 }
 
