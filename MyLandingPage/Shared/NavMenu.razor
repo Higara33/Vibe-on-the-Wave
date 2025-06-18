@@ -53,19 +53,60 @@
         }
     }
 
+    // private void ChangeCultureAndNavigate(string culture)
+    // {
+    //     if (string.IsNullOrEmpty(culture)) return;
+    //     var uri = new Uri(NavigationManager.Uri);
+    //     var segments = uri.AbsolutePath.Trim('/').Split('/', StringSplitOptions.RemoveEmptyEntries);
+
+    //     if (segments.Length > 0 && (segments[0] == "ru" || segments[0] == "en"))
+    //         segments[0] = culture;
+    //     else
+    //         segments = new[] { culture }.Concat(segments).ToArray();
+
+    //     var newPath = string.Join('/', segments);
+    //     NavigationManager.NavigateTo($"/{newPath}{uri.Query}", forceLoad: true);
+    // }
+
     private void ChangeCultureAndNavigate(string culture)
     {
-        if (string.IsNullOrEmpty(culture)) return;
-        var uri = new Uri(NavigationManager.Uri);
-        var segments = uri.AbsolutePath.Trim('/').Split('/', StringSplitOptions.RemoveEmptyEntries);
+        if (string.IsNullOrEmpty(culture))
+            return;
 
-        if (segments.Length > 0 && (segments[0] == "ru" || segments[0] == "en"))
-            segments[0] = culture;
+        // 1) Устанавливаем культуру .NET для локализатора
+        var ci = new CultureInfo(culture);
+        CultureInfo.DefaultThreadCurrentCulture = ci;
+        CultureInfo.DefaultThreadCurrentUICulture = ci;
+
+        // 2) Берём текущий BaseUri ("/" или "/Vibe-on-the-Wave/")
+        var baseUri = NavigationManager.BaseUri.TrimEnd('/');
+        var fullUri = NavigationManager.Uri;
+
+        // 3) Вычисляем относительный путь, удаляя BaseUri
+        string relativePath;
+        if (fullUri.StartsWith(baseUri, StringComparison.OrdinalIgnoreCase))
+        {
+            relativePath = fullUri.Substring(baseUri.Length).Trim('/');
+        }
         else
-            segments = new[] { culture }.Concat(segments).ToArray();
+        {
+            // на случай, если BaseUri не совпал (например, при локальных обходах)
+            relativePath = new Uri(fullUri).AbsolutePath.Trim('/');
+        }
 
-        var newPath = string.Join('/', segments);
-        NavigationManager.NavigateTo($"/{newPath}{uri.Query}", forceLoad: true);
+        // 4) Разбиваем на сегменты и удаляем старые коды "ru"/"en"
+        var segments = relativePath
+            .Split('/', StringSplitOptions.RemoveEmptyEntries)
+            .Where(s => s != "ru" && s != "en")
+            .ToList();
+
+        // 5) Вставляем новый язык в начало
+        segments.Insert(0, culture);
+
+        // 6) Собираем новый относительный путь и переходим на него
+        var newRelative = string.Join('/', segments);
+        var query = new Uri(fullUri).Query;
+        NavigationManager.NavigateTo(newRelative + query, forceLoad: true);
     }
 
     protected override void OnInitialized()
