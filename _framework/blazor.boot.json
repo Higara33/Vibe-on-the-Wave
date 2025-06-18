@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MyLandingPage",
   "resources": {
-    "hash": "sha256-33ikTW9FQAJMaE7fr4KiSqq+2zUNFFyPxXOGYSmUgHM=",
+    "hash": "sha256-WrZozZP9O8s6gzVV/w4FYFDo1/IAKqJLfR+K3xpCS0k=",
     "jsModuleNative": {
       "dotnet.native.8.0.17.qnqnu9is6n.js": "sha256-YyxJV6dv935qHoQAmjB+2qRjHeGpm4SyWxE0T/KvsIE="
     },
@@ -43,7 +43,7 @@
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-3ZhhLqIl/a3sQpZRtZoP3l0PQlX+2Joo9fqnzbZmm6c=",
       "Microsoft.Net.Http.Headers.wasm": "sha256-jfXK+cfJd/PteHB+5Bay/NDY9b9VLvVw6G/Bm262Lpo=",
       "MimeKit.wasm": "sha256-LbB8LQHwlUoNIBYViNDXX6XeIz9FDcw/dZkTQ9lI2Xw=",
-      "MyLandingPage.wasm": "sha256-WOSz+uU98zcCOTYMpPSvW1z0YxxC1eEbppZNunOWICc=",
+      "MyLandingPage.wasm": "sha256-msx3GCwE+N9uOBTfc5Us3ULrz3QURjn9J9FyuLi6tf0=",
       "netstandard.wasm": "sha256-YGoE4sNvuIQzGRc2eg6yH312Q73glFvI0IvVkjOKKLk=",
       "System.Buffers.wasm": "sha256-2xRMo5+XIMOmPkn0CpPBh4sRZhsn/wukzZ2Vk6GgmSc=",
       "System.Collections.Concurrent.wasm": "sha256-HumZfnn4TbFcuG079JbIocxoB3YTzoKR5an5nAFFpJw=",
@@ -59,7 +59,7 @@
       "System.Formats.Asn1.wasm": "sha256-4/8DzlA9X/hzssqepFRMyMLMDb/vMJK5dKaGPTxe4a4=",
       "System.IO.Compression.wasm": "sha256-TuUWwCIQS7HTv2yMFK3Oaw5OZhE7s/Vx63cSkVCCMp8=",
       "System.Linq.Expressions.wasm": "sha256-0cz+NZZY+b2Lr79BarqNVLE/k2s+ZPEr5/4nrlW8MSA=",
-      "System.Linq.wasm": "sha256-BixJSa/JHqE+N9ELZ1prQCt9gLRrs3FgUSCHxw8xxGM=",
+      "System.Linq.wasm": "sha256-U82XDT+nQEpy6xNfMgm3/aPl4mmjcdUy3WqAfWvcmYg=",
       "System.Memory.wasm": "sha256-sTqQTz0W015GEGEXgj+x0LWRfBO+YNdsa4MNgl2f/+A=",
       "System.Net.Http.wasm": "sha256-QaHqNbyXYOLf/CzKb/z8mNPEtNk1+PKt3wGaI9mb7DY=",
       "System.Net.NameResolution.wasm": "sha256-fHIZeVgQEN01sa+lHlIGTiOBHfP1nz2Nnyss1QtQNjA=",
@@ -94,7 +94,7 @@
     },
     "satelliteResources": {
       "ru": {
-        "MyLandingPage.resources.wasm": "sha256-2kxk2YTM/jkRpNFAUsny5XwiV/f6YXToU4EBGTKaPUY="
+        "MyLandingPage.resources.wasm": "sha256-hEDMWmkvop2TK+cyv4E4zDJxhki+fEKnpmUHAEc4w4A="
       }
     }
   },
