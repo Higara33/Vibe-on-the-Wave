@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MyLandingPage",
   "resources": {
-    "hash": "sha256-WrZozZP9O8s6gzVV/w4FYFDo1/IAKqJLfR+K3xpCS0k=",
+    "hash": "sha256-oGkwOnwO1mZHCoBcSZULuIAjsp2FXH+KKfeuyekY8v8=",
     "jsModuleNative": {
       "dotnet.native.8.0.17.qnqnu9is6n.js": "sha256-YyxJV6dv935qHoQAmjB+2qRjHeGpm4SyWxE0T/KvsIE="
     },
@@ -43,7 +43,7 @@
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-3ZhhLqIl/a3sQpZRtZoP3l0PQlX+2Joo9fqnzbZmm6c=",
       "Microsoft.Net.Http.Headers.wasm": "sha256-jfXK+cfJd/PteHB+5Bay/NDY9b9VLvVw6G/Bm262Lpo=",
       "MimeKit.wasm": "sha256-LbB8LQHwlUoNIBYViNDXX6XeIz9FDcw/dZkTQ9lI2Xw=",
-      "MyLandingPage.wasm": "sha256-msx3GCwE+N9uOBTfc5Us3ULrz3QURjn9J9FyuLi6tf0=",
+      "MyLandingPage.wasm": "sha256-uQYIPnTOgId4214A0ZpD5d9yuix5O/fJgtw7s1b6cM4=",
       "netstandard.wasm": "sha256-YGoE4sNvuIQzGRc2eg6yH312Q73glFvI0IvVkjOKKLk=",
       "System.Buffers.wasm": "sha256-2xRMo5+XIMOmPkn0CpPBh4sRZhsn/wukzZ2Vk6GgmSc=",
       "System.Collections.Concurrent.wasm": "sha256-HumZfnn4TbFcuG079JbIocxoB3YTzoKR5an5nAFFpJw=",
@@ -94,7 +94,7 @@
     },
     "satelliteResources": {
       "ru": {
-        "MyLandingPage.resources.wasm": "sha256-hEDMWmkvop2TK+cyv4E4zDJxhki+fEKnpmUHAEc4w4A="
+        "MyLandingPage.resources.wasm": "sha256-mbvho4gA9qs9qz2ImrKuFas65lNg7toMo1j0SSsgGcA="
       }
     }
   },
