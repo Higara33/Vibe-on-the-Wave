@@ -18,3 +18,32 @@ window.startCarousel = (carouselId) => {
         });
     }
 };
+
+// ====================
+// Sticky header on scroll
+// ====================
+window.addEventListener('scroll', () => {
+    const hdr = document.getElementById('site-header');
+    if (!hdr) return;
+
+    if (window.scrollY > 50) {
+        hdr.classList.add('scrolled');
+    } else {
+        hdr.classList.remove('scrolled');
+    }
+});
+
+// =========================================
+// Auto-close Bootstrap offcanvas on link tap
+// =========================================
+document.addEventListener('DOMContentLoaded', () => {
+    const offcanvasEl = document.getElementById('offcanvasNav');
+    if (offcanvasEl && window.bootstrap && bootstrap.Offcanvas) {
+        const offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+        offcanvasEl.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                offcanvasInstance.hide();
+            });
+        });
+    }
+});

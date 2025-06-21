@@ -117,31 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Nav_About" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="Nav_Contacts" xml:space="preserve">
-    <value>Contact</value>
-  </data>
-  <data name="Nav_Fleet" xml:space="preserve">
-    <value>Our fleet</value>
-  </data>
-  <data name="Nav_Hero" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="Nav_Programs" xml:space="preserve">
-    <value>Programs</value>
-  </data>
-  <data name="Site_Title" xml:space="preserve">
-    <value>Vibe on the Waves</value>
-  </data>
-  <data name="Nav_Services" xml:space="preserve">
-    <value>Services</value>
-  </data>
-  <data name="Nav_Contact" xml:space="preserve">
-    <value>Contact</value>
-  </data>
-  <data name="Nav_CTA" xml:space="preserve">
-    <value>Book Now</value>
+  <data name="Footer_Copyright" xml:space="preserve">
+    <value>© 2025 Vibe on the waves. Все права защищены.</value>
   </data>
 </root>

@@ -77,6 +77,11 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Shared.InfoModal.resx</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Shared.MainLayout.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.MainLayout.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Shared.NavMenu.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -135,6 +140,9 @@
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.InfoModal.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.MainLayout.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.NavMenu.resx">

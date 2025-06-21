@@ -489,3 +489,56 @@ a {
         opacity: 1;
     }
 }
+
+/* ================================
+   Header (NavMenu) улучшения
+   ================================ */
+#site-header {
+    background-color: rgba(255,255,255,0.8);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+    #site-header.sticky-top.scrolled {
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+.logo-img {
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Навигация */
+#site-header .nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+    #site-header .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #0d6efd;
+        transition: width 0.3s, left 0.3s;
+    }
+
+    #site-header .nav-link:hover {
+        color: #0d6efd;
+    }
+
+        #site-header .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+/* Кнопка CTA */
+#site-header .btn-primary {
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+}
