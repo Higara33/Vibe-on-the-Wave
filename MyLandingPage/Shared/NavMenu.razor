@@ -48,14 +48,14 @@
                 @* Programs — отдельная страница *@
                 <li class="nav-item">
                     <NavLink class="nav-link"
-                             href="@($"/{CurrentCulture}/programs")">
+                             href="@($"{CurrentCulture}/programs")">
                         @L["Nav_Programs"]
                     </NavLink>
                 </li>
                 @* Our Fleet — отдельная страница *@
                 <li class="nav-item">
                     <NavLink class="nav-link"
-                             href="@($"/{CurrentCulture}/fleet")">
+                             href="@($"{CurrentCulture}/fleet")">
                         @L["Nav_Fleet"]
                     </NavLink>
                 </li>
@@ -125,13 +125,13 @@
                 </li>
                 <li class="nav-item">
                     <NavLink class="nav-link"
-                             href="@($"/{CurrentCulture}/programs")">
+                             href="@($"{CurrentCulture}/programs")">
                         @L["Nav_Programs"]
                     </NavLink>
                 </li>
                 <li class="nav-item">
                     <NavLink class="nav-link"
-                             href="@($"/{CurrentCulture}/fleet")">
+                             href="@($"{CurrentCulture}/fleet")">
                         @L["Nav_Fleet"]
                     </NavLink>
                 </li>
@@ -184,7 +184,7 @@
         else
         {
             // перейдём на главную с фрагментом — браузер прыгнет
-            NavigationManager.NavigateTo($"/{CurrentCulture}#{sectionId}", false);
+            NavigationManager.NavigateTo($"{CurrentCulture}#{sectionId}", false);
         }
     }
 
