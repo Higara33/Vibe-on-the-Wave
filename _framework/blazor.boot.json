@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MyLandingPage",
   "resources": {
-    "hash": "sha256-n2AmQ6Usw7wApjE13nzoHgtcD8+Qhp5W1EYQEETysqQ=",
+    "hash": "sha256-5DcfuTQO6hJBqNaVFYhPrwGDv5RYpXfwD1jDOfylBJM=",
     "jsModuleNative": {
       "dotnet.native.8.0.17.qnqnu9is6n.js": "sha256-YyxJV6dv935qHoQAmjB+2qRjHeGpm4SyWxE0T/KvsIE="
     },
@@ -18,8 +18,8 @@
       "BouncyCastle.Cryptography.wasm": "sha256-gy0YVyBWlVPAW/D2WdBB/hMOkSFk7t4D1p0xyiKNrcs=",
       "MailKit.wasm": "sha256-v5JoJ7D2goyKYyXJmResPbdscLTRFrEiHa8zRN4uwKM=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-Y3BwzS35WFgx3FWvkE3FxG1Zh2xFkzTfvTKnKNjdn8o=",
-      "Microsoft.AspNetCore.Components.wasm": "sha256-KXazOkqS0rbMMc3ao9n9Z1bldKOGxsMsLpSNEb8Fgqg=",
-      "Microsoft.AspNetCore.Components.Web.wasm": "sha256-DT5YI5nXCjW3/vDumlLdarnhxPAnl3OWDCIvJHnGJZo=",
+      "Microsoft.AspNetCore.Components.wasm": "sha256-edMRUNRbpoOAyC10MFKHZtzQYL1yJy/Begu9H7P3msM=",
+      "Microsoft.AspNetCore.Components.Web.wasm": "sha256-QlxUCnzSFJFmfrT5fN170numpd3BFB4i67Nnz9BOEIU=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-dZh6zr+6kO2UTsafWCliJx3hEzE9Tevemsu5VZDaJXw=",
       "Microsoft.AspNetCore.Http.Abstractions.wasm": "sha256-7wgz1ZHwXmXV8y00xn+jT4BGeuCQQbVYGQl+PNvBfnQ=",
       "Microsoft.AspNetCore.Http.Extensions.wasm": "sha256-sbIJEHnGL6std1HkIJ83mfNTk5yznrGRZbaacPDI5w4=",
@@ -43,7 +43,7 @@
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-3ZhhLqIl/a3sQpZRtZoP3l0PQlX+2Joo9fqnzbZmm6c=",
       "Microsoft.Net.Http.Headers.wasm": "sha256-jfXK+cfJd/PteHB+5Bay/NDY9b9VLvVw6G/Bm262Lpo=",
       "MimeKit.wasm": "sha256-LbB8LQHwlUoNIBYViNDXX6XeIz9FDcw/dZkTQ9lI2Xw=",
-      "MyLandingPage.wasm": "sha256-6iCrV8/g9KSVW/KuzlpW6xcAPX5WomxtkhUGBNknt5g=",
+      "MyLandingPage.wasm": "sha256-sMyT2QXefHdkYZx6jOqX9504isSv18Hjzrwe18NTnGI=",
       "netstandard.wasm": "sha256-YGoE4sNvuIQzGRc2eg6yH312Q73glFvI0IvVkjOKKLk=",
       "System.Buffers.wasm": "sha256-2xRMo5+XIMOmPkn0CpPBh4sRZhsn/wukzZ2Vk6GgmSc=",
       "System.Collections.Concurrent.wasm": "sha256-HumZfnn4TbFcuG079JbIocxoB3YTzoKR5an5nAFFpJw=",
@@ -94,7 +94,7 @@
     },
     "satelliteResources": {
       "ru": {
-        "MyLandingPage.resources.wasm": "sha256-p4bV05+czZBEgqLjHiIUsegSV+rZbBWsALNgb5g21vE="
+        "MyLandingPage.resources.wasm": "sha256-8LV3v1NK2zYi9Ux3L4C+9eVaiI1HgP8wBmZWH6VVKpE="
       }
     }
   },
