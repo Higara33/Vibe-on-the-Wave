@@ -57,6 +57,11 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Shared.ContactCTASection.resx</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Shared.ContactSection.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.ContactSection.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Shared.Header.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -121,6 +126,9 @@
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.ContactCTASection.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.ContactSection.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.HeroSection.ru.resx">

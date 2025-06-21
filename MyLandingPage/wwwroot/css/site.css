@@ -422,3 +422,70 @@ a {
         background-color: #ffc107;
         color: #212529;
     }
+
+/* ================================
+   ContactSection
+   ================================ */
+#contact-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+    #contact-section .icon-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+        #contact-section .icon-circle:hover {
+            transform: scale(1.1);
+        }
+
+    #contact-section .contact-info h5 {
+        margin-bottom: 0.25rem;
+    }
+
+    #contact-section .social-links a {
+        color: #495057;
+        transition: color 0.3s ease;
+    }
+
+        #contact-section .social-links a:hover {
+            color: #0d6efd;
+        }
+
+    #contact-section .contact-form {
+        animation: fadeInUp 0.6s ease both;
+    }
+
+    #contact-section .map-container {
+        animation: fadeIn 0.8s ease both;
+    }
+
+/* анимации */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
