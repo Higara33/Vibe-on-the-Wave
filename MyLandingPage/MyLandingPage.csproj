@@ -82,6 +82,11 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Shared.ProgramsSection.resx</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Shared.PromotionsSection.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.PromotionsSection.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Shared.ReasonsSection.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -128,6 +133,9 @@
 	    <Generator>ResXFileCodeGenerator</Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.NavMenu.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.PromotionsSection.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.ReasonsSection.ru.resx">

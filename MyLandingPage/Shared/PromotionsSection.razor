@@ -1,0 +1,70 @@
+﻿@namespace MyLandingPage.Shared
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Shared.PromotionsSection> L
+
+<section id="promotions" class="py-5">
+    <div class="container">
+        <!-- Заголовок блока -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">@L["Promotions_Title"]</h2>
+            <p class="lead text-secondary">@L["Promotions_Subtitle"]</p>
+        </div>
+
+        <!-- Карточки акций с иконками и hover-эффектом -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Акция 1 -->
+            <div class="col">
+                <div class="card h-100 promo-card">
+                    <div class="promo-icon bg-primary text-white text-center">
+                        <i class="bi bi-tags fs-2"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@L["Promo1_Title"]</h5>
+                        <p class="card-text text-muted flex-fill">@L["Promo1_Text"]</p>
+                        <div class="mt-auto d-grid">
+                            <a href="survey/sail" class="btn btn-outline-primary">
+                                @L["Promo1_Button"]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Акция 2 -->
+            <div class="col">
+                <div class="card h-100 promo-card">
+                    <div class="promo-icon bg-success text-white text-center">
+                        <i class="bi bi-clock-history fs-2"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@L["Promo2_Title"]</h5>
+                        <p class="card-text text-muted flex-fill">@L["Promo2_Text"]</p>
+                        <div class="mt-auto d-grid">
+                            <a href="survey/power" class="btn btn-outline-success">
+                                @L["Promo2_Button"]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Акция 3 -->
+            <div class="col">
+                <div class="card h-100 promo-card">
+                    <div class="promo-icon bg-warning text-white text-center">
+                        <i class="bi bi-people fs-2"></i>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@L["Promo3_Title"]</h5>
+                        <p class="card-text text-muted flex-fill">@L["Promo3_Text"]</p>
+                        <div class="mt-auto d-grid">
+                            <a href="survey/catamaran" class="btn btn-outline-warning">
+                                @L["Promo3_Button"]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
