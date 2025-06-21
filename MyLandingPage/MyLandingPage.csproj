@@ -57,6 +57,11 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Shared.ContactCTASection.resx</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Shared.ContactSection.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.ContactSection.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Shared.Header.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -71,6 +76,11 @@
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Shared.InfoModal.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Shared.MainLayout.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Shared.MainLayout.resx</DependentUpon>
 	  </Compile>
 	  <Compile Update="Resources\Shared.NavMenu.Designer.cs">
 	    <DesignTime>True</DesignTime>
@@ -123,10 +133,16 @@
 	  <EmbeddedResource Update="Resources\Shared.ContactCTASection.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.ContactSection.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.HeroSection.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.InfoModal.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Shared.MainLayout.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.NavMenu.resx">

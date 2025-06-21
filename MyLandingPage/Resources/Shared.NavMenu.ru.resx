@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Nav_About" xml:space="preserve">
-    <value>О компании</value>
+    <value>О нас</value>
   </data>
   <data name="Nav_Contacts" xml:space="preserve">
     <value>Контакты</value>
@@ -131,5 +131,17 @@
   </data>
   <data name="Nav_Programs" xml:space="preserve">
     <value>Программы</value>
+  </data>
+  <data name="Site_Title" xml:space="preserve">
+    <value>Vibe on the Waves</value>
+  </data>
+  <data name="Nav_Services" xml:space="preserve">
+    <value>Услуги</value>
+  </data>
+  <data name="Nav_Contact" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="Nav_CTA" xml:space="preserve">
+    <value>Записаться</value>
   </data>
 </root>

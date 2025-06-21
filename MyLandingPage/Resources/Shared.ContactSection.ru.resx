@@ -117,31 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Nav_About" xml:space="preserve">
-    <value>About</value>
+  <data name="Contact_Title" xml:space="preserve">
+    <value>Свяжитесь с нами</value>
   </data>
-  <data name="Nav_Contacts" xml:space="preserve">
-    <value>Contact</value>
+  <data name="Contact_Subtitle" xml:space="preserve">
+    <value>Мы всегда на связи и рады вашим вопросам!</value>
   </data>
-  <data name="Nav_Fleet" xml:space="preserve">
-    <value>Our fleet</value>
+  <data name="Contact_Phone_Title" xml:space="preserve">
+    <value>Телефон</value>
   </data>
-  <data name="Nav_Hero" xml:space="preserve">
-    <value>Home</value>
+  <data name="Contact_Phone_Value" xml:space="preserve">
+    <value>+420-774-343-513</value>
   </data>
-  <data name="Nav_Programs" xml:space="preserve">
-    <value>Programs</value>
+  <data name="Contact_Email_Title" xml:space="preserve">
+    <value>E-mail</value>
   </data>
-  <data name="Site_Title" xml:space="preserve">
-    <value>Vibe on the Waves</value>
+  <data name="Contact_Email_Value" xml:space="preserve">
+    <value>annushcz@gmail.com</value>
   </data>
-  <data name="Nav_Services" xml:space="preserve">
-    <value>Services</value>
+  <data name="Contact_Address_Title" xml:space="preserve">
+    <value>Адрес</value>
   </data>
-  <data name="Nav_Contact" xml:space="preserve">
-    <value>Contact</value>
+  <data name="Contact_Address_Value" xml:space="preserve">
+    <value>Na Strži 1205/39</value>
   </data>
-  <data name="Nav_CTA" xml:space="preserve">
-    <value>Book Now</value>
+  <data name="Social_Facebook" xml:space="preserve">
+    <value>https://facebook.com/yourpage</value>
+  </data>
+  <data name="Social_Instagram" xml:space="preserve">
+    <value>https://instagram.com/yourpage</value>
+  </data>
+  <data name="Social_LinkedIn" xml:space="preserve">
+    <value>https://linkedin.com/company/yourpage</value>
+  </data>
+  <data name="Form_Name_Placeholder" xml:space="preserve">
+    <value>Ваше имя</value>
+  </data>
+  <data name="Form_Email_Placeholder" xml:space="preserve">
+    <value>Ваш e-mail</value>
+  </data>
+  <data name="Form_Message_Placeholder" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="Form_Button" xml:space="preserve">
+    <value>Отправить сообщение</value>
+  </data>
+  <data name="Contact_Map_Embed" xml:space="preserve">
+    <value>https://www.google.com/maps?q=50.0463574,14.4390276&amp;z=16&amp;output=embed</value>
+  </data>
+  <data name="Form_SuccessMessage" xml:space="preserve">
+    <value>Спасибо, {0}! Ваше сообщение отправлено.</value>
+  </data>
+  <data name="Form_Sending" xml:space="preserve">
+    <value>Отправка…</value>
+  </data>
+  <data name="Form_ErrorPrefix" xml:space="preserve">
+    <value>Ошибка при отправке:</value>
   </data>
 </root>

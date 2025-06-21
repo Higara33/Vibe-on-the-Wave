@@ -2,43 +2,156 @@
 @using Microsoft.AspNetCore.Components
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.Extensions.Localization
+@using Microsoft.JSInterop
 @inject NavigationManager NavigationManager
 @inject IStringLocalizer<Shared.NavMenu> L
+@inject IJSRuntime JS
 
-<!-- Нижняя часть шапки: меню (Home, About, Contact) + селектор языка -->
-<section class="header-nav">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg p-0">
-            <!-- Если вам нужно в меню дублировать маленький логотип, раскомментируйте: -->
-            <a class="navbar-brand" href="@NavigationManager.BaseUri">
-                <img src="images/logo-small.png" alt="Logo" />
+<header id="site-header" class="sticky-top">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+        <!-- Логотип -->
+        <a href="@NavigationManager.BaseUri" class="d-flex align-items-center logo-link">
+            <img src="images/logo.png" alt="Logo" class="logo-img me-2" />
+            <span class="h4 mb-0 fw-bold">@L["Site_Title"]</span>
+        </a>
+
+        <!-- Desktop меню -->
+        <nav class="d-none d-lg-block">
+            <ul class="nav">
+                @* Home *@
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#hero"
+                       @onclick='@(async () => await NavigateOrScroll("hero"))'
+                       @onclick:preventDefault>
+                        @L["Nav_Hero"]
+                    </a>
+                </li>
+                @* About *@
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#about"
+                       @onclick='@(async () => await NavigateOrScroll("about"))'
+                       @onclick:preventDefault>
+                        @L["Nav_About"]
+                    </a>
+                </li>
+                @* Services *@
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#services"
+                       @onclick='@(async () => await NavigateOrScroll("services"))'
+                       @onclick:preventDefault>
+                        @L["Nav_Services"]
+                    </a>
+                </li>
+                @* Programs — отдельная страница *@
+                <li class="nav-item">
+                    <NavLink class="nav-link"
+                             href="@($"/{CurrentCulture}/programs")">
+                        @L["Nav_Programs"]
+                    </NavLink>
+                </li>
+                @* Our Fleet — отдельная страница *@
+                <li class="nav-item">
+                    <NavLink class="nav-link"
+                             href="@($"/{CurrentCulture}/fleet")">
+                        @L["Nav_Fleet"]
+                    </NavLink>
+                </li>
+                @* Contact *@
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#contact-section"
+                       @onclick='@(async () => await NavigateOrScroll("contact-section"))'
+                       @onclick:preventDefault>
+                        @L["Nav_Contact"]
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Language + CTA + Mobile toggle -->
+        <div class="d-flex align-items-center">
+            <select class="form-select form-select-sm language-select"
+                    @bind="CurrentCulture">
+                <option value="ru">Рус</option>
+                <option value="en">EN</option>
+            </select>
+
+            <a href="survey/sail" class="btn btn-primary btn-sm ms-3">
+                @L["Nav_CTA"]
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <button class="navbar-toggler ms-2" type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <NavLink class="nav-link" href="#hero-section">@L["Nav_Hero"]</NavLink>
-                    </li>
-                    <li class="nav-item">
-                        <NavLink class="nav-link" href="programs">@L["Nav_Programs"]</NavLink>
-                    </li>
-                    <li class="nav-item">
-                        <NavLink class="nav-link" href="fleet">@L["Nav_Fleet"]</NavLink>
-                    </li>
-                </ul>
-
-                <!-- Селектор языка -->
-                <select class="form-select form-select-sm w-auto language-select" @bind="CurrentCulture">
-                    <option value="ru">Рус</option>
-                    <option value="en">EN</option>
-                </select>
-            </div>
-        </nav>
+        </div>
     </div>
-</section>
+
+    <!-- Offcanvas (mobile) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">@L["Site_Title"]</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#hero"
+                       @onclick='@(async () => await NavigateOrScroll("hero"))'
+                       @onclick:preventDefault>
+                        @L["Nav_Hero"]
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#about"
+                       @onclick='@(async () => await NavigateOrScroll("about"))'
+                       @onclick:preventDefault>
+                        @L["Nav_About"]
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#services"
+                       @onclick='@(async () => await NavigateOrScroll("services"))'
+                       @onclick:preventDefault>
+                        @L["Nav_Services"]
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link"
+                             href="@($"/{CurrentCulture}/programs")">
+                        @L["Nav_Programs"]
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link"
+                             href="@($"/{CurrentCulture}/fleet")">
+                        @L["Nav_Fleet"]
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#contact-section"
+                       @onclick='@(async () => await NavigateOrScroll("contact-section"))'
+                       @onclick:preventDefault>
+                        @L["Nav_Contact"]
+                    </a>
+                </li>
+                <li class="nav-item mt-3">
+                    <a class="btn btn-primary w-100" href="survey/sail">
+                        @L["Nav_CTA"]
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 
 @code {
     private string currentCulture = "en";
@@ -50,6 +163,28 @@
             if (value == currentCulture) return;
             currentCulture = value;
             ChangeCultureAndNavigate(currentCulture);
+        }
+    }
+
+    bool IsOnHomePage
+    {
+        get
+        {
+            var path = NavigationManager.ToBaseRelativePath(NavigationManager.Uri).TrimEnd('/');
+            return path == CurrentCulture;
+        }
+    }
+
+    async Task NavigateOrScroll(string sectionId)
+    {
+        if (IsOnHomePage)
+        {
+            await JS.InvokeVoidAsync("scrollToSection", sectionId);
+        }
+        else
+        {
+            // перейдём на главную с фрагментом — браузер прыгнет
+            NavigationManager.NavigateTo($"/{CurrentCulture}#{sectionId}", false);
         }
     }
 

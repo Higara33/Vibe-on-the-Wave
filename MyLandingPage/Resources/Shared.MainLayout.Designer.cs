@@ -22,14 +22,14 @@ namespace MyLandingPage.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Shared_NavMenu {
+    internal class Shared_MainLayout {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Shared_NavMenu() {
+        internal Shared_MainLayout() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MyLandingPage.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MyLandingPage.Resources.Shared.NavMenu", typeof(Shared_NavMenu).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MyLandingPage.Resources.Shared.MainLayout", typeof(Shared_MainLayout).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,83 +61,11 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на About.
+        ///   Ищет локализованную строку, похожую на © 2025 Vibe on the waves. All rights reserved..
         /// </summary>
-        internal static string Nav_About {
+        internal static string Footer_Copyright {
             get {
-                return ResourceManager.GetString("Nav_About", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Contact.
-        /// </summary>
-        internal static string Nav_Contact {
-            get {
-                return ResourceManager.GetString("Nav_Contact", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Contact.
-        /// </summary>
-        internal static string Nav_Contacts {
-            get {
-                return ResourceManager.GetString("Nav_Contacts", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Book Now.
-        /// </summary>
-        internal static string Nav_CTA {
-            get {
-                return ResourceManager.GetString("Nav_CTA", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Our fleet.
-        /// </summary>
-        internal static string Nav_Fleet {
-            get {
-                return ResourceManager.GetString("Nav_Fleet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Home.
-        /// </summary>
-        internal static string Nav_Hero {
-            get {
-                return ResourceManager.GetString("Nav_Hero", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Programs.
-        /// </summary>
-        internal static string Nav_Programs {
-            get {
-                return ResourceManager.GetString("Nav_Programs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Services.
-        /// </summary>
-        internal static string Nav_Services {
-            get {
-                return ResourceManager.GetString("Nav_Services", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Vibe on the Waves.
-        /// </summary>
-        internal static string Site_Title {
-            get {
-                return ResourceManager.GetString("Site_Title", resourceCulture);
+                return ResourceManager.GetString("Footer_Copyright", resourceCulture);
             }
         }
     }

@@ -1,0 +1,167 @@
+﻿@namespace MyLandingPage.Shared
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Shared.ContactSection> L
+@inject MyLandingPage.Services.Interfaces.IEmailService EmailService
+
+<section id="contact-section" class="py-5">
+    <div class="container">
+        <!-- Заголовок -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">@L["Contact_Title"]</h2>
+            <p class="lead text-secondary">@L["Contact_Subtitle"]</p>
+        </div>
+
+        <div class="row gy-4">
+            <!-- 1) Контактная информация -->
+            <div class="col-lg-6">
+                <div class="contact-info">
+                    <div class="d-flex mb-4 align-items-start fade-up">
+                        <div class="icon-circle bg-primary text-white me-3">
+                            <i class="bi bi-telephone-fill fs-3"></i>
+                        </div>
+                        <div>
+                            <h5>@L["Contact_Phone_Title"]</h5>
+                            <a href="tel:@L["Contact_Phone_Value"]" class="text-decoration-none text-dark fw-bold">
+                                @L["Contact_Phone_Value"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 align-items-start fade-up" style="animation-delay: 0.1s;">
+                        <div class="icon-circle bg-success text-white me-3">
+                            <i class="bi bi-envelope-fill fs-3"></i>
+                        </div>
+                        <div>
+                            <h5>@L["Contact_Email_Title"]</h5>
+                            <a href="mailto:@L["Contact_Email_Value"]" class="text-decoration-none text-dark fw-bold">
+                                @L["Contact_Email_Value"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 align-items-start fade-up" style="animation-delay: 0.2s;">
+                        <div class="icon-circle bg-warning text-white me-3">
+                            <i class="bi bi-geo-alt-fill fs-3"></i>
+                        </div>
+                        <div>
+                            <h5>@L["Contact_Address_Title"]</h5>
+                            <p class="mb-0 text-muted">@L["Contact_Address_Value"]</p>
+                        </div>
+                    </div>
+
+                    <!-- Соцсети -->
+                    <div class="social-links mt-4 fade-up" style="animation-delay:0.3s;">
+                        <a href="@L["Social_Facebook"]" target="_blank" class="me-3">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                        <a href="@L["Social_Instagram"]" target="_blank" class="me-3">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="@L["Social_LinkedIn"]" target="_blank" class="me-3">
+                            <i class="bi bi-linkedin fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2) Форма обратной связи -->
+            <div class="col-lg-6">
+                <div class="contact-form bg-light p-4 rounded shadow-sm fade-up" style="animation-delay:0.4s;">
+                    @if (isSent)
+                    {
+                        <div class="alert alert-success">
+                            @L["Form_SuccessMessage", form.Name]
+                        </div>
+                    }
+                    else
+                    {
+                        @if (errorMessage is not null)
+                        {
+                            <div class="alert alert-danger mt-3">
+                                @L["Form_ErrorPrefix"] @errorMessage
+                            </div>
+                        }
+
+                        <EditForm Model="form" OnValidSubmit="Submit">
+                            <DataAnnotationsValidator />
+                            <ValidationSummary />
+
+                            <div class="mb-3">
+                                <InputText @bind-Value="form.Name"
+                                           class="form-control"
+                                           placeholder="@L["Form_Name_Placeholder"]" />
+                            </div>
+                            <div class="mb-3">
+                                <InputText @bind-Value="form.Email"
+                                           class="form-control"
+                                           placeholder="@L["Form_Email_Placeholder"]" />
+                            </div>
+                            <div class="mb-3">
+                                <InputTextArea @bind-Value="form.Message"
+                                               class="form-control"
+                                               rows="5"
+                                               placeholder="@L["Form_Message_Placeholder"]" />
+                            </div>
+
+                            <button type="submit"
+                                    class="btn btn-primary w-100"
+                                    disabled="@isSending">
+                            @(isSending
+                                ? L["Form_Sending"]
+                                : L["Form_Button"])
+                            </button>
+                        </EditForm>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- 3) Карта -->
+        <div class="map-container mt-5 rounded overflow-hidden shadow-sm fade-in" style="animation-delay:0.5s;">
+            <iframe src="@L["Contact_Map_Embed"]"
+                    width="100%" height="300" style="border:0;"
+                    allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+@code {
+    class ContactFormModel
+    {
+        [Required] public string Name { get; set; } = "";
+        [Required, EmailAddress] public string Email { get; set; } = "";
+        [Required] public string Message { get; set; } = "";
+    }
+
+    ContactFormModel form = new();
+    bool isSending;
+    bool isSent;
+    string? errorMessage;
+
+    async Task Submit()
+    {
+        isSending = true;
+        errorMessage = null;
+
+        try
+        {
+            // отправляем письмо на e-mail из настроек
+            var to = L["Contact_Email_Value"];
+            var subject = $"Новое сообщение с сайта от {form.Name}";
+            var body =
+                $"Имя: {form.Name}\n" +
+                $"Email: {form.Email}\n\n" +
+                $"{form.Message}";
+            await EmailService.SendEmailAsync(to, subject, body);
+
+            isSent = true;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        finally
+        {
+            isSending = false;
+        }
+    }
+}
