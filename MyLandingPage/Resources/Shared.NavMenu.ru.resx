@@ -144,4 +144,7 @@
   <data name="Nav_CTA" xml:space="preserve">
     <value>Записаться</value>
   </data>
+  <data name="Nav_Charter" xml:space="preserve">
+    <value>Аренда яхт</value>
+  </data>
 </root>

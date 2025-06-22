@@ -144,4 +144,7 @@
   <data name="Nav_CTA" xml:space="preserve">
     <value>Book Now</value>
   </data>
+  <data name="Nav_Charter" xml:space="preserve">
+    <value>Yacht Charter</value>
+  </data>
 </root>

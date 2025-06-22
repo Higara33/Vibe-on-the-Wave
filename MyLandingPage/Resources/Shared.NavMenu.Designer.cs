@@ -70,6 +70,15 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Yacht Charter.
+        /// </summary>
+        internal static string Nav_Charter {
+            get {
+                return ResourceManager.GetString("Nav_Charter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Contact.
         /// </summary>
         internal static string Nav_Contact {
