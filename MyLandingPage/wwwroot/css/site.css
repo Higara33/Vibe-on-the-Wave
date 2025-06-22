@@ -542,3 +542,106 @@ a {
     padding: 0.4rem 1rem;
     font-weight: 600;
 }
+
+/* ==============================================
+   How to Charter — единая карточка со Steps
+   ============================================== */
+#charter-process .charter-step-card {
+    position: relative;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 2.5rem 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    #charter-process .charter-step-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+/* Бейдж номера шага */
+#charter-process .step-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #0d6efd;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Заголовок шага — перенос по словам */
+#charter-process .step-title {
+    margin-top: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+/* Блоки «You» & «We» */
+#charter-process .step-block {
+    border-left: 4px solid transparent;
+    padding-left: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+#charter-process .user-block {
+    background-color: rgba(13,110,253,0.1);
+    border-color: #0d6efd;
+}
+
+#charter-process .agency-block {
+    background-color: rgba(25,135,84,0.1);
+    border-color: #198754;
+}
+
+#charter-process .step-block strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #212529;
+}
+
+#charter-process .step-block p {
+    margin: 0;
+    color: #495057;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* ====== Charter CTA (аренда) ====== */
+#charter-contact-cta {
+    position: relative; /* чтобы ::before позиционировался внутри */
+    overflow: hidden; /* ничего не вылезет за края */
+    background: url('../images/charter-cta.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 3rem 0; /* py-5 */
+}
+
+    #charter-contact-cta::before {
+        content: '';
+        position: absolute;
+        inset: 0; /* top:0; right:0; bottom:0; left:0 */
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 0; /* под контентом */
+    }
+
+    #charter-contact-cta .container {
+        position: relative; /* «подняли» контент над маской */
+        z-index: 1;
+    }
+
+    /* Немного текстовой тени для читабельности */
+    #charter-contact-cta h2,
+    #charter-contact-cta .btn {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }

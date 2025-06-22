@@ -1,0 +1,179 @@
+﻿@page "/charter"
+@page "/{culture}/charter"
+
+@using Microsoft.JSInterop
+@using Microsoft.Extensions.Localization
+@using MyLandingPage.Services.Interfaces
+@inject IStringLocalizer<Pages.Charter> L
+@inject IJSRuntime JS
+@inject IStringLocalizer<Shared.ContactSection> CS
+@inject IEmailService EmailService
+@inject NavigationManager NavigationManager
+
+<!-- Hero-блок -->
+<section class="position-relative text-white text-center d-flex align-items-center justify-content-center"
+         style="height:60vh; background:url('images/charter-hero.jpg')center/cover no-repeat">
+  <div class="overlay position-absolute w-100 h-100" style="background:rgba(0,0,0,0.5)"></div>
+  <div class="position-relative">
+    <h1 class="display-4 fw-bold">@L["Charter_Hero_Title"]</h1>
+    <p class="lead mb-4">@L["Charter_Hero_Subtitle"]</p>
+    <button class="btn btn-outline-light btn-lg"
+            @onclick='() => JS.InvokeVoidAsync("scrollToSection","charter-process")'>
+      @L["Charter_Hero_CTA"]
+    </button>
+  </div>
+</section>
+
+<!-- Преимущества -->
+<section id="charter-benefits" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">@L["Charter_Benefits_Title"]</h2>
+    <div class="row g-4">
+      <div class="col-md-4 text-center">
+        <i class="bi bi-currency-exchange fs-1 text-primary mb-3"></i>
+        <h5>@L["Charter_Benefit1_Title"]</h5>
+        <p>@L["Charter_Benefit1_Text"]</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="bi bi-search fs-1 text-primary mb-3"></i>
+        <h5>@L["Charter_Benefit2_Title"]</h5>
+        <p>@L["Charter_Benefit2_Text"]</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="bi bi-shield-lock fs-1 text-primary mb-3"></i>
+        <h5>@L["Charter_Benefit3_Title"]</h5>
+        <p>@L["Charter_Benefit3_Text"]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Процесс чартеринга -->
+<section id="charter-process" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">@L["Charter_Process_Title"]</h2>
+        <div class="row gy-4">
+            @for (int i = 1; i <= 5; i++)
+            {
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="charter-step-card d-flex flex-column w-100">
+                        <div class="step-badge">@i</div>
+                        <h5 class="step-title text-center">@L[$"Charter_Process{i}_Title"]</h5>
+
+                        <div class="step-block user-block">
+                            <strong>@L[$"Charter_Process{i}_User_Label"]</strong>
+                            <p>@L[$"Charter_Process{i}_User"]</p>
+                        </div>
+
+                        <div class="step-block agency-block mt-auto">
+                            <strong>@L[$"Charter_Process{i}_Agency_Label"]</strong>
+                            <p>@L[$"Charter_Process{i}_Agency"]</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- CTA перед формой -->
+<section id="charter-contact-cta" class="py-5 text-white text-center">
+    <div class="container">
+        <h2 class="mb-4">@L["Charter_Contact_Title"]</h2>
+        <button class="btn btn-light btn-lg"
+                @onclick='() => JS.InvokeVoidAsync("scrollToSection", "charter-form")'>
+            @L["Charter_Contact_Button"]
+        </button>
+    </div>
+</section>
+
+<!-- Форма заявки -->
+<section id="charter-form" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">@L["Charter_Form_Title"]</h2>
+    @if (formSent)
+    {
+      <div class="alert alert-success">@L["Charter_Form_Success"]</div>
+    }
+    else
+    {
+      <EditForm Model="req" OnValidSubmit="OnSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="row g-3">
+          <div class="col-md-6">
+            <InputText @bind-Value="req.Name" class="form-control" placeholder="@L["Charter_Form_Name"]" />
+          </div>
+          <div class="col-md-6">
+            <InputText @bind-Value="req.Phone" class="form-control" placeholder="@L["Charter_Form_Phone"]" />
+          </div>
+          <div class="col-md-6">
+            <InputText @bind-Value="req.Email" class="form-control" placeholder="@L["Charter_Form_Email"]" />
+          </div>
+          <div class="col-md-6">
+            <InputText @bind-Value="req.Country" class="form-control" placeholder="@L["Charter_Form_Country"]" />
+          </div>
+          <div class="col-md-12">
+            <InputSelect @bind-Value="req.YachtType" class="form-select">
+              <option value="">@L["Charter_Form_Type"]</option>
+              <option value="Monohull">@L["Charter_Type_Mono"]</option>
+              <option value="Catamaran">@L["Charter_Type_Cat"]</option>
+              <option value="Motor">@L["Charter_Type_Motor"]</option>
+            </InputSelect>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary btn-lg">
+              @L["Charter_Form_Button"]
+            </button>
+          </div>
+        </div>
+      </EditForm>
+    }
+  </div>
+</section>
+
+@code {
+  class CharterRequest {
+    [Required] public string Name { get; set; } = "";
+    [Required] public string Phone { get; set; } = "";
+    [Required, EmailAddress] public string Email { get; set; } = "";
+    [Required] public string Country { get; set; } = "";
+    [Required] public string YachtType { get; set; } = "";
+  }
+
+  CharterRequest req = new();
+  bool formSent;
+
+  async Task OnSubmit() {
+    var subject = $"Charter request from {req.Name}";
+    var body = $"Name: {req.Name}\nPhone: {req.Phone}\nEmail: {req.Email}\n" +
+               $"Country: {req.Country}\nYacht: {req.YachtType}";
+    await EmailService.SendEmailAsync(CS["Contact_Email_Value"], subject, body);
+    formSent = true;
+  }
+
+    [Parameter]
+    public string? culture { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        // Если заходят без сегмента культуры — редирект на en/charter
+        if (string.IsNullOrEmpty(culture))
+        {
+            NavigationManager.NavigateTo("en/charter", forceLoad: true);
+            return;
+        }
+
+        // Устанавливаем культуру .NET
+        try
+        {
+            var ci = new CultureInfo(culture);
+            CultureInfo.DefaultThreadCurrentCulture = ci;
+            CultureInfo.DefaultThreadCurrentUICulture = ci;
+        }
+        catch
+        {
+            // игнорируем некорректные значения culture
+        }
+    }
+}

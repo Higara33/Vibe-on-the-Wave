@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Charter_Hero_Title" xml:space="preserve">
+    <value>Worldwide Yacht Charter for Zero € Fees</value>
+  </data>
+  <data name="Charter_Hero_Subtitle"><value>We handle agency fees — your charter cost is 0 €</value></data>
+<data name="Charter_Hero_CTA"><value>How It Works</value></data>
+<data name="Charter_Benefits_Title"><value>Why Charter with Us</value></data>
+<data name="Charter_Benefit1_Title"><value>Zero Fees</value></data>
+<data name="Charter_Benefit1_Text"><value>Our agency is paid by owners, not you.</value></data>
+<data name="Charter_Benefit2_Title"><value>Best Selection</value></data>
+<data name="Charter_Benefit2_Text"><value>Hand-picked yachts from top companies.</value></data>
+<data name="Charter_Benefit3_Title"><value>Secure Contracts</value></data>
+<data name="Charter_Benefit3_Text"><value>All agreements vetted to protect you.</value></data>
+<data name="Charter_Process_Title"><value>How to Charter</value></data>
+<data name="Charter_Contact_Title"><value>Ready to Charter?</value></data>
+<data name="Charter_Contact_Button"><value>Contact Us</value></data>
+<data name="Charter_Form_Title"><value>Charter Request Form</value></data>
+<data name="Charter_Form_Name"><value>Your Name</value></data>
+<data name="Charter_Form_Phone"><value>Phone Number</value></data>
+<data name="Charter_Form_Email"><value>Your Email</value></data>
+<data name="Charter_Form_Country"><value>Country of Charter</value></data>
+<data name="Charter_Form_Type"><value>Select Yacht Type</value></data>
+<data name="Charter_Type_Mono"><value>Monohull Sailboat</value></data>
+<data name="Charter_Type_Cat"><value>Catamaran</value></data>
+<data name="Charter_Type_Motor"><value>Motor Yacht</value></data>
+<data name="Charter_Form_Button"><value>Send Request</value></data>
+<data name="Charter_Form_Success"><value>Thank you! We’ll be in touch shortly.</value></data>
+<data name="Charter_Process1_Title" xml:space="preserve">
+    <value>Step 1: Preliminary Selection (1 day)</value>
+  </data>
+  <data name="Charter_Process2_Title" xml:space="preserve">
+    <value>Step 2: Main Selection (1–3 days)</value>
+  </data>
+  <data name="Charter_Process3_Title" xml:space="preserve">
+    <value>Step 3: Contract Signing &amp; Payment (1 day)</value>
+  </data>
+  <data name="Charter_Process4_Title" xml:space="preserve">
+    <value>Step 4: Embarkation &amp; Check-In</value>
+  </data>
+  <data name="Charter_Process5_Title" xml:space="preserve">
+    <value>Step 5: Disembarkation &amp; Support</value>
+  </data>
+  <data name="Charter_Process1_User_Label" xml:space="preserve">
+    <value>You:</value>
+  </data>
+  <data name="Charter_Process2_User_Label" xml:space="preserve">
+    <value>You:</value>
+  </data>
+  <data name="Charter_Process3_User_Label" xml:space="preserve">
+    <value>You:</value>
+  </data>
+  <data name="Charter_Process4_User_Label" xml:space="preserve">
+    <value>You:</value>
+  </data>
+  <data name="Charter_Process5_User_Label" xml:space="preserve">
+    <value>You:</value>
+  </data>
+  <data name="Charter_Process1_Agency_Label" xml:space="preserve">
+    <value>We:</value>
+  </data>
+  <data name="Charter_Process2_Agency_Label" xml:space="preserve">
+    <value>We:</value>
+  </data>
+  <data name="Charter_Process3_Agency_Label" xml:space="preserve">
+    <value>We:</value>
+  </data>
+  <data name="Charter_Process4_Agency_Label" xml:space="preserve">
+    <value>We:</value>
+  </data>
+  <data name="Charter_Process5_Agency_Label" xml:space="preserve">
+    <value>We:</value>
+  </data>
+  <data name="Charter_Process1_User" xml:space="preserve">
+    <value>You tell us which yacht, destination and dates you need—either by phone or via our online form—so we can clarify your exact requirements.</value>
+  </data>
+  <data name="Charter_Process2_User" xml:space="preserve">
+    <value>You review the curated shortlist and simply point to the yachts you like best—no need for endless emails.</value>
+  </data>
+  <data name="Charter_Process3_User" xml:space="preserve">
+    <value>You sign the agreement and pay the deposit (and later the final balance), which usually takes minutes once everything’s in place.</value>
+  </data>
+  <data name="Charter_Process4_User" xml:space="preserve">
+    <value>On arrival, you board the yacht and complete check-in.</value>
+  </data>
+  <data name="Charter_Process5_User" xml:space="preserve">
+    <value>At the end of your charter you return the yacht and complete check-out.</value>
+  </data>
+  <data name="Charter_Process1_Agency" xml:space="preserve">
+    <value>Then we conduct a rapid market scan: assessing availability, average rates and spotting hidden gems based on our years of experience. We shortlist the most attractive, best-value options (filtering out overpriced or poor–quality boats) and even make provisional, no-obligation bookings to hold those yachts while you decide.</value>
+  </data>
+  <data name="Charter_Process2_Agency" xml:space="preserve">
+    <value>Meanwhile, we perform a deep dive: vetting each charter company and vessel for reputation and safety, negotiating extra discounts or special requests, and scrutinizing draft contracts for hidden fees. Once terms are agreed, we email you the finalized agreement, invoices (deposit and balance) and our clear commentary.</value>
+  </data>
+  <data name="Charter_Process3_Agency" xml:space="preserve">
+    <value>We oversee every document exchange and bank transfer—making sure your booking stays secured even if payments take time to clear—so there’s zero risk of the yacht slipping away.</value>
+  </data>
+  <data name="Charter_Process4_Agency" xml:space="preserve">
+    <value>We stay on standby: if any issue arises—missing provisions, paperwork hiccups or last-minute demands—we intervene directly with the charter company to enforce the agreed terms and ensure your cruise departs smoothly.</value>
+  </data>
+  <data name="Charter_Process5_Agency" xml:space="preserve">
+    <value>At the end of your charter you return the yacht and complete check-out. Should any dispute over the deposit or unexpected charges arise, we immediately advocate on your behalf to recover every euro—and provide post-charter assistance so you can relax knowing we’ve got you covered.</value>
+  </data>
+</root>
