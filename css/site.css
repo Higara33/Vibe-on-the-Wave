@@ -645,3 +645,142 @@ a {
     #charter-contact-cta .btn {
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
+
+/* =========================================
+   Styles for Management Page (Management.razor)
+   ========================================= */
+
+/* 1. Hero section */
+#management-hero {
+    position: relative;
+    background: url('../images/management/management_hero.jpg') center/cover no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+    #management-hero .overlay {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+
+    #management-hero .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    #management-hero h1 {
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    #management-hero p,
+    #management-hero .btn {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+
+/* 2. Parking section */
+#management-parking {
+    position: relative;
+    background: url('../images/management/parking_bg.jpg') center/cover no-repeat;
+    padding: 5rem 0;
+}
+
+    #management-parking .overlay {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 0;
+    }
+
+    #management-parking .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    #management-parking .card {
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        #management-parking .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+/* Uniform circular icon container */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 3. Offer section */
+#management-offer {
+    padding: 4rem 0;
+}
+
+    #management-offer .card {
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        #management-offer .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+
+/* 4. Wishes section */
+#management-wishes {
+    padding: 5rem 0;
+}
+
+    #management-wishes .card {
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+        #management-wishes .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+    #management-wishes .flex-fill {
+        flex: 1;
+    }
+
+
+/* 5. Contact Form section */
+#management-form {
+    padding: 5rem 0;
+}
+
+    #management-form .card {
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        #management-form .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+    #management-form .text-danger {
+        margin-bottom: 1rem;
+    }
