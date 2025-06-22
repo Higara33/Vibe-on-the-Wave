@@ -645,3 +645,8 @@ a {
     #charter-contact-cta .btn {
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
+
+/* Фон для секции Parking */
+#management-parking {
+    background: url('../images/management/parking_bg.jpg') center/cover no-repeat;
+}

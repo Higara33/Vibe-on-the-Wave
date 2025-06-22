@@ -47,6 +47,11 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Pages.Index.resx</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Pages.Management.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Pages.Management.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Pages.Survey.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -130,6 +135,9 @@
 	    <Generator>ResXFileCodeGenerator</Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Pages.Index.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Pages.Management.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Pages.Survey.ru.resx">

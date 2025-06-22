@@ -124,6 +124,15 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Management.
+        /// </summary>
+        internal static string Nav_Management {
+            get {
+                return ResourceManager.GetString("Nav_Management", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Programs.
         /// </summary>
         internal static string Nav_Programs {
