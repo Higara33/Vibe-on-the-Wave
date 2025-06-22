@@ -147,4 +147,7 @@
   <data name="Nav_Charter" xml:space="preserve">
     <value>Yacht Charter</value>
   </data>
+  <data name="Nav_Management" xml:space="preserve">
+    <value>Management</value>
+  </data>
 </root>

@@ -66,6 +66,13 @@
                         @L["Nav_Fleet"]
                     </NavLink>
                 </li>
+                @* Management — отдельная страница *@
+                <li class="nav-item">
+                    <NavLink class="nav-link"
+                             href="@($"{CurrentCulture}/management")">
+                        @L["Nav_Management"]
+                    </NavLink>
+                </li>
                 @* Contact *@
                 <li class="nav-item">
                     <a class="nav-link"
@@ -146,6 +153,12 @@
                     <NavLink class="nav-link"
                              href="@($"{CurrentCulture}/fleet")">
                         @L["Nav_Fleet"]
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link"
+                             href="@($"{CurrentCulture}/management")">
+                        @L["Nav_Management"]
                     </NavLink>
                 </li>
                 <li class="nav-item">

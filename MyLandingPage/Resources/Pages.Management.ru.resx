@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Management_HeroHeadlinePart1" xml:space="preserve">
+    <value>Vibe of the Waves</value>
+  </data>
+  <data name="Management_HeroHeadlinePart2" xml:space="preserve">
+    <value>MANAGEMENT</value>
+  </data>
+  <data name="Management_HeroSubheadline" xml:space="preserve">
+    <value>Сервис для владельцев яхт</value>
+  </data>
+  <data name="Management_HeroCTA" xml:space="preserve">
+    <value>ОТПРАВИТЬ</value>
+  </data>
+  <data name="Management_Parking_Title" xml:space="preserve">
+    <value>Стоянка в Porto Montenegro – лучшая марина Адриатики</value>
+  </data>
+  <data name="Management_Parking_Advantage1" xml:space="preserve">
+    <value>Круглогодичное техническое обслуживание бесплатно!</value>
+  </data>
+  <data name="Management_Parking_Advantage2" xml:space="preserve">
+    <value>Мы поддерживаем вашу яхту в идеальном состоянии</value>
+  </data>
+  <data name="Management_Parking_Advantage3" xml:space="preserve">
+    <value>Вы ни о чём не беспокоитесь, наслаждайтесь морем и отдыхом</value>
+  </data>
+  <data name="Management_Parking_Annual_Title" xml:space="preserve">
+    <value>Годовая стоянка</value>
+  </data>
+  <data name="Management_Parking_Annual_Price" xml:space="preserve">
+    <value>от 4400 €</value>
+  </data>
+  <data name="Management_Parking_Winter_Title" xml:space="preserve">
+    <value>Зимняя стоянка (октябрь–апрель)</value>
+  </data>
+  <data name="Management_Parking_Winter_Price" xml:space="preserve">
+    <value>от 2580 €</value>
+  </data>
+  <data name="Management_Offer_Title" xml:space="preserve">
+    <value>Предложение для судовладельцев</value>
+  </data>
+  <data name="Management_Offer_Intro" xml:space="preserve">
+    <value>Если вы это читаете, значит либо у вас уже есть яхта, либо вы только собираетесь её приобрести. Эта страница для вас, и перед вами три важных пункта:</value>
+  </data>
+  <data name="Management_Offer_Point1_Subtitle" xml:space="preserve">
+    <value>Суть предложения</value>
+  </data>
+  <data name="Management_Offer_Point1_Text" xml:space="preserve">
+    <value>Мы поставим вашу яхту на причал в марине Porto Montenegro по официальному прайсу и предоставим бесплатное круглогодичное техобслуживание. Работаем с парусными и моторными яхтами. Годовая стоянка – от 4400 €; зимняя (октябрь–апрель) – от 2580 €. Точная стоимость зависит от размера вашей яхты.</value>
+  </data>
+  <data name="Management_Offer_HowItWorks_Title" xml:space="preserve">
+    <value>Как это работает</value>
+  </data>
+  <data name="Management_Offer_HowItWorks_Text" xml:space="preserve">
+    <value>Яхта получает уход и сервис по жёсткому регламенту договора. Перед вашим прибытием она будет готова (вооружена, вымыта, постель застелена, баллоны с водой заправлены, документы оформлены). Вам останется только запустить двигатель и наслаждаться отпуском.</value>
+  </data>
+  <data name="Management_Wishes_Title" xml:space="preserve">
+    <value>Определитесь с вашими пожеланиями</value>
+  </data>
+  <data name="Management_Wishes_Option1_Title" xml:space="preserve">
+    <value>Не хочу видеть на яхте посторонних людей</value>
+  </data>
+  <data name="Management_Wishes_Option1_Text" xml:space="preserve">
+    <value>Ваша яхта всегда идеальна и готова к выходу в море для вас и ваших друзей.</value>
+  </data>
+  <data name="Management_Wishes_Option2_Title" xml:space="preserve">
+    <value>Хочу окупать часть затрат, но не готов доверить яхту абы кому</value>
+  </data>
+  <data name="Management_Wishes_Option2_Text" xml:space="preserve">
+    <value>Мы будем сдавать её в чартер только с нашим шкипером, которому полностью доверяем. Вся ответственность – на нас.</value>
+  </data>
+  <data name="Management_Wishes_Option3_Title" xml:space="preserve">
+    <value>Хочу зарабатывать и получать максимальную прибыль</value>
+  </data>
+  <data name="Management_Wishes_Option3_Text" xml:space="preserve">
+    <value>Не проблема. Сдадим вашу яхту в чартер так же, как и свои собственные.</value>
+  </data>
+  <data name="Management_Form_Title" xml:space="preserve">
+    <value>Свяжитесь с нами для уточнения деталей</value>
+  </data>
+  <data name="Management_Form_Name_Label" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Management_Form_Phone_Label" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="Management_Form_Email_Label" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="Management_Form_YachtType_Label" xml:space="preserve">
+    <value>Тип яхты</value>
+  </data>
+  <data name="Management_Form_YachtType_Sail" xml:space="preserve">
+    <value>Парусная</value>
+  </data>
+  <data name="Management_Form_YachtType_Motor" xml:space="preserve">
+    <value>Моторная</value>
+  </data>
+  <data name="Management_Form_YachtSize_Label" xml:space="preserve">
+    <value>Размер яхты (футы)</value>
+  </data>
+  <data name="Management_Form_SubmitButton" xml:space="preserve">
+    <value>ОТПРАВИТЬ</value>
+  </data>
+  <data name="Management_Form_Note" xml:space="preserve">
+    <value>Смело отправляйте заявку — это ни к чему не обязывает.</value>
+  </data>
+  <data name="Management_Form_Benefit1" xml:space="preserve">
+    <value>обсудим все детали,</value>
+  </data>
+  <data name="Management_Form_Benefit2" xml:space="preserve">
+    <value>рассчитаем стоимость стоянки по размеру яхты,</value>
+  </data>
+  <data name="Management_Form_Benefit3" xml:space="preserve">
+    <value>пришлём договор с графиком бесплатного техобслуживания,</value>
+  </data>
+  <data name="Management_Form_AfterListNote" xml:space="preserve">
+    <value>после чего вы решите, нужен ли вам сервис.</value>
+  </data>
+  <data name="Management_Form_Reassurance1" xml:space="preserve">
+    <value>Приглашаем вас лично посетить марину Porto Montenegro, оценить уровень сервиса и увидеть, как мы заботимся о наших яхтах перед вашим путешествием.</value>
+  </data>
+  <data name="Management_Form_Reassurance2" xml:space="preserve">
+    <value>Чартерные яхты подвергаются сильным нагрузкам, и если наш флот сохраняет идеальное состояние, вы можете быть уверены: ваша красавица в надёжных руках.</value>
+  </data>
+  <data name="Management_Form_Success" xml:space="preserve">
+    <value>Ваша заявка успешно отправлена!</value>
+  </data>
+  <data name="Management_Wishes_LearnMore" xml:space="preserve">
+    <value>Узнать больше</value>
+  </data>
+</root>
