@@ -14,175 +14,188 @@
 @inject IStringLocalizer<Shared.ContactSection> CS
 @inject IEmailService EmailService
 
-<!-- 1. Hero section -->
-<section id="management-hero" class="hero d-flex align-items-center text-center text-white"
-         style="background: url('images/management/management_hero.jpg') center/cover no-repeat;">
-    <div class="container">
+<!-- 1. Hero -->
+<section id="management-hero" class="hero d-flex align-items-center text-center text-white">
+    <div class="overlay position-absolute w-100 h-100"></div>
+    <div class="container position-relative">
         <h1 class="display-4 fw-bold">
-            @L["Management_HeroHeadlinePart1"] <br />
+            @L["Management_HeroHeadlinePart1"]<br />
             @L["Management_HeroHeadlinePart2"]
         </h1>
         <p class="lead mt-3">@L["Management_HeroSubheadline"]</p>
-        <button type="button"
-                class="btn btn-primary btn-lg mt-4"
-                @onclick='@(async () => await JS.InvokeVoidAsync("scrollToSection", "management-form"))'>
+        <button class="btn btn-primary btn-lg mt-4"
+                @onclick='async () => await JS.InvokeVoidAsync(" scrollToSection", "management-parking" )'>
             @L["Management_HeroCTA"]
         </button>
     </div>
 </section>
 
-<!-- 2. Стоянка в Porto Montenegro (Tariffs and advantages) -->
-<section id="management-parking" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5 fw-bold">@L["Management_Parking_Title"]</h2>
-        <!-- Advantages -->
-        <div class="row mb-4">
-            <div class="col-md-4 text-center">
-                <i class="bi bi-tools fs-1 text-primary mb-2"></i>
-                <h5 class="fw-semibold">@L["Management_Parking_Advantage1"]</h5>
+<!-- 2. Parking -->
+<section id="management-parking" class="py-5 position-relative text-dark">
+    <div class="overlay position-absolute w-100 h-100"></div>
+    <div class="container position-relative">
+        <h2 class="text-center mb-5 display-5">@L["Management_Parking_Title"]</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 text-center py-4">
+                    <div class="icon-circle bg-primary text-white mb-3 mx-auto">
+                        <i class="bi bi-tools fs-2"></i>
+                    </div>
+                    <p class="fw-semibold">@L["Management_Parking_Advantage1"]</p>
+                </div>
             </div>
-            <div class="col-md-4 text-center">
-                <i class="bi bi-award fs-1 text-primary mb-2"></i>
-                <h5 class="fw-semibold">@L["Management_Parking_Advantage2"]</h5>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 text-center py-4">
+                    <div class="icon-circle bg-primary text-white mb-3 mx-auto">
+                        <i class="bi bi-award fs-2"></i>
+                    </div>
+                    <p class="fw-semibold">@L["Management_Parking_Advantage2"]</p>
+                </div>
             </div>
-            <div class="col-md-4 text-center">
-                <i class="bi bi-emoji-smile fs-1 text-primary mb-2"></i>
-                <h5 class="fw-semibold">@L["Management_Parking_Advantage3"]</h5>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 text-center py-4">
+                    <div class="icon-circle bg-primary text-white mb-3 mx-auto">
+                        <i class="bi bi-emoji-smile fs-2"></i>
+                    </div>
+                    <p class="fw-semibold">@L["Management_Parking_Advantage3"]</p>
+                </div>
             </div>
         </div>
-        <!-- Tariff cards -->
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card h-100 text-center shadow-sm">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                        <h5 class="card-title text-secondary">@L["Management_Parking_Annual_Title"]</h5>
-                        <p class="display-6 fw-bold text-primary">@L["Management_Parking_Annual_Price"]</p>
-                    </div>
+                <div class="card h-100 text-center shadow-lg border-0 py-5">
+                    <h5 class="text-secondary">@L["Management_Parking_Annual_Title"]</h5>
+                    <p class="display-6 fw-bold text-primary">@L["Management_Parking_Annual_Price"]</p>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 text-center shadow-sm">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                        <h5 class="card-title text-secondary">@L["Management_Parking_Winter_Title"]</h5>
-                        <p class="display-6 fw-bold text-primary">@L["Management_Parking_Winter_Price"]</p>
-                    </div>
+                <div class="card h-100 text-center shadow-lg border-0 py-5">
+                    <h5 class="text-secondary">@L["Management_Parking_Winter_Title"]</h5>
+                    <p class="display-6 fw-bold text-primary">@L["Management_Parking_Winter_Price"]</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 3. Предложение для судовладельцев (Offer description) -->
-<section id="management-offer" class="py-5">
+<!-- 3. Offer -->
+<section id="management-offer" class="py-5 bg-white">
     <div class="container">
-        <h2 class="text-center mb-4 fw-bold">@L["Management_Offer_Title"]</h2>
+        <h2 class="text-center mb-4 display-5">@L["Management_Offer_Title"]</h2>
         <p class="lead text-center mb-5">@L["Management_Offer_Intro"]</p>
-        <h5 class="fw-semibold mb-3">@L["Management_Offer_Point1_Subtitle"]</h5>
-        <p>@L["Management_Offer_Point1_Text"]</p>
-        <h6 class="fw-semibold mt-4">@L["Management_Offer_HowItWorks_Title"]</h6>
-        <p>@L["Management_Offer_HowItWorks_Text"]</p>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-lightbulb fs-2 text-primary me-2"></i>
+                        <h5 class="mb-0">@L["Management_Offer_Point1_Subtitle"]</h5>
+                    </div>
+                    <p class="text-secondary">@L["Management_Offer_Point1_Text"]</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-0 p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-gear fs-2 text-primary me-2"></i>
+                        <h5 class="mb-0">@L["Management_Offer_HowItWorks_Title"]</h5>
+                    </div>
+                    <p class="text-secondary">@L["Management_Offer_HowItWorks_Text"]</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- 4. Определитесь с вашими пожеланиями (Owner preferences) -->
+<!-- 4. Wishes -->
 <section id="management-wishes" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-5 fw-bold">@L["Management_Wishes_Title"]</h2>
+        <h2 class="text-center mb-5 display-5">@L["Management_Wishes_Title"]</h2>
         <div class="row g-4">
-            <!-- Option 1 -->
-            <div class="col-md-4 text-center">
-                <i class="bi bi-person-x-fill fs-1 text-primary mb-3"></i>
-                <h5 class="fw-semibold">@L["Management_Wishes_Option1_Title"]</h5>
-                <p class="text-secondary">@L["Management_Wishes_Option1_Text"]</p>
-            </div>
-            <!-- Option 2 -->
-            <div class="col-md-4 text-center">
-                <i class="bi bi-piggy-bank fs-1 text-primary mb-3"></i>
-                <h5 class="fw-semibold">@L["Management_Wishes_Option2_Title"]</h5>
-                <p class="text-secondary">@L["Management_Wishes_Option2_Text"]</p>
-            </div>
-            <!-- Option 3 -->
-            <div class="col-md-4 text-center">
-                <i class="bi bi-graph-up-arrow fs-1 text-primary mb-3"></i>
-                <h5 class="fw-semibold">@L["Management_Wishes_Option3_Title"]</h5>
-                <p class="text-secondary">@L["Management_Wishes_Option3_Text"]</p>
-            </div>
+            @for (int i = 1; i <= 3; i++)
+            {
+                var icon = i == 1 ? "person-x-fill" : i == 2 ? "piggy-bank" : "graph-up-arrow";
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm border-0 p-4 d-flex flex-column">
+                        <div class="icon-circle bg-primary text-white mb-3 mx-auto">
+                            <i class="bi bi-@icon fs-2"></i>
+                        </div>
+                        <h5 class="fw-semibold mb-3">@L[$"Management_Wishes_Option{i}_Title"]</h5>
+                        <p class="text-secondary flex-fill">@L[$"Management_Wishes_Option{i}_Text"]</p>
+                        <button type="button"
+                                class="btn btn-outline-primary mt-3"
+                                @onclick='() => JS.InvokeVoidAsync("scrollToSection","management-form")'>
+                            @L["Management_Wishes_LearnMore"]
+                        </button>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 </section>
 
-<!-- 5. Форма заявки (Contact form) -->
+<!-- 5. Contact Form -->
 <section id="management-form" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4 fw-bold">@L["Management_Form_Title"]</h2>
+    <div class="container">
+        <h2 class="text-center mb-4 display-5">@L["Management_Form_Title"]</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm p-4">
+                    <EditForm Model="req" OnValidSubmit="OnSubmitManagement">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary class="text-danger" />
 
-        <EditForm Model="req" OnValidSubmit="OnSubmitManagement">
-            <DataAnnotationsValidator />
-            <ValidationSummary />
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">@L["Management_Form_Name_Label"]</label>
+                                <InputText class="form-control" @bind-Value="req.Name" />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">@L["Management_Form_Phone_Label"]</label>
+                                <InputText class="form-control" @bind-Value="req.Phone" />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">@L["Management_Form_Email_Label"]</label>
+                                <InputText class="form-control" @bind-Value="req.Email" />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">@L["Management_Form_YachtType_Label"]</label>
+                                <InputSelect class="form-select" @bind-Value="req.YachtType">
+                                    <option value="">@L["Management_Form_YachtType_Label"]</option>
+                                    <option value="Sailing">@L["Management_Form_YachtType_Sail"]</option>
+                                    <option value="Motor">@L["Management_Form_YachtType_Motor"]</option>
+                                </InputSelect>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">@L["Management_Form_YachtSize_Label"]</label>
+                                <InputNumber class="form-control" @bind-Value="req.YachtSize" Min="20" Max="100" />
+                            </div>
+                        </div>
 
-            <div class="row g-3">
-                <!-- Name -->
-                <div class="col-md-6">
-                    <label class="form-label">@L["Management_Form_Name_Label"]</label>
-                    <InputText class="form-control" @bind-Value="req.Name" />
-                </div>
+                        <button type="submit" class="btn btn-primary btn-lg mt-4 w-100">
+                            @L["Management_Form_SubmitButton"]
+                        </button>
 
-                <!-- Phone -->
-                <div class="col-md-6">
-                    <label class="form-label">@L["Management_Form_Phone_Label"]</label>
-                    <InputText class="form-control" @bind-Value="req.Phone" />
-                </div>
+                        @if (sent)
+                        {
+                            <div class="alert alert-success mt-3">
+                                @L["Management_Form_Success"]
+                            </div>
+                        }
+                    </EditForm>
 
-                <!-- Email -->
-                <div class="col-md-6">
-                    <label class="form-label">@L["Management_Form_Email_Label"]</label>
-                    <InputText class="form-control" @bind-Value="req.Email" />
-                </div>
-
-                <!-- Yacht Type (select, как в Charter) -->
-                <div class="col-md-6">
-                    <label class="form-label">@L["Management_Form_YachtType_Label"]</label>
-                    <InputSelect class="form-select" @bind-Value="req.YachtType">
-                        <option value="">@L["Management_Form_YachtType_Label"]</option>
-                        <option value="Sailing">@L["Management_Form_YachtType_Sail"]</option>
-                        <option value="Motor">@L["Management_Form_YachtType_Motor"]</option>
-                    </InputSelect>
-                </div>
-
-                <!-- Yacht Size -->
-                <div class="col-md-6">
-                    <label class="form-label">@L["Management_Form_YachtSize_Label"]</label>
-                    <InputNumber class="form-control"
-                                 @bind-Value="req.YachtSize"
-                                 Min="20" Max="100" />
-                </div>
-
-                <!-- Submit -->
-                <div class="col-md-6 d-flex align-items-end">
-                    <button type="submit" class="btn btn-primary w-100">
-                        @L["Management_Form_SubmitButton"]
-                    </button>
+                    <p class="text-secondary mt-4 mb-2">@L["Management_Form_Note"]</p>
+                    <ul class="text-secondary ps-4">
+                        <li>@L["Management_Form_Benefit1"]</li>
+                        <li>@L["Management_Form_Benefit2"]</li>
+                        <li>@L["Management_Form_Benefit3"]</li>
+                    </ul>
+                    <p class="text-secondary">@L["Management_Form_AfterListNote"]</p>
+                    <p class="mt-4">@L["Management_Form_Reassurance1"]</p>
+                    <p>@L["Management_Form_Reassurance2"]</p>
                 </div>
             </div>
-        </EditForm>
-
-        @if (sent)
-        {
-            <div class="alert alert-success mt-3">
-                @L["Management_Form_Success"]
-            </div>
-        }
-
-        <p class="text-secondary mb-1">@L["Management_Form_Note"]</p>
-        <ul class="text-secondary ps-4">
-            <li>@L["Management_Form_Benefit1"]</li>
-            <li>@L["Management_Form_Benefit2"]</li>
-            <li>@L["Management_Form_Benefit3"]</li>
-        </ul>
-        <p class="text-secondary">@L["Management_Form_AfterListNote"]</p>
-        <p class="mt-4">@L["Management_Form_Reassurance1"]</p>
-        <p>@L["Management_Form_Reassurance2"]</p>
-  </div>
+        </div>
+    </div>
 </section>
 
 @code {

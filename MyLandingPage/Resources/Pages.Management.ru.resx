@@ -243,4 +243,7 @@
   <data name="Management_Form_Success" xml:space="preserve">
     <value>Ваша заявка успешно отправлена!</value>
   </data>
+  <data name="Management_Wishes_LearnMore" xml:space="preserve">
+    <value>Узнать больше</value>
+  </data>
 </root>

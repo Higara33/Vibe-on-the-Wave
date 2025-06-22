@@ -376,6 +376,15 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Learn more.
+        /// </summary>
+        internal static string Management_Wishes_LearnMore {
+            get {
+                return ResourceManager.GetString("Management_Wishes_LearnMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Your yacht is always in perfect condition and ready to take you or your friends on board and head out to sea at a moment’s notice..
         /// </summary>
         internal static string Management_Wishes_Option1_Text {

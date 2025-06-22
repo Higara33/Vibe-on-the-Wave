@@ -243,4 +243,7 @@
   <data name="Management_Form_Success" xml:space="preserve">
     <value>Your request has been sent successfully!</value>
   </data>
+  <data name="Management_Wishes_LearnMore" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
 </root>
