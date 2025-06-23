@@ -150,4 +150,7 @@
   <data name="Nav_Management" xml:space="preserve">
     <value>Менеджмент</value>
   </data>
+  <data name="Nav_Bareboat-Сharter" xml:space="preserve">
+    <value>Аренда яхт в Чергногории</value>
+  </data>
 </root>

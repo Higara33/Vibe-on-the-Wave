@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Bareboat_Benefit1" xml:space="preserve">
+    <value>Perfect technical condition of the fleet, guaranteed</value>
+  </data>
+  <data name="Bareboat_Benefit2" xml:space="preserve">
+    <value>Excellent service and friendly staff</value>
+  </data>
+  <data name="Bareboat_Benefit3" xml:space="preserve">
+    <value> No hidden fees, transparent conditions</value>
+  </data>
+  <data name="Bareboat_Benefit4" xml:space="preserve">
+    <value>Free boat handling refresher at handover</value>
+  </data>
+  <data name="Bareboat_Benefits_Title" xml:space="preserve">
+    <value>Why choose us?</value>
+  </data>
+  <data name="Bareboat_Hero_Subtitle" xml:space="preserve">
+    <value>8 identical sailing yachts (and one motor yacht) at 5★ Porto Montenegro marina</value>
+  </data>
+  <data name="Bareboat_Rate1" xml:space="preserve">
+    <value>until March 30 — 1 900 €</value>
+  </data>
+  <data name="Bareboat_Rates_Subtitle" xml:space="preserve">
+    <value>Price for 1 week of charter. Standard charter week is from 17:00 Saturday to 10:00 next Saturday.</value>
+  </data>
+  <data name="Bareboat_Rates_Title" xml:space="preserve">
+    <value>Rental rates</value>
+  </data>
+  <data name="Bareboat_Title" xml:space="preserve">
+    <value>Yachting in Montenegro</value>
+  </data>
+  <data name="Bareboat_Rate2" xml:space="preserve">
+    <value>Mar 30 – Apr 22 — 2 400 €</value>
+  </data>
+  <data name="Bareboat_Rate3" xml:space="preserve">
+    <value>Apr 22 – Jun 15 — 2 900 €</value>
+  </data>
+  <data name="Bareboat_Rate4" xml:space="preserve">
+    <value>Jun 15 – Jun 29 — 3 300 €</value>
+  </data>
+  <data name="Bareboat_Rate5" xml:space="preserve">
+    <value>Jun 29 – Aug 24 — 3 900 €</value>
+  </data>
+  <data name="Bareboat_Rate6" xml:space="preserve">
+    <value>Aug 24 – Oct 5 — 3 300 €</value>
+  </data>
+  <data name="Bareboat_Rate7" xml:space="preserve">
+    <value>Oct 5 – Nov 9 — 2 600 €</value>
+  </data>
+  <data name="Bareboat_Rate8" xml:space="preserve">
+    <value>from Nov 9 — 1 900 €</value>
+  </data>
+  <data name="Bareboat_Included_Title" xml:space="preserve">
+    <value>Included in price</value>
+  </data>
+  <data name="Bareboat_Included_Item1" xml:space="preserve">
+    <value>Dinghy with outboard motor</value>
+  </data>
+  <data name="Bareboat_Included_Item2" xml:space="preserve">
+    <value>Bed linens, towels, and all necessary items</value>
+  </data>
+  <data name="Bareboat_Included_Item3" xml:space="preserve">
+    <value>Berth in Porto Montenegro marina</value>
+  </data>
+  <data name="Bareboat_Included_Item4" xml:space="preserve">
+    <value>Insurance</value>
+  </data>
+  <data name="Bareboat_Included_Item5" xml:space="preserve">
+    <value>Galley gas cylinders</value>
+  </data>
+  <data name="Bareboat_Included_Item6" xml:space="preserve">
+    <value>Onboard Wi-Fi in Montenegro (5 GB)</value>
+  </data>
+  <data name="Bareboat_NotIncluded_Title" xml:space="preserve">
+    <value>Not included in price</value>
+  </data>
+  <data name="Bareboat_NotIncluded_Item1" xml:space="preserve">
+    <value>Final cleaning – 140 €</value>
+  </data>
+  <data name="Bareboat_NotIncluded_Item2" xml:space="preserve">
+    <value>Fuel (return with full tank)</value>
+  </data>
+  <data name="Bareboat_Deposit_Title" xml:space="preserve">
+    <value>Security deposit = 2000 €</value>
+  </data>
+  <data name="Bareboat_Deposit_Text" xml:space="preserve">
+    <value>Refundable security deposit taken at check-in as a guarantee for the yacht and its equipment. Damage Waiver available at €30 per day.</value>
+  </data>
+  <data name="Bareboat_Discounts_Title" xml:space="preserve">
+    <value>DISCOUNTS!</value>
+  </data>
+  <data name="Bareboat_Discount_Alumni" xml:space="preserve">
+    <value>discount for Sail Band Sailing School alumni</value>
+  </data>
+  <data name="Bareboat_Discount_LastMinute" xml:space="preserve">
+    <value>discount for last-minute booking (contract signed &lt; 10 days before start)</value>
+  </data>
+  <data name="Bareboat_Discount_LongTerm" xml:space="preserve">
+    <value>discount for long-term charter (10% off second week, 15% off third week)</value>
+  </data>
+  <data name="Bareboat_Discount_Note" xml:space="preserve">
+    <value>*Maximum total discount is 15%.</value>
+  </data>
+  <data name="Bareboat_Extras_Title" xml:space="preserve">
+    <value>Additionally</value>
+  </data>
+  <data name="Bareboat_Extra_Skipper_Title" xml:space="preserve">
+    <value>Skipper – €140 per day (plus meals)</value>
+  </data>
+  <data name="Bareboat_Extra_Skipper_Text" xml:space="preserve">
+    <value>If you don’t have a skipper license, you can rent with a captain.</value>
+  </data>
+  <data name="Bareboat_Extra_Gennaker_Title" xml:space="preserve">
+    <value>Gennaker – €200 per week (deposit €1000)</value>
+  </data>
+  <data name="Bareboat_Extra_Gennaker_Text" xml:space="preserve">
+    <value>Halyard and sheets are provided.</value>
+  </data>
+  <data name="Bareboat_Extra_Fishing_Title" xml:space="preserve">
+    <value>Fishing gear – €50 per week</value>
+  </data>
+  <data name="Bareboat_Extra_Fishing_Text" xml:space="preserve">
+    <value>Includes a trolling rod with reel and line, a set of lures, a gaff, and a rod holder for the rail.</value>
+  </data>
+  <data name="Bareboat_Extra_Poker_Title" xml:space="preserve">
+    <value>Poker set – €10 per week</value>
+  </data>
+  <data name="Bareboat_Extra_Poker_Text" xml:space="preserve">
+    <value>If you have nothing to do in the evenings.</value>
+  </data>
+  <data name="Bareboat_Contact_Title" xml:space="preserve">
+    <value>Ready to set sail?</value>
+  </data>
+  <data name="Bareboat_Contact_Button" xml:space="preserve">
+    <value>Send Request</value>
+  </data>
+  <data name="Bareboat_Form_Title" xml:space="preserve">
+    <value>Send us a Request</value>
+  </data>
+  <data name="Bareboat_Form_Intro" xml:space="preserve">
+    <value>Send a request and we’ll contact you with a personal discount offer.</value>
+  </data>
+  <data name="Bareboat_Form_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Bareboat_Form_Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Bareboat_Form_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Bareboat_Form_Button" xml:space="preserve">
+    <value>Send Request</value>
+  </data>
+  <data name="Bareboat_Form_Success" xml:space="preserve">
+    <value>Thank you! Your request has been sent. We will contact you shortly.</value>
+  </data>
+  <data name="Bareboat_Day_Text" xml:space="preserve">
+    <value>For those short on time, we offer full-day yacht rental (Day Charter) in Montenegro. Enjoy a day at sea exploring the coast with an experienced skipper. Prices start from €600 per day (skipper included).</value>
+  </data>
+  <data name="Bareboat_Day_Title" xml:space="preserve">
+    <value>Day Yacht Charter</value>
+  </data>
+  <data name="Bareboat_Hero_CTA" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
+  <data name="Bareboat_Rates_Week_Title" xml:space="preserve">
+    <value>Weekly Yacht Charter</value>
+  </data>
+</root>

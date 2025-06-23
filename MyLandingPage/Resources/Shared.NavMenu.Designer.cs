@@ -70,6 +70,15 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Yacht Charter in Montenegro.
+        /// </summary>
+        internal static string Nav_Bareboat_Сharter {
+            get {
+                return ResourceManager.GetString("Nav_Bareboat-Сharter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Yacht Charter.
         /// </summary>
         internal static string Nav_Charter {

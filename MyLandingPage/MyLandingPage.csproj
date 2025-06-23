@@ -32,6 +32,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Resources\Pages.BareboatCharter.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Pages.BareboatCharter.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Pages.Charter.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -125,6 +130,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Update="Resources\Pages.BareboatCharter.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Pages.Charter.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>

@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Bareboat_Benefit1" xml:space="preserve">
+    <value>Флот в идеальном техническом состоянии, гарантируем</value>
+  </data>
+  <data name="Bareboat_Benefit2" xml:space="preserve">
+    <value>Отличный сервис, приятный персонал</value>
+  </data>
+  <data name="Bareboat_Benefit3" xml:space="preserve">
+    <value>Без скрытых доплат, прозрачные условия</value>
+  </data>
+  <data name="Bareboat_Benefit4" xml:space="preserve">
+    <value>Поможем освоиться с лодкой и всё вспомнить (бесплатно)</value>
+  </data>
+  <data name="Bareboat_Benefits_Title" xml:space="preserve">
+    <value>Почему мы?</value>
+  </data>
+  <data name="Bareboat_Hero_Subtitle" xml:space="preserve">
+    <value>8 одинаковых парусных яхт (и одна моторная) в марине Porto Montenegro (5★)</value>
+  </data>
+  <data name="Bareboat_Rate1" xml:space="preserve">
+    <value>по 30 марта — 1 900 €</value>
+  </data>
+  <data name="Bareboat_Rates_Subtitle" xml:space="preserve">
+    <value>Цена за 1 неделю аренды. Стандартная чартерная неделя — с 17:00 субботы до 10:00 следующей субботы.</value>
+  </data>
+  <data name="Bareboat_Rates_Title" xml:space="preserve">
+    <value>Стоимость аренды</value>
+  </data>
+  <data name="Bareboat_Title" xml:space="preserve">
+    <value>Яхтинг в Черногории</value>
+  </data>
+  <data name="Bareboat_Rate2" xml:space="preserve">
+    <value>с 30 марта по 22 апреля — 2 400 €</value>
+  </data>
+  <data name="Bareboat_Rate3" xml:space="preserve">
+    <value>с 22 апреля по 15 июня — 2 900 €</value>
+  </data>
+  <data name="Bareboat_Rate4" xml:space="preserve">
+    <value>с 15 по 29 июня — 3 300 €</value>
+  </data>
+  <data name="Bareboat_Rate5" xml:space="preserve">
+    <value>с 29 июня по 24 августа — 3 900 €</value>
+  </data>
+  <data name="Bareboat_Rate6" xml:space="preserve">
+    <value>с 24 августа по 5 октября — 3 300 €</value>
+  </data>
+  <data name="Bareboat_Rate7" xml:space="preserve">
+    <value>с 5 по 9 ноября — 2 600 €</value>
+  </data>
+  <data name="Bareboat_Rate8" xml:space="preserve">
+    <value>с 9 ноября — 1 900 €</value>
+  </data>
+  <data name="Bareboat_Included_Title" xml:space="preserve">
+    <value>Включено в стоимость</value>
+  </data>
+  <data name="Bareboat_Included_Item1" xml:space="preserve">
+    <value>«Тузик» с подвесным двигателем</value>
+  </data>
+  <data name="Bareboat_Included_Item2" xml:space="preserve">
+    <value>Постельное белье, полотенца и всё необходимое</value>
+  </data>
+  <data name="Bareboat_Included_Item3" xml:space="preserve">
+    <value>Стоянка в Porto Montenegro</value>
+  </data>
+  <data name="Bareboat_Included_Item4" xml:space="preserve">
+    <value>Страховка</value>
+  </data>
+  <data name="Bareboat_Included_Item5" xml:space="preserve">
+    <value>Газовые баллоны для камбуза</value>
+  </data>
+  <data name="Bareboat_Included_Item6" xml:space="preserve">
+    <value>Wi-Fi на борту на территории Черногории (5 Gb)</value>
+  </data>
+  <data name="Bareboat_NotIncluded_Title" xml:space="preserve">
+    <value>Не включено в стоимость</value>
+  </data>
+  <data name="Bareboat_NotIncluded_Item1" xml:space="preserve">
+    <value>Финальная уборка – 140 €</value>
+  </data>
+  <data name="Bareboat_NotIncluded_Item2" xml:space="preserve">
+    <value>Топливо (возврат с полным баком)</value>
+  </data>
+  <data name="Bareboat_Deposit_Title" xml:space="preserve">
+    <value>Депозит = 2000 €</value>
+  </data>
+  <data name="Bareboat_Deposit_Text" xml:space="preserve">
+    <value>Возвращаемый залог, который вы вносите при приемке яхты в качестве гарантии сохранности яхты и ее имущества. Возможен Damage Waiver – 30 € в день.</value>
+  </data>
+  <data name="Bareboat_Discounts_Title" xml:space="preserve">
+    <value>СКИДКИ!</value>
+  </data>
+  <data name="Bareboat_Discount_Alumni" xml:space="preserve">
+    <value>скидка выпускникам яхтенной школы Sail Band</value>
+  </data>
+  <data name="Bareboat_Discount_LastMinute" xml:space="preserve">
+    <value>скидка за позднее бронирование (договор заключён менее чем за 10 дней до старта)</value>
+  </data>
+  <data name="Bareboat_Discount_LongTerm" xml:space="preserve">
+    <value>скидка за длительный чартер (на вторую неделю 10%, на третью – 15%)</value>
+  </data>
+  <data name="Bareboat_Discount_Note" xml:space="preserve">
+    <value>*Максимально возможный размер скидки – 15%.</value>
+  </data>
+  <data name="Bareboat_Extras_Title" xml:space="preserve">
+    <value>Дополнительно</value>
+  </data>
+  <data name="Bareboat_Extra_Skipper_Title" xml:space="preserve">
+    <value>Шкипер – 140 € в день (плюс питание)</value>
+  </data>
+  <data name="Bareboat_Extra_Skipper_Text" xml:space="preserve">
+    <value>Если у вас нет прав на управление яхтой, вы можете арендовать яхту вместе с капитаном.</value>
+  </data>
+  <data name="Bareboat_Extra_Gennaker_Title" xml:space="preserve">
+    <value>Геннакер – 200 € в неделю (депозит 1000 €)</value>
+  </data>
+  <data name="Bareboat_Extra_Gennaker_Text" xml:space="preserve">
+    <value>Проводка и брасы присутствуют.</value>
+  </data>
+  <data name="Bareboat_Extra_Fishing_Title" xml:space="preserve">
+    <value>Оборудование для рыбалки – 50 € в неделю</value>
+  </data>
+  <data name="Bareboat_Extra_Fishing_Text" xml:space="preserve">
+    <value>В комплекте: троллинговое удилище с катушкой и тросом, набор воблеров, багор и стакан для крепления удилища на леерной стойке.</value>
+  </data>
+  <data name="Bareboat_Extra_Poker_Title" xml:space="preserve">
+    <value>Набор для покера – 10 € в неделю</value>
+  </data>
+  <data name="Bareboat_Extra_Poker_Text" xml:space="preserve">
+    <value>Если нечем заняться по вечерам.</value>
+  </data>
+  <data name="Bareboat_Contact_Title" xml:space="preserve">
+    <value>Готовы отправиться в плавание?</value>
+  </data>
+  <data name="Bareboat_Contact_Button" xml:space="preserve">
+    <value>Оставить заявку</value>
+  </data>
+  <data name="Bareboat_Form_Title" xml:space="preserve">
+    <value>Оставьте заявку</value>
+  </data>
+  <data name="Bareboat_Form_Intro" xml:space="preserve">
+    <value>Отправьте заявку, мы свяжемся с вами и предложим индивидуальную скидку.</value>
+  </data>
+  <data name="Bareboat_Form_Name" xml:space="preserve">
+    <value>Имя и фамилия</value>
+  </data>
+  <data name="Bareboat_Form_Phone" xml:space="preserve">
+    <value>Номер телефона</value>
+  </data>
+  <data name="Bareboat_Form_Email" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="Bareboat_Form_Button" xml:space="preserve">
+    <value>Отправить заявку</value>
+  </data>
+  <data name="Bareboat_Form_Success" xml:space="preserve">
+    <value>Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.</value>
+  </data>
+  <data name="Bareboat_Day_Text" xml:space="preserve">
+    <value>Для тех, кто ограничен во времени, мы предлагаем аренду яхты на целый день в Черногории. Проведите день в море, исследуя побережье с опытным шкипером. Цены начинаются от 600 € в день (шкипер включён).</value>
+  </data>
+  <data name="Bareboat_Day_Title" xml:space="preserve">
+    <value>Аренда яхты на день</value>
+  </data>
+  <data name="Bareboat_Hero_CTA" xml:space="preserve">
+    <value>Узнать больше</value>
+  </data>
+  <data name="Bareboat_Rates_Week_Title" xml:space="preserve">
+    <value>Аренда на неделю</value>
+  </data>
+</root>

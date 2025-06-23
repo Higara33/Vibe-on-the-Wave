@@ -1,0 +1,248 @@
+﻿@page "/bareboat-charter"
+@page "/{culture}/bareboat-charter"
+
+@using System.Globalization
+@using Microsoft.AspNetCore.Components
+@using Microsoft.JSInterop
+@using Microsoft.Extensions.Localization
+@using MyLandingPage.Services.Interfaces
+@using System.ComponentModel.DataAnnotations
+
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+@inject IStringLocalizer<Pages.BareboatCharter> L
+@inject IStringLocalizer<Shared.ContactSection> CS
+@inject IEmailService EmailService
+
+<style>
+    /* Градиент CTA без затемнения */
+    #bareboat-contact-cta {
+        background: linear-gradient(135deg, rgba(13,110,253,0.8), rgba(25,135,84,0.8));
+    }
+
+        #bareboat-contact-cta .btn {
+            border-radius: 50px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+        }
+    /* Скругление карточек */
+    .card.rounded-lg {
+        border-radius: 1rem;
+    }
+    /* Диагональные секции */
+    .diagonal {
+        clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+    }
+</style>
+
+<!-- Hero -->
+<section id="bareboat-hero" class="hero diagonal d-flex align-items-center text-center text-white"
+         style="background: url('images/bareboat-charter/hero_new.jpg') center/cover no-repeat;">
+    <div class="container">
+        <h1 class="display-4 fw-bold">@L["Bareboat_Title"]</h1>
+        <p class="lead mt-3">@L["Bareboat_Hero_Subtitle"]</p>
+        <button class="btn btn-outline-light btn-lg mt-4"
+                @onclick='() => JS.InvokeVoidAsync("scrollToSection", "bareboat-benefits")'>
+            <i class="bi me-2"></i>@L["Bareboat_Hero_CTA"]
+        </button>
+    </div>
+</section>
+
+<!-- Почему мы -->
+<section id="bareboat-benefits" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">@L["Bareboat_Benefits_Title"]</h2>
+        <div class="row g-4">
+            @foreach (var icon in new[] { "tools", "emoji-smile", "cash-stack", "info-circle" })
+            {
+                <div class="col-6 col-md-3 text-center">
+                    <i class="bi bi-@icon fs-1 text-primary mb-3"></i>
+                    <p class="fw-semibold">@L[$"Bareboat_Benefit{Array.IndexOf(new[] { "tools", "emoji-smile", "cash-stack", "info-circle" }, icon) + 1}"]</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Тарифы -->
+<section id="bareboat-pricing" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">@L["Bareboat_Rates_Title"]</h2>
+        <p class="text-center mb-5">@L["Bareboat_Rates_Subtitle"]</p>
+
+        <div class="row gy-4">
+            <!-- Недельный чартер -->
+            <div class="col-md-6">
+                <div class="card rounded-lg shadow-sm">
+                    <div class="card-header bg-primary text-white text-center d-flex align-items-center justify-content-center">
+                        <i class="bi bi-calendar-week fs-2 me-2"></i>
+                        <h5 class="mb-0">@L["Bareboat_Rates_Week_Title"]</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        @for (int i = 1; i <= 8; i++)
+                        {
+                            <li class="list-group-item">@L[$"Bareboat_Rate{i}"]</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <!-- Дневной чартер -->
+            <div class="col-md-6">
+                <div class="card rounded-lg shadow-sm">
+                    <div class="card-header bg-success text-white text-center d-flex align-items-center justify-content-center">
+                        <i class="bi bi-sun fs-2 me-2"></i>
+                        <h5 class="mt-1 mb-0">@L["Bareboat_Day_Title"]</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>@L["Bareboat_Day_Text"]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Включено / Не включено -->
+        <div class="row mt-5 g-4">
+            <div class="col-md-6">
+                <div class="card rounded-lg shadow-sm">
+                    <div class="card-body">
+                        <h5 class="text-primary fw-semibold mb-3">@L["Bareboat_Included_Title"]</h5>
+                        <ul class="list-unstyled ps-3">
+                            @for (int i = 1; i <= 6; i++)
+                            {
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>@L[$"Bareboat_Included_Item{i}"]</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card rounded-lg shadow-sm">
+                    <div class="card-body">
+                        <h5 class="text-primary fw-semibold mb-3">@L["Bareboat_NotIncluded_Title"]</h5>
+                        <ul class="list-unstyled ps-3">
+                            @for (int i = 1; i <= 2; i++)
+                            {
+                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>@L[$"Bareboat_NotIncluded_Item{i}"]</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Депозит и скидки -->
+        <div class="mt-4 text-center">
+            <p><strong>@L["Bareboat_Deposit_Title"]</strong> @L["Bareboat_Deposit_Text"]</p>
+            <h5 class="fw-bold mt-4 mb-3">@L["Bareboat_Discounts_Title"]</h5>
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><strong>15%</strong> @L["Bareboat_Discount_Alumni"]</li>
+                <li class="list-inline-item me-4"><strong>10%</strong> @L["Bareboat_Discount_LastMinute"]</li>
+                <li class="list-inline-item"><strong>10%</strong> @L["Bareboat_Discount_LongTerm"]</li>
+            </ul>
+            <p class="text-secondary small">@L["Bareboat_Discount_Note"]</p>
+        </div>
+    </div>
+</section>
+
+<!-- Дополнительные опции -->
+<section id="bareboat-extras" class="py-5 bg-light diagonal">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">@L["Bareboat_Extras_Title"]</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            @foreach (var key in new[] { "Skipper", "Gennaker", "Fishing", "Poker" })
+            {
+                <div class="col">
+                    <div class="card rounded-lg shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">@L[$"Bareboat_Extra_{key}_Title"]</h5>
+                            <p class="card-text text-secondary">@L[$"Bareboat_Extra_{key}_Text"]</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- CTA без затемнения -->
+<section id="bareboat-contact-cta" class="py-5 text-center text-white">
+    <div class="container">
+        <h2 class="fw-bold mb-4">@L["Bareboat_Contact_Title"]</h2>
+        <button class="btn btn-light btn-lg" @onclick='() => JS.InvokeVoidAsync("scrollToSection", "bareboat-form")'>
+            @L["Bareboat_Contact_Button"]
+        </button>
+    </div>
+</section>
+
+<!-- Форма -->
+<section id="bareboat-form" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">@L["Bareboat_Form_Title"]</h2>
+        <p class="text-center text-secondary mb-4">@L["Bareboat_Form_Intro"]</p>
+        @if (formSent)
+        {
+            <div class="alert alert-success text-center">@L["Bareboat_Form_Success"]</div>
+        }
+        else
+        {
+            <EditForm Model="req" OnValidSubmit="OnSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="row g-3">
+                    <div class="col-md-4"><InputText @bind-Value="req.Name" class="form-control" placeholder="@L["Bareboat_Form_Name"]" /></div>
+                    <div class="col-md-4"><InputText @bind-Value="req.Phone" class="form-control" placeholder="@L["Bareboat_Form_Phone"]" /></div>
+                    <div class="col-md-4 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary w-100">@L["Bareboat_Form_Button"]</button>
+                    </div>
+                </div>
+            </EditForm>
+        }
+    </div>
+</section>
+
+@code {
+    [Parameter]
+    public string? culture { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        // Если заходят без сегмента культуры — редирект на en/bareboat-charter
+        if (string.IsNullOrEmpty(culture))
+        {
+            NavigationManager.NavigateTo("en/bareboat-charter", forceLoad: true);
+            return;
+        }
+        // Устанавливаем культуру .NET
+        try
+        {
+            var ci = new CultureInfo(culture);
+            CultureInfo.DefaultThreadCurrentCulture = ci;
+            CultureInfo.DefaultThreadCurrentUICulture = ci;
+        }
+        catch
+        {
+            // игнорируем некорректные значения culture
+        }
+    }
+
+    class BareboatRequest
+    {
+        [Required] public string Name { get; set; } = "";
+        [Required] public string Phone { get; set; } = "";
+        [Required, EmailAddress] public string Email { get; set; } = "";
+    }
+
+    private BareboatRequest req = new();
+    private bool formSent;
+
+    private async Task OnSubmit()
+    {
+        var subject = $"Bareboat charter request from {req.Name}";
+        var body =
+            $"Name: {req.Name}\n" +
+            $"Phone: {req.Phone}\n" +
+            $"Email: {req.Email}";
+        await EmailService.SendEmailAsync(CS["Contact_Email_Value"], subject, body);
+        formSent = true;
+    }
+}
