@@ -153,4 +153,7 @@
   <data name="Nav_Bareboat-Сharter" xml:space="preserve">
     <value>Аренда яхт в Чергногории</value>
   </data>
+  <data name="Tours" xml:space="preserve">
+    <value>Туры</value>
+  </data>
 </root>

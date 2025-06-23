@@ -167,5 +167,14 @@ namespace MyLandingPage.Resources {
                 return ResourceManager.GetString("Site_Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tours.
+        /// </summary>
+        internal static string Tours {
+            get {
+                return ResourceManager.GetString("Tours", resourceCulture);
+            }
+        }
     }
 }
