@@ -62,6 +62,11 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Pages.Survey.resx</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Pages.Tours.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Pages.Tours.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Shared.AboutSection.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -149,6 +154,9 @@
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Pages.Survey.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Pages.Tours.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Shared.AboutSection.ru.resx">

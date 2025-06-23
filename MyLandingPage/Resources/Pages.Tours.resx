@@ -117,43 +117,88 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Nav_About" xml:space="preserve">
-    <value>About</value>
+  <data name="Tours_Title" xml:space="preserve">
+    <value>Yacht Tours &amp; Celebrations</value>
   </data>
-  <data name="Nav_Contacts" xml:space="preserve">
-    <value>Contact</value>
+  <data name="Tours_Subtitle" xml:space="preserve">
+    <value>We host your perfect celebration on a yacht – captain, route, and vessel provided. You bring the good mood!</value>
   </data>
-  <data name="Nav_Fleet" xml:space="preserve">
-    <value>Our fleet</value>
+  <data name="Tours_Hero_CTA" xml:space="preserve">
+    <value>Discover More</value>
   </data>
-  <data name="Nav_Hero" xml:space="preserve">
-    <value>Home</value>
+  <data name="Tours_Benefits_Title" xml:space="preserve">
+    <value>Why Celebrate on a Yacht?</value>
   </data>
-  <data name="Nav_Programs" xml:space="preserve">
-    <value>Programs</value>
+  <data name="Tours_Benefit1" xml:space="preserve">
+    <value>Unforgettable atmosphere on the open sea</value>
   </data>
-  <data name="Site_Title" xml:space="preserve">
-    <value>Vibe on the Waves</value>
+  <data name="Tours_Benefit2" xml:space="preserve">
+    <value>Professional captain ensures your safety</value>
   </data>
-  <data name="Nav_Services" xml:space="preserve">
-    <value>Services</value>
+  <data name="Tours_Benefit3" xml:space="preserve">
+    <value>Customizable routes along the stunning coast</value>
   </data>
-  <data name="Nav_Contact" xml:space="preserve">
-    <value>Contact</value>
+  <data name="Tours_Benefit4" xml:space="preserve">
+    <value>All-inclusive yacht and crew</value>
   </data>
-  <data name="Nav_CTA" xml:space="preserve">
-    <value>Book Now</value>
+  <data name="Tours_Services_Title" xml:space="preserve">
+    <value>What’s Included</value>
   </data>
-  <data name="Nav_Charter" xml:space="preserve">
-    <value>Yacht Charter</value>
+  <data name="Tours_Service_Captain" xml:space="preserve">
+    <value>Experienced captain at the helm</value>
   </data>
-  <data name="Nav_Management" xml:space="preserve">
-    <value>Management</value>
+  <data name="Tours_Service_Route" xml:space="preserve">
+    <value>Scenic coastal route planning</value>
   </data>
-  <data name="Nav_Bareboat-Сharter" xml:space="preserve">
-    <value>Yacht Charter in Montenegro</value>
+  <data name="Tours_Service_Yacht" xml:space="preserve">
+    <value>Modern and fully equipped yacht</value>
   </data>
-  <data name="Tours" xml:space="preserve">
-    <value>Tours</value>
+  <data name="Tours_Advantages_Title" xml:space="preserve">
+    <value>Additional Perks</value>
+  </data>
+  <data name="Tours_Advantage1" xml:space="preserve">
+    <value>Photo &amp; Video service available on request</value>
+  </data>
+  <data name="Tours_Advantage2" xml:space="preserve">
+    <value>Flexible timing: half-day or full-day options</value>
+  </data>
+  <data name="Tours_Advantage3" xml:space="preserve">
+    <value>Catering service: finger food, salads, drinks</value>
+  </data>
+  <data name="Tours_Advantage4" xml:space="preserve">
+    <value>Exclusive use: just your group on board</value>
+  </data>
+  <data name="Tours_Gallery_Title" xml:space="preserve">
+    <value>Gallery Preview</value>
+  </data>
+  <data name="Tours_CTA_Title" xml:space="preserve">
+    <value>Ready to Party on Deck?</value>
+  </data>
+  <data name="Tours_CTA_Button" xml:space="preserve">
+    <value>Book Your Tour</value>
+  </data>
+  <data name="Tours_Form_Title" xml:space="preserve">
+    <value>Request a Party Tour</value>
+  </data>
+  <data name="Tours_Form_Name" xml:space="preserve">
+    <value>Your Name</value>
+  </data>
+  <data name="Tours_Form_Phone" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Tours_Form_Email" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="Tours_Form_Date" xml:space="preserve">
+    <value>Event Date</value>
+  </data>
+  <data name="Tours_Form_Guests" xml:space="preserve">
+    <value>Number of Guests</value>
+  </data>
+  <data name="Tours_Form_Button" xml:space="preserve">
+    <value>Send Request</value>
+  </data>
+  <data name="Tours_Form_Success" xml:space="preserve">
+    <value>Thank you! Your request has been sent. We will contact you soon.</value>
   </data>
 </root>

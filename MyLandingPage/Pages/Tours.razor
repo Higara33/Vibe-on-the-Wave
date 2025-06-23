@@ -1,0 +1,243 @@
+﻿@page "/tours"
+@page "/{culture}/tours"
+
+@using System.Globalization
+@using Microsoft.AspNetCore.Components
+@using Microsoft.JSInterop
+@using Microsoft.Extensions.Localization
+@using MyLandingPage.Services.Interfaces
+@using System.ComponentModel.DataAnnotations
+
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+@inject IStringLocalizer<Pages.Tours> L
+@inject IStringLocalizer<Shared.ContactSection> CS
+@inject IEmailService EmailService
+
+<style>
+    /* Hero styling */
+    #tours-hero {
+        background: url('images/tours/tours-hero.jpg') center/cover no-repeat;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: #fff;
+    }
+
+    /* Rounded cards */
+    .card.rounded-lg {
+        border-radius: 1rem;
+    }
+
+    /* Gallery images: uniform and moderate size */
+    .gallery-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    /* CTA gradient */
+    #tours-cta {
+        background: linear-gradient(135deg, rgba(13,110,253,0.9), rgba(25,135,84,0.9));
+    }
+
+        #tours-cta .btn {
+            border-radius: 50px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+        }
+</style>
+
+<!-- Hero -->
+<section id="tours-hero" class="text-center text-white">
+    <div class="container">
+        <h1 class="display-4 fw-bold">@L["Tours_Title"]</h1>
+        <p class="lead mt-3">@L["Tours_Subtitle"]</p>
+        <button class="btn btn-outline-light btn-lg mt-4"
+                @onclick='() => JS.InvokeVoidAsync("scrollToSection", "tours-benefits")'>
+            @L["Tours_Hero_CTA"]
+        </button>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section id="tours-benefits" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">@L["Tours_Benefits_Title"]</h2>
+        <div class="row g-4">
+            @foreach (var icon in new[] { "emoji-heart-eyes", "person-check", "map", "people-fill" })
+            {
+                var idx = Array.IndexOf(new[] { "emoji-heart-eyes", "person-check", "map", "people-fill" }, icon) + 1;
+                <div class="col-6 col-md-3 text-center">
+                    <i class="bi bi-@icon fs-1 text-primary mb-3"></i>
+                    <p class="fw-semibold">@L[$"Tours_Benefit{idx}"]</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Services Included -->
+<section id="tours-services" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">@L["Tours_Services_Title"]</h2>
+        <div class="row justify-content-center g-4">
+            <div class="col-12 col-md-4">
+                <div class="card rounded-lg shadow-sm h-100 text-center p-4">
+                    <i class="bi bi-flag fs-2 text-primary mb-3"></i>
+                    <h5 class="fw-semibold">@L["Tours_Service_Captain"]</h5>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-lg shadow-sm h-100 text-center p-4">
+                    <i class="bi bi-geo-alt fs-2 text-primary mb-3"></i>
+                    <h5 class="fw-semibold">@L["Tours_Service_Route"]</h5>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card rounded-lg shadow-sm h-100 text-center p-4">
+                    <i class="bi bi-compass fs-2 text-primary mb-3"></i>
+                    <h5 class="fw-semibold">@L["Tours_Service_Yacht"]</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Perks -->
+<section id="tours-advantages" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">@L["Tours_Advantages_Title"]</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            @for (int i = 1; i <= 4; i++)
+            {
+                <div class="col">
+                    <div class="card rounded-lg shadow-sm h-100 p-4 text-center">
+                        <i class="bi bi-gift fs-2 text-primary mb-3"></i>
+                        <h6 class="fw-semibold">@L[$"Tours_Advantage{i}"]</h6>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Preview -->
+<section id="tours-gallery" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">@L["Tours_Gallery_Title"]</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+            @for (int i = 1; i <= 4; i++)
+            {
+                <div class="col">
+                    <img src="@($"images/tours/gallery-{i}.jpg")"
+                         class="gallery-img shadow-sm"
+                         alt="@($"Gallery {i}")" />
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="tours-cta" class="py-5 text-center text-white">
+    <div class="container">
+        <h2 class="fw-bold mb-4">@L["Tours_CTA_Title"]</h2>
+        <button class="btn btn-light btn-lg"
+                @onclick='() => JS.InvokeVoidAsync("scrollToSection", "tours-form")'>
+            @L["Tours_CTA_Button"]
+        </button>
+    </div>
+</section>
+
+<!-- Request Form -->
+<section id="tours-form" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">@L["Tours_Form_Title"]</h2>
+        @if (formSent)
+        {
+            <div class="alert alert-success text-center">@L["Tours_Form_Success"]</div>
+        }
+        else
+        {
+            <EditForm Model="request" OnValidSubmit="HandleSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="row g-3 mb-3">
+                    <div class="col-md-4">
+                        <InputText @bind-Value="request.Name" class="form-control" placeholder="@L["Tours_Form_Name"]" />
+                    </div>
+                    <div class="col-md-4">
+                        <InputText @bind-Value="request.Phone" class="form-control" placeholder="@L["Tours_Form_Phone"]" />
+                    </div>
+                    <div class="col-md-4">
+                        <InputText @bind-Value="request.Email" class="form-control" placeholder="@L["Tours_Form_Email"]" />
+                    </div>
+                </div>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-4">
+                        <InputDate @bind-Value="request.Date" class="form-control" placeholder="@L["Tours_Form_Date"]" />
+                    </div>
+                    <div class="col-md-4">
+                        <InputNumber @bind-Value="request.Guests" class="form-control" placeholder="@L["Tours_Form_Guests"]" />
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary w-100">@L["Tours_Form_Button"]</button>
+                    </div>
+                </div>
+            </EditForm>
+        }
+    </div>
+</section>
+
+@code {
+    [Parameter] public string? culture { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        if (string.IsNullOrEmpty(culture))
+        {
+            NavigationManager.NavigateTo("en/tours", forceLoad: true);
+            return;
+        }
+        try
+        {
+            var ci = new CultureInfo(culture);
+            CultureInfo.DefaultThreadCurrentCulture = ci;
+            CultureInfo.DefaultThreadCurrentUICulture = ci;
+        }
+        catch { }
+    }
+
+    class TourRequest
+    {
+        [Required] public string Name { get; set; } = "";
+        [Required] public string Phone { get; set; } = "";
+        [Required, EmailAddress] public string Email { get; set; } = "";
+        [Required] public DateTime? Date { get; set; }
+        [Required, Range(1, 100)] public int? Guests { get; set; }
+    }
+
+    private TourRequest request = new();
+    private bool formSent;
+
+    private async Task HandleSubmit()
+    {
+        var subject = $"Tour request from {request.Name}";
+        var body =
+          $"Name: {request.Name}\n" +
+          $"Phone: {request.Phone}\n" +
+          $"Email: {request.Email}\n" +
+          $"Date: {request.Date:yyyy-MM-dd}\n" +
+          $"Guests: {request.Guests}";
+        await EmailService.SendEmailAsync(
+          CS["Contact_Email_Value"],
+          subject,
+          body
+        );
+        formSent = true;
+    }
+}
