@@ -121,13 +121,13 @@
     <value>What We Offer</value>
   </data>
   <data name="Services_List" xml:space="preserve">
-    <value>
-      school::Yacht School::Sail and powerboat training|
-      flotilla::Training Flotillas::Safe group voyages for beginners|
-      charter::Yacht Charter::Bareboat and skippered charters worldwide|
-      montenegro::Yachting in Montenegro::Day and multi-day itineraries|
-      broker::Independent Brokerage::Purchase, registration, and delivery|
-      management::Full Management::Comprehensive yacht care services
-    </value>
-  </data>
+  <value>
+    yacht-school::Yacht School::Become a certified sailor with our comprehensive courses|
+    yacht-charter::Yacht Charter::Charter a yacht for your own adventure|
+    yachting-in-montenegro::Yachting in Montenegro::Bareboat charter from Porto Montenegro|
+    full-management::Full Management::We handle your yacht’s maintenance and scheduling|
+    independent-brokerage::Independent Brokerage::Buy or sell yachts with expert support|
+    tours-celebrations::Tours &amp; Celebrations::Host your celebration on a yacht – captain, route and vessel provided. You bring the fun
+  </value>
+</data>
 </root>
