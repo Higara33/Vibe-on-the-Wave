@@ -63,15 +63,6 @@ namespace MyLandingPage.Resources {
         /// <summary>
         ///   Ищет локализованную строку, похожую на About.
         /// </summary>
-        internal static string Nav_About {
-            get {
-                return ResourceManager.GetString("Nav_About", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Yacht Charter in Montenegro.
-        /// </summary>
         internal static string Nav_Bareboat_Сharter {
             get {
                 return ResourceManager.GetString("Nav_Bareboat-Сharter", resourceCulture);
@@ -151,16 +142,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Services.
-        /// </summary>
-        internal static string Nav_Services {
-            get {
-                return ResourceManager.GetString("Nav_Services", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Vibe on the Waves.
+        ///   Looks up a localized string similar to Vibe on the Waves.
         /// </summary>
         internal static string Site_Title {
             get {
