@@ -1,0 +1,12 @@
+﻿.navbar-book-up-container{
+    padding: 0 1em
+}
+
+.navbar-lang-selector {
+    max-width: 3em
+}
+
+.navbar-title-text {
+    font-family: Arial;
+    color: #0c5dd3
+}
