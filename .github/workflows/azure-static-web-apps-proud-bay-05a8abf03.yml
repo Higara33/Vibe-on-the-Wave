@@ -11,29 +11,28 @@ jobs:
     name: Build and Deploy Job
 
     steps:
-      # 1) Забираем код
       - uses: actions/checkout@v3
 
-      # 2) Ставим .NET SDK той же версии, что у вас локально
+      # 1) Ставим .NET 8
       - name: Setup .NET 8
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.x'
 
-      # 3) Публикуем Blazor WASM
+      # 2) Собираем Blazor WASM в папку publish
       - name: Publish Blazor WebAssembly
         run: |
           dotnet publish MyLandingPage/MyLandingPage.csproj \
             -c Release \
             -o MyLandingPage/bin/Release/net8.0/browser-wasm/publish
 
-      # 4) Деплоим готовые файлы и пропускаем Oryx
-      - name: Build And Deploy to Azure Static Web Apps
+      # 3) Деплоим готовые файлы, указывая папку publish как app_location
+      - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_PROUD_BAY_05A8ABF03 }}
           action: upload
-          app_location: "MyLandingPage"
+          app_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish"
           api_location: ""
-          output_location: "bin/Release/net8.0/browser-wasm/publish"
-          skip_app_build: true
+          output_location: ""           # <-- здесь пустая строка
+          skip_app_build: true          # <-- отключаем попытку Oryx-сборки
