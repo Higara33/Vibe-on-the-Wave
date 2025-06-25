@@ -21,9 +21,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Publish Blazor WASM
-        run: dotnet publish MyLandingPage/MyLandingPage.csproj \
-               -c Release \
-               -o MyLandingPage/bin/Release/net8.0/browser-wasm/publish
+        run: dotnet publish MyLandingPage/MyLandingPage.csproj -c Release -o MyLandingPage/bin/Release/net8.0/browser-wasm/publish
 
       - name: Build And Deploy
         uses: Azure/static-web-apps-deploy@v1
