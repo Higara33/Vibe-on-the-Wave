@@ -1,4 +1,4 @@
-﻿@namespace MyLandingPage.Shared
+@namespace MyLandingPage.Shared
 @using Microsoft.AspNetCore.Components
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.Extensions.Localization
@@ -6,6 +6,7 @@
 @inject NavigationManager NavigationManager
 @inject IStringLocalizer<Shared.NavMenu> L
 @inject IJSRuntime JS
+@implements IAsyncDisposable
 
 <header id="site-header" class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -47,13 +48,6 @@
                         <NavLink class="nav-link text-nowrap"
                                  href="@($"{CurrentCulture}/fleet")">
                             @L["Nav_Fleet"]
-                        </NavLink>
-                    </li>
-                    @* Management — отдельная страница *@
-                    <li class="nav-item">
-                        <NavLink class="nav-link text-nowrap"
-                                 href="@($"{CurrentCulture}/management")">
-                            @L["Nav_Management"]
                         </NavLink>
                     </li>
                     @* Яхтанг в Черногории — отдельная страница *@
@@ -98,6 +92,9 @@
 
 @code {
     private string currentCulture = "en";
+    private IJSObjectReference? cultureModule;
+    private DotNetObjectReference<NavMenu>? objRef;
+    
     public string CurrentCulture
     {
         get => currentCulture;
@@ -146,52 +143,154 @@
     //     NavigationManager.NavigateTo($"/{newPath}{uri.Query}", forceLoad: true);
     // }
 
-    private void ChangeCultureAndNavigate(string culture)
+    private async void ChangeCultureAndNavigate(string culture)
     {
         if (string.IsNullOrEmpty(culture))
             return;
+
+        try
+        {
+            // Сохраняем культуру в localStorage и уведомляем другие вкладки
+            if (cultureModule != null)
+            {
+                await cultureModule.InvokeVoidAsync("setCulture", culture);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка сохранения культуры: {ex.Message}");
+        }
 
         // 1) Устанавливаем культуру .NET для локализатора
         var ci = new CultureInfo(culture);
         CultureInfo.DefaultThreadCurrentCulture = ci;
         CultureInfo.DefaultThreadCurrentUICulture = ci;
 
-        // 2) Берём текущий BaseUri ("/" или "/Vibe-on-the-Wave/")
+        // 2) Парсим текущий URI
+        var currentUri = new Uri(NavigationManager.Uri);
+        
+        // 3) Получаем путь без BaseUri
         var baseUri = NavigationManager.BaseUri.TrimEnd('/');
-        var fullUri = NavigationManager.Uri;
-
-        // 3) Вычисляем относительный путь, удаляя BaseUri
         string relativePath;
-        if (fullUri.StartsWith(baseUri, StringComparison.OrdinalIgnoreCase))
+        if (NavigationManager.Uri.StartsWith(baseUri, StringComparison.OrdinalIgnoreCase))
         {
-            relativePath = fullUri.Substring(baseUri.Length).Trim('/');
+            relativePath = NavigationManager.Uri.Substring(baseUri.Length).TrimStart('/');
         }
         else
         {
-            // на случай, если BaseUri не совпал (например, при локальных обходах)
-            relativePath = new Uri(fullUri).AbsolutePath.Trim('/');
+            relativePath = currentUri.AbsolutePath.TrimStart('/');
         }
 
-        // 4) Разбиваем на сегменты и удаляем старые коды "ru"/"en"
-        var segments = relativePath
+        // 4) Разделяем путь и фрагмент
+        var pathPart = relativePath;
+        var fragment = currentUri.Fragment; // включает # если есть
+        if (pathPart.Contains('#'))
+        {
+            var hashIndex = pathPart.IndexOf('#');
+            fragment = pathPart.Substring(hashIndex);
+            pathPart = pathPart.Substring(0, hashIndex);
+        }
+
+        // 5) Разбиваем путь на сегменты, удаляя все языковые коды
+        var segments = pathPart.Trim('/')
             .Split('/', StringSplitOptions.RemoveEmptyEntries)
             .Where(s => s != "ru" && s != "en")
             .ToList();
 
-        // 5) Вставляем новый язык в начало
-        segments.Insert(0, culture);
+        // 6) Формируем новый путь с культурой в начале
+        var newPath = culture;
+        if (segments.Count > 0)
+        {
+            newPath += "/" + string.Join('/', segments);
+        }
 
-        // 6) Собираем новый относительный путь и переходим на него
-        var newRelative = string.Join('/', segments);
-        var query = new Uri(fullUri).Query;
-        NavigationManager.NavigateTo(newRelative + query, forceLoad: true);
+        // 7) Добавляем query и fragment
+        var newUrl = newPath + currentUri.Query + fragment;
+        
+        NavigationManager.NavigateTo(newUrl, forceLoad: true);
+    }
+    
+    public async ValueTask DisposeAsync()
+    {
+        try
+        {
+            if (cultureModule != null)
+            {
+                await cultureModule.InvokeVoidAsync("unsubscribeFromCultureChanges");
+                await cultureModule.DisposeAsync();
+            }
+            objRef?.Dispose();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка освобождения ресурсов NavMenu: {ex.Message}");
+        }
     }
 
-    protected override void OnInitialized()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try
+            {
+                // Загружаем модуль культуры
+                cultureModule = await JS.InvokeAsync<IJSObjectReference>("import", "./js/culture.js");
+                objRef = DotNetObjectReference.Create(this);
+                
+                // Инициализируем культуру из localStorage или URL
+                var storedCulture = await cultureModule.InvokeAsync<string?>("getCulture");
+                var urlCulture = GetCultureFromUrl();
+                
+                if (!string.IsNullOrEmpty(storedCulture) && (storedCulture == "ru" || storedCulture == "en"))
+                {
+                    currentCulture = storedCulture;
+                }
+                else if (!string.IsNullOrEmpty(urlCulture))
+                {
+                    currentCulture = urlCulture;
+                    await cultureModule.InvokeVoidAsync("setCulture", currentCulture);
+                }
+                
+                // Подписываемся на изменения культуры из других вкладок
+                await cultureModule.InvokeVoidAsync("subscribeToCultureChanges", objRef);
+                
+                StateHasChanged();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка инициализации культуры: {ex.Message}");
+                // Fallback к определению из URL
+                var urlCulture = GetCultureFromUrl();
+                if (!string.IsNullOrEmpty(urlCulture))
+                {
+                    currentCulture = urlCulture;
+                    StateHasChanged();
+                }
+            }
+        }
+    }
+    
+    private string? GetCultureFromUrl()
     {
         var uri = new Uri(NavigationManager.Uri);
         var segments = uri.AbsolutePath.Trim('/').Split('/', StringSplitOptions.RemoveEmptyEntries);
         if (segments.Length > 0 && (segments[0] == "ru" || segments[0] == "en"))
-            currentCulture = segments[0];
+            return segments[0];
+        return null;
+    }
+    
+    [JSInvokable]
+    public async Task OnCultureChanged(string culture)
+    {
+        if (culture != currentCulture && (culture == "ru" || culture == "en"))
+        {
+            currentCulture = culture;
+            await InvokeAsync(StateHasChanged);
+            
+            // Обновляем URL без форсированной перезагрузки
+            var currentUrl = NavigationManager.Uri;
+            var newUrl = await cultureModule!.InvokeAsync<string>("updateUrlWithCulture", currentUrl, culture);
+            NavigationManager.NavigateTo(newUrl, forceLoad: false);
+        }
     }
 }
