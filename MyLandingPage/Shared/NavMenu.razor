@@ -8,7 +8,7 @@
 @inject IJSRuntime JS
 @implements IAsyncDisposable
 
-<header id="site-header" class="sticky-top">
+<header id="site-header" class="fixed-top navmenu-header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a href="@NavigationManager.BaseUri" class="d-flex align-items-center logo-link">
@@ -19,7 +19,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav d-flex flex-wrap justify-content-center">
                     @* Home *@
                     <li class="nav-item">
                         <a class="nav-link text-nowrap"
