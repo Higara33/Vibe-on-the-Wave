@@ -29,6 +29,10 @@ jobs:
             -c Release \
             -o FunctionEmailApi/bin/Release/net8.0/publish
 
+      - name: Publish Azure Function API
+        run: |
+          ls -la FunctionEmailApi/bin/Release/net8.0/publish 
+
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -40,7 +44,7 @@ jobs:
           action: upload
 
           # вот тут — готовые статика-артефакты, а не исходники
-          app_artifact_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish"
+          app_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish/wwwroot"
           skip_app_build: true
 
           # готовые функции с host.json и .azurefunctions
