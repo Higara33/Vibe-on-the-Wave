@@ -35,7 +35,8 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_PROUD_BAY_05A8ABF03 }}
           action: upload
 
-          app_artifact_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish/wwwroot"
+          app_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish/wwwroot"
+
           api_artifact_location: "FunctionEmailApi/bin/Release/net8.0/publish"
 
           skip_app_build: true
