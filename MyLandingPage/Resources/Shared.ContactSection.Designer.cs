@@ -88,7 +88,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на duha3222@gmail.com.
+        ///   Ищет локализованную строку, похожую на vibe.of.the.wave@gmail.com.
         /// </summary>
         internal static string Contact_Email_Value {
             get {

@@ -6,6 +6,14 @@
 @inject IStringLocalizer<Pages.Programs> L
 @inject NavigationManager NavigationManager
 
+<PageTitle>@L["PageTitle_Programs"]</PageTitle>
+<HeadContent>
+    <meta name="description" content="@L["Meta_Description_Programs"]" />
+    <meta property="og:title" content="@L["PageTitle_Programs"]" />
+    <meta property="og:description" content="@L["Meta_Description_Programs"]" />
+    <meta property="og:image" content="https://www.vibeofthewave.com/images/preview.jpg" />
+</HeadContent>
+
 @code {
     [Parameter] public string? culture { get; set; }
 

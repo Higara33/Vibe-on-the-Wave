@@ -22,14 +22,14 @@ namespace MyLandingPage.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Shared_MainLayout {
+    internal class Pages_Programs {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Shared_MainLayout() {
+        internal Pages_Programs() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace MyLandingPage.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MyLandingPage.Resources.Shared.MainLayout", typeof(Shared_MainLayout).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MyLandingPage.Resources.Pages.Programs", typeof(Pages_Programs).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,20 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на © 2025 Vibe of the wave. All rights reserved..
+        ///   Ищет локализованную строку, похожую на Explore our yachting training programs: from beginner to advanced, bareboat skipper courses, catamaran and powerboat training, and individual lessons. Get certified and sail with confidence in Montenegro and beyond!.
         /// </summary>
-        internal static string Footer_Copyright {
+        internal static string Meta_Description_Programs {
             get {
-                return ResourceManager.GetString("Footer_Copyright", resourceCulture);
+                return ResourceManager.GetString("Meta_Description_Programs", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Unique sea experiences: yachting training, yacht charter, bespoke tours in Montenegro and beyond. Prepare for independent sailing, get certified and discover the Adriatic with us..
+        ///   Ищет локализованную строку, похожую на Yachting Training Programs — Skipper Courses &amp; Catamaran | VibeOfTheWave.
         /// </summary>
-        internal static string Meta_Description_Home {
+        internal static string PageTitle_Programs {
             get {
-                return ResourceManager.GetString("Meta_Description_Home", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на VibeOfTheWave — yachting, training, cruises.
-        /// </summary>
-        internal static string PageTitle_Home {
-            get {
-                return ResourceManager.GetString("PageTitle_Home", resourceCulture);
+                return ResourceManager.GetString("PageTitle_Programs", resourceCulture);
             }
         }
     }

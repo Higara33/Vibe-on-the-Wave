@@ -58,6 +58,11 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Pages.Management.resx</DependentUpon>
 	  </Compile>
+	  <Compile Update="Resources\Pages.Programs.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Pages.Programs.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Pages.Survey.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -158,6 +163,9 @@
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Pages.Management.ru.resx">
+	    <Generator></Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Pages.Programs.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Pages.Survey.ru.resx">

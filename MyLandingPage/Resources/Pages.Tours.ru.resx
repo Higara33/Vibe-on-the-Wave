@@ -120,7 +120,7 @@
   <data name="Tours_Title" xml:space="preserve">
     <value>Яхтенные туры и празднования</value>
   </data>
-<data name="Tours_Subtitle" xml:space="preserve">
+  <data name="Tours_Subtitle" xml:space="preserve">
     <value>Мы организуем идеальный праздник на яхте — капитан, маршрут и судно предоставляем мы. А вы приносите хорошее настроение!</value>
   </data>
   <data name="Tours_Hero_CTA" xml:space="preserve">
@@ -200,5 +200,11 @@
   </data>
   <data name="Tours_Form_Success" xml:space="preserve">
     <value>Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.</value>
+  </data>
+  <data name="Meta_Description_Tours" xml:space="preserve">
+    <value>Уникальные яхт-туры и морские круизы по побережью Черногории. Индивидуальные маршруты, опытные шкиперы, новые впечатления на Адриатике. Забронируйте своё морское приключение с VibeOfTheWave!</value>
+  </data>
+  <data name="PageTitle_Tours" xml:space="preserve">
+    <value>Яхт-туры и круизы в Черногории | VibeOfTheWave</value>
   </data>
 </root>
