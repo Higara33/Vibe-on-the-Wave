@@ -10,18 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1) Клонируем репозиторий
       - uses: actions/checkout@v3
 
+      # 2) Устанавливаем .NET 8
       - name: Setup .NET 8
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.x'
 
+      # 3) Сборка и деплой через Oryx
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_PROUD_BAY_05A8ABF03 }}
           action: upload
 
+          # Пути к исходникам проектов — Azure сам их соберёт
           app_location: "MyLandingPage"
           api_location: "FunctionEmailApi"
+
+          # Где после Oryx-билда лежат статические файлы Blazor
+          output_location: "MyLandingPage/bin/Release/net8.0/wwwroot"
