@@ -1,28 +1,54 @@
-﻿<html lang="ru">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!--<base href="/Vibe-on-the-Wave/" />-->
     <base href="/" /> <!--- для локального запуска-->
 
+    <!-- SEO мета-теги -->
+    <title>VibeOnTheWave — yachting, training, cruises</title>
+    <meta name="description" content="Unique sea experiences: yachting training, yacht charter, bespoke tours in Montenegro and beyond. Preparing for independent sailing and certification." />
+    <meta name="keywords" content="yachting, yacht charter, yachting training, cruises, Montenegro yachting, bareboat, tours, catamaran, sailing, sea adventures" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Canonical и hreflang для мультиязычности -->
+    <link rel="canonical" href="https://www.vibeofthewave.com/" />
+    <link rel="alternate" hreflang="en" href="https://www.vibeofthewave.com/en" />
+    <link rel="alternate" hreflang="ru" href="https://www.vibeofthewave.com/ru" />
+
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="VibeOnTheWave — yachting, training, cruises" />
+    <meta property="og:description" content="Unique sea experiences: yachting training, yacht charter, bespoke tours in Montenegro and beyond." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.vibeofthewave.com/" />
+    <meta property="og:image" content="https://www.vibeofthewave.com/images/preview.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VibeOnTheWave — yachting, training, cruises" />
+    <meta name="twitter:description" content="Unique sea experiences: yachting training, yacht charter, bespoke tours." />
+    <meta name="twitter:image" content="https://www.vibeofthewave.com/images/preview.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/helm.svg">
+
+    <!-- Bootstrap и твои стили -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-          rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
     <link href="css/load-page.css" rel="stylesheet" />
     <link href="css/nav-menu.css" rel="stylesheet" />
-    <title>VibeOnTheWave</title>
-    <link rel="icon" type="image/x-icon" href="images/helm.svg">
 </head>
 <body>
     <div id="app">
         <div class="w-100 h-100 row">
-            <img class="load-page-img col-6 mx-auto my-auto" src="images/helm.svg" />
+            <img class="load-page-img col-6 mx-auto my-auto" src="images/helm.svg" alt="VibeOnTheWave logo" />
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="js/site.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="_framework/blazor.globalization.js"></script>
