@@ -49,4 +49,3 @@ jobs:
 
           # готовые функции с host.json и .azurefunctions
           api_location: "FunctionEmailApi/bin/Release/net8.0/publish"
-          skip_api_build: true
