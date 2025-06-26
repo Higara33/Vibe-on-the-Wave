@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Footer_Copyright" xml:space="preserve">
-    <value>© 2025 Vibe on the waves. Все права защищены.</value>
+    <value>© 2025 Vibe of the wave. Все права защищены.</value>
+  </data>
+  <data name="Meta_Description_Home" xml:space="preserve">
+    <value>VibeOfTheWave — яхтинг, обучение, круизы</value>
+  </data>
+  <data name="PageTitle_Home" xml:space="preserve">
+    <value>Уникальный опыт на море: обучение яхтингу, аренда яхт, авторские туры в Черногории и за её пределами. Подготовка к самостоятельным путешествиям и сертификация.</value>
   </data>
 </root>

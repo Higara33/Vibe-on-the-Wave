@@ -61,6 +61,24 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Discover unique yacht tours and sea cruises along the Montenegrin coast. Choose your route, enjoy unforgettable experiences, and explore the Adriatic with professional skippers. Book your adventure with VibeOfTheWave!.
+        /// </summary>
+        internal static string Meta_Description_Tours {
+            get {
+                return ResourceManager.GetString("Meta_Description_Tours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yacht Tours Montenegro — Sea Adventures &amp; Cruises | VibeOfTheWave.
+        /// </summary>
+        internal static string PageTitle_Tours {
+            get {
+                return ResourceManager.GetString("PageTitle_Tours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Photo &amp; Video service available on request.
         /// </summary>
         internal static string Tours_Advantage1 {

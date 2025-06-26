@@ -177,4 +177,10 @@
   <data name="Fleet_Beneteau_BowThruster" xml:space="preserve">
     <value>Носовое подруливающее устройство: есть</value>
   </data>
+  <data name="PageTitle_Fleet" xml:space="preserve">
+    <value>Познакомьтесь с нашим флотом: современные парусные яхты, катамараны и моторные лодки для аренды и чартера в Черногории. Выберите свою яхту с VibeOfTheWave и отправляйтесь в морское путешествие по Адриатике!</value>
+  </data>
+  <data name="Meta_Description_Fleet" xml:space="preserve">
+    <value>Наш флот яхт — чартер и аренда в Черногории | VibeOfTheWave</value>
+  </data>
 </root>

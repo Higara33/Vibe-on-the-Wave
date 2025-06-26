@@ -117,13 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Footer_Copyright" xml:space="preserve">
-    <value>© 2025 Vibe of the wave. All rights reserved.</value>
+  <data name="Meta_Description_Programs" xml:space="preserve">
+    <value>Выберите свою яхтенную программу: обучение с нуля, курс шкипера, катамаран, моторная яхта, индивидуальные занятия. Получите международный сертификат и управляйте яхтой уверенно в Черногории и по всему миру!</value>
   </data>
-  <data name="Meta_Description_Home" xml:space="preserve">
-    <value>Unique sea experiences: yachting training, yacht charter, bespoke tours in Montenegro and beyond. Prepare for independent sailing, get certified and discover the Adriatic with us.</value>
-  </data>
-  <data name="PageTitle_Home" xml:space="preserve">
-    <value>VibeOfTheWave — yachting, training, cruises</value>
+  <data name="PageTitle_Programs" xml:space="preserve">
+    <value>Яхтенные программы — обучение, шкипер, катамаран | VibeOfTheWave</value>
   </data>
 </root>

@@ -563,5 +563,23 @@ namespace MyLandingPage.Resources {
                 return ResourceManager.GetString("Bareboat_Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rent a yacht without skipper in Montenegro! Bareboat charters for experienced sailors: large fleet, transparent rates, full support, and expert advice. Plan your own sailing adventure with VibeOfTheWave..
+        /// </summary>
+        internal static string Meta_Description_BareboatCharter {
+            get {
+                return ResourceManager.GetString("Meta_Description_BareboatCharter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bareboat Yacht Charter Montenegro — Rent Without Skipper | VibeOfTheWave.
+        /// </summary>
+        internal static string PageTitle_BareboatCharter {
+            get {
+                return ResourceManager.GetString("PageTitle_BareboatCharter", resourceCulture);
+            }
+        }
     }
 }

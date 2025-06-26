@@ -138,4 +138,10 @@
   <data name="Hero_Title" xml:space="preserve">
     <value>Welcome to our website</value>
   </data>
+  <data name="Meta_Description_Index" xml:space="preserve">
+    <value>Explore yachting in Montenegro with VibeOfTheWave: bareboat charters, certified skipper training, and unique yacht tours. Discover the Adriatic, sail with confidence, and enjoy unforgettable sea adventures.</value>
+  </data>
+  <data name="PageTitle_Index" xml:space="preserve">
+    <value>Yachting in Montenegro — Bareboat, Training, Yacht Tours | VibeOfTheWave</value>
+  </data>
 </root>

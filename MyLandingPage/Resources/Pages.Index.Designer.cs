@@ -122,5 +122,23 @@ namespace MyLandingPage.Resources {
                 return ResourceManager.GetString("Hero_Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Explore yachting in Montenegro with VibeOfTheWave: bareboat charters, certified skipper training, and unique yacht tours. Discover the Adriatic, sail with confidence, and enjoy unforgettable sea adventures..
+        /// </summary>
+        internal static string Meta_Description_Index {
+            get {
+                return ResourceManager.GetString("Meta_Description_Index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yachting in Montenegro — Bareboat, Training, Yacht Tours | VibeOfTheWave.
+        /// </summary>
+        internal static string PageTitle_Index {
+            get {
+                return ResourceManager.GetString("PageTitle_Index", resourceCulture);
+            }
+        }
     }
 }
