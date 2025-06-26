@@ -220,7 +220,7 @@ a {
 
 /* Ограничиваем размер иконок услуг */
 #services img {
-    width: 4em; /* одинаковая ширина */
+    width: 3em; /* одинаковая ширина */
     height: auto; /* сохраняем пропорции */
     margin-bottom: 1rem;
     object-fit: contain;
