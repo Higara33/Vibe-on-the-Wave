@@ -5,23 +5,22 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MyLandingPage;
-using MyLandingPage.Services;
-using MyLandingPage.Services.Interfaces;
 using System;
 using System.Globalization;
 using System.Linq;
 using System.Net.Http;
-using static MyLandingPage.Services.EmailService;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 
 // 1. HttpClient для обращения к серверным API (при необходимости)
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
-// 2. Регистрация EmailSettings через IOptions:
-builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
-builder.Services.AddTransient<IEmailService, EmailService>();
+builder.Services.AddScoped(sp =>
+{
+    var apiBase = builder.HostEnvironment.IsDevelopment()
+        ? "http://localhost:7012/"
+        : builder.HostEnvironment.BaseAddress;
+    return new HttpClient { BaseAddress = new Uri(apiBase) };
+});
 
 // 3. Локализация (Resources)
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
