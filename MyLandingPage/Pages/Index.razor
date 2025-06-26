@@ -20,6 +20,14 @@
 @inject IJSRuntime JS
 @inject NavigationManager NavigationManager
 
+<PageTitle>@L["PageTitle_Index"]</PageTitle>
+<HeadContent>
+    <meta name="description" content="@L["Meta_Description_Index"]" />
+    <meta property="og:title" content="@L["PageTitle_Index"]" />
+    <meta property="og:description" content="@L["Meta_Description_Index"]" />
+    <meta property="og:image" content="https://www.vibeofthewave.com/images/preview.jpg" />
+</HeadContent>
+
 @code {
     [Parameter]
     public string? culture { get; set; }

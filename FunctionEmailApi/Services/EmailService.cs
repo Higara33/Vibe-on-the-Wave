@@ -43,7 +43,7 @@ namespace FunctionEmailApi.Services
             var message = new MimeMessage();
 
             // From: отображаемое имя и адрес
-            message.From.Add(new MailboxAddress("Vibe on the Wave", _settings.User));
+            message.From.Add(new MailboxAddress("Vibe of the Wave", _settings.User));
             // Reply-To: куда отвечать
             message.ReplyTo.Add(new MailboxAddress("Vibe Support", _settings.User));
             // To: получатель

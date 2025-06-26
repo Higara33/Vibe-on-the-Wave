@@ -61,11 +61,461 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Our agency is paid by owners, not you..
+        /// </summary>
+        internal static string Charter_Benefit1_Text {
+            get {
+                return ResourceManager.GetString("Charter_Benefit1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Zero Fees.
+        /// </summary>
+        internal static string Charter_Benefit1_Title {
+            get {
+                return ResourceManager.GetString("Charter_Benefit1_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Hand-picked yachts from top companies..
+        /// </summary>
+        internal static string Charter_Benefit2_Text {
+            get {
+                return ResourceManager.GetString("Charter_Benefit2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Best Selection.
+        /// </summary>
+        internal static string Charter_Benefit2_Title {
+            get {
+                return ResourceManager.GetString("Charter_Benefit2_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на All agreements vetted to protect you..
+        /// </summary>
+        internal static string Charter_Benefit3_Text {
+            get {
+                return ResourceManager.GetString("Charter_Benefit3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Secure Contracts.
+        /// </summary>
+        internal static string Charter_Benefit3_Title {
+            get {
+                return ResourceManager.GetString("Charter_Benefit3_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Why Charter with Us.
+        /// </summary>
+        internal static string Charter_Benefits_Title {
+            get {
+                return ResourceManager.GetString("Charter_Benefits_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Contact Us.
+        /// </summary>
+        internal static string Charter_Contact_Button {
+            get {
+                return ResourceManager.GetString("Charter_Contact_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ready to Charter?.
+        /// </summary>
+        internal static string Charter_Contact_Title {
+            get {
+                return ResourceManager.GetString("Charter_Contact_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Send Request.
+        /// </summary>
+        internal static string Charter_Form_Button {
+            get {
+                return ResourceManager.GetString("Charter_Form_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Country of Charter.
+        /// </summary>
+        internal static string Charter_Form_Country {
+            get {
+                return ResourceManager.GetString("Charter_Form_Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Your Email.
+        /// </summary>
+        internal static string Charter_Form_Email {
+            get {
+                return ResourceManager.GetString("Charter_Form_Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Your Name.
+        /// </summary>
+        internal static string Charter_Form_Name {
+            get {
+                return ResourceManager.GetString("Charter_Form_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Phone Number.
+        /// </summary>
+        internal static string Charter_Form_Phone {
+            get {
+                return ResourceManager.GetString("Charter_Form_Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Thank you! We’ll be in touch shortly..
+        /// </summary>
+        internal static string Charter_Form_Success {
+            get {
+                return ResourceManager.GetString("Charter_Form_Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Charter Request Form.
+        /// </summary>
+        internal static string Charter_Form_Title {
+            get {
+                return ResourceManager.GetString("Charter_Form_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Select Yacht Type.
+        /// </summary>
+        internal static string Charter_Form_Type {
+            get {
+                return ResourceManager.GetString("Charter_Form_Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на How It Works.
+        /// </summary>
+        internal static string Charter_Hero_CTA {
+            get {
+                return ResourceManager.GetString("Charter_Hero_CTA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We handle agency fees — your charter cost is 0 €.
+        /// </summary>
+        internal static string Charter_Hero_Subtitle {
+            get {
+                return ResourceManager.GetString("Charter_Hero_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Worldwide Yacht Charter for Zero € Fees.
         /// </summary>
         internal static string Charter_Hero_Title {
             get {
                 return ResourceManager.GetString("Charter_Hero_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на How to Charter.
+        /// </summary>
+        internal static string Charter_Process_Title {
+            get {
+                return ResourceManager.GetString("Charter_Process_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Then we conduct a rapid market scan: assessing availability, average rates and spotting hidden gems based on our years of experience. We shortlist the most attractive, best-value options (filtering out overpriced or poor–quality boats) and even make provisional, no-obligation bookings to hold those yachts while you decide..
+        /// </summary>
+        internal static string Charter_Process1_Agency {
+            get {
+                return ResourceManager.GetString("Charter_Process1_Agency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We:.
+        /// </summary>
+        internal static string Charter_Process1_Agency_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process1_Agency_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Step 1: Preliminary Selection (1 day).
+        /// </summary>
+        internal static string Charter_Process1_Title {
+            get {
+                return ResourceManager.GetString("Charter_Process1_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You tell us which yacht, destination and dates you need—either by phone or via our online form—so we can clarify your exact requirements..
+        /// </summary>
+        internal static string Charter_Process1_User {
+            get {
+                return ResourceManager.GetString("Charter_Process1_User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You:.
+        /// </summary>
+        internal static string Charter_Process1_User_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process1_User_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Meanwhile, we perform a deep dive: vetting each charter company and vessel for reputation and safety, negotiating extra discounts or special requests, and scrutinizing draft contracts for hidden fees. Once terms are agreed, we email you the finalized agreement, invoices (deposit and balance) and our clear commentary..
+        /// </summary>
+        internal static string Charter_Process2_Agency {
+            get {
+                return ResourceManager.GetString("Charter_Process2_Agency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We:.
+        /// </summary>
+        internal static string Charter_Process2_Agency_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process2_Agency_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Step 2: Main Selection (1–3 days).
+        /// </summary>
+        internal static string Charter_Process2_Title {
+            get {
+                return ResourceManager.GetString("Charter_Process2_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You review the curated shortlist and simply point to the yachts you like best—no need for endless emails..
+        /// </summary>
+        internal static string Charter_Process2_User {
+            get {
+                return ResourceManager.GetString("Charter_Process2_User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You:.
+        /// </summary>
+        internal static string Charter_Process2_User_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process2_User_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We oversee every document exchange and bank transfer—making sure your booking stays secured even if payments take time to clear—so there’s zero risk of the yacht slipping away..
+        /// </summary>
+        internal static string Charter_Process3_Agency {
+            get {
+                return ResourceManager.GetString("Charter_Process3_Agency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We:.
+        /// </summary>
+        internal static string Charter_Process3_Agency_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process3_Agency_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Step 3: Contract Signing &amp; Payment (1 day).
+        /// </summary>
+        internal static string Charter_Process3_Title {
+            get {
+                return ResourceManager.GetString("Charter_Process3_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You sign the agreement and pay the deposit (and later the final balance), which usually takes minutes once everything’s in place..
+        /// </summary>
+        internal static string Charter_Process3_User {
+            get {
+                return ResourceManager.GetString("Charter_Process3_User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You:.
+        /// </summary>
+        internal static string Charter_Process3_User_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process3_User_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We stay on standby: if any issue arises—missing provisions, paperwork hiccups or last-minute demands—we intervene directly with the charter company to enforce the agreed terms and ensure your cruise departs smoothly..
+        /// </summary>
+        internal static string Charter_Process4_Agency {
+            get {
+                return ResourceManager.GetString("Charter_Process4_Agency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We:.
+        /// </summary>
+        internal static string Charter_Process4_Agency_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process4_Agency_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Step 4: Embarkation &amp; Check-In.
+        /// </summary>
+        internal static string Charter_Process4_Title {
+            get {
+                return ResourceManager.GetString("Charter_Process4_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на On arrival, you board the yacht and complete check-in..
+        /// </summary>
+        internal static string Charter_Process4_User {
+            get {
+                return ResourceManager.GetString("Charter_Process4_User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You:.
+        /// </summary>
+        internal static string Charter_Process4_User_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process4_User_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на At the end of your charter you return the yacht and complete check-out. Should any dispute over the deposit or unexpected charges arise, we immediately advocate on your behalf to recover every euro—and provide post-charter assistance so you can relax knowing we’ve got you covered..
+        /// </summary>
+        internal static string Charter_Process5_Agency {
+            get {
+                return ResourceManager.GetString("Charter_Process5_Agency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We:.
+        /// </summary>
+        internal static string Charter_Process5_Agency_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process5_Agency_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Step 5: Disembarkation &amp; Support.
+        /// </summary>
+        internal static string Charter_Process5_Title {
+            get {
+                return ResourceManager.GetString("Charter_Process5_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на At the end of your charter you return the yacht and complete check-out..
+        /// </summary>
+        internal static string Charter_Process5_User {
+            get {
+                return ResourceManager.GetString("Charter_Process5_User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на You:.
+        /// </summary>
+        internal static string Charter_Process5_User_Label {
+            get {
+                return ResourceManager.GetString("Charter_Process5_User_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Catamaran.
+        /// </summary>
+        internal static string Charter_Type_Cat {
+            get {
+                return ResourceManager.GetString("Charter_Type_Cat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Monohull Sailboat.
+        /// </summary>
+        internal static string Charter_Type_Mono {
+            get {
+                return ResourceManager.GetString("Charter_Type_Mono", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Motor Yacht.
+        /// </summary>
+        internal static string Charter_Type_Motor {
+            get {
+                return ResourceManager.GetString("Charter_Type_Motor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Find your ideal yacht for charter in Montenegro! Personal selection, support at every stage, best prices, and reliable partners. Start your sea journey with VibeOfTheWave — we’ll help you choose the perfect yacht for your needs..
+        /// </summary>
+        internal static string Meta_Description_Charter {
+            get {
+                return ResourceManager.GetString("Meta_Description_Charter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yacht Charter in Montenegro — Personalized Selection | VibeOfTheWave.
+        /// </summary>
+        internal static string PageTitle_Charter {
+            get {
+                return ResourceManager.GetString("PageTitle_Charter", resourceCulture);
             }
         }
     }

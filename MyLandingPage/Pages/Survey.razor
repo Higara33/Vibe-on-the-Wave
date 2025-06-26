@@ -11,6 +11,14 @@
 @inject IStringLocalizer<Shared.ContactSection> CS
 @inject NavigationManager NavigationManager
 
+<PageTitle>@L["PageTitle_Survey"]</PageTitle>
+<HeadContent>
+    <meta name="description" content="@L["Meta_Description_Survey"]" />
+    <meta property="og:title" content="@L["PageTitle_Survey"]" />
+    <meta property="og:description" content="@L["Meta_Description_Survey"]" />
+    <meta property="og:image" content="https://www.vibeofthewave.com/images/preview.jpg" />
+</HeadContent>
+
 <div class="container py-5">
     <h1 class="mb-4">@L["Survey_Header", GetProgramDisplayName(program)]</h1>
     <p class="lead mb-5">@L["Survey_Intro"]</p>

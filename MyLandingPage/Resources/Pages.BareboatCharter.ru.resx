@@ -285,4 +285,10 @@
   <data name="Bareboat_Rates_Week_Title" xml:space="preserve">
     <value>Аренда на неделю</value>
   </data>
+  <data name="PageTitle_BareboatCharter" xml:space="preserve">
+    <value>Чартер яхты без капитана в Черногории | VibeOfTheWave</value>
+  </data>
+  <data name="Meta_Description_BareboatCharter" xml:space="preserve">
+    <value>Аренда яхты без капитана (bareboat) в Черногории для опытных яхтсменов. Большой выбор яхт, понятные тарифы, поддержка и консультации. Спланируйте самостоятельное морское путешествие с VibeOfTheWave!</value>
+  </data>
 </root>
