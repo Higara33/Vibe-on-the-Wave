@@ -14,7 +14,7 @@ namespace FunctionEmailApi
 
         [Function("SendMail")]
         public async Task<HttpResponseData> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "options", "post")] HttpRequestData req)
+            [HttpTrigger(AuthorizationLevel.Anonymous, "options", "post")] HttpRequestData req)
         {
             // Определяем Origin для CORS
             var origin = req.Headers.TryGetValues("Origin", out var vals)
