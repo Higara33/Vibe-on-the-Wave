@@ -239,5 +239,23 @@ namespace MyLandingPage.Resources {
                 return ResourceManager.GetString("Fleet_Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Explore our yacht fleet in Montenegro: modern sailing yachts, catamarans, and motorboats for charter and hire. Choose your perfect yacht with VibeOfTheWave and start your adventure on the Adriatic Sea!.
+        /// </summary>
+        internal static string Meta_Description_Fleet {
+            get {
+                return ResourceManager.GetString("Meta_Description_Fleet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Our Yacht Fleet — Charter &amp; Hire in Montenegro | VibeOfTheWave.
+        /// </summary>
+        internal static string PageTitle_Fleet {
+            get {
+                return ResourceManager.GetString("PageTitle_Fleet", resourceCulture);
+            }
+        }
     }
 }

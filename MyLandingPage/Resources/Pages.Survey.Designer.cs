@@ -79,11 +79,29 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Take our yachting survey to help us recommend the best sailing program for you: confident start, advanced training, catamaran courses, or individual lessons. Tailor your yachting experience in Montenegro!.
+        /// </summary>
+        internal static string Meta_Description_Survey {
+            get {
+                return ResourceManager.GetString("Meta_Description_Survey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Next.
         /// </summary>
         internal static string Next {
             get {
                 return ResourceManager.GetString("Next", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yachting Survey — Select Program | VibeOfTheWave.
+        /// </summary>
+        internal static string PageTitle_Survey {
+            get {
+                return ResourceManager.GetString("PageTitle_Survey", resourceCulture);
             }
         }
         

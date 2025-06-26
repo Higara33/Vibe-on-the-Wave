@@ -177,4 +177,10 @@
   <data name="Fleet_Beneteau_BowThruster" xml:space="preserve">
     <value>Bow thruster: Yes</value>
   </data>
+  <data name="PageTitle_Fleet" xml:space="preserve">
+    <value>Our Yacht Fleet — Charter &amp; Hire in Montenegro | VibeOfTheWave</value>
+  </data>
+  <data name="Meta_Description_Fleet" xml:space="preserve">
+    <value>Explore our yacht fleet in Montenegro: modern sailing yachts, catamarans, and motorboats for charter and hire. Choose your perfect yacht with VibeOfTheWave and start your adventure on the Adriatic Sea!</value>
+  </data>
 </root>

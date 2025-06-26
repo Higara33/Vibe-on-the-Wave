@@ -201,4 +201,10 @@
   <data name="Tours_Form_Success" xml:space="preserve">
     <value>Thank you! Your request has been sent. We will contact you soon.</value>
   </data>
+  <data name="Meta_Description_Tours" xml:space="preserve">
+    <value>Discover unique yacht tours and sea cruises along the Montenegrin coast. Choose your route, enjoy unforgettable experiences, and explore the Adriatic with professional skippers. Book your adventure with VibeOfTheWave!</value>
+  </data>
+  <data name="PageTitle_Tours" xml:space="preserve">
+    <value>Yacht Tours Montenegro — Sea Adventures &amp; Cruises | VibeOfTheWave</value>
+  </data>
 </root>

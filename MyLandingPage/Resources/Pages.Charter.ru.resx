@@ -120,30 +120,76 @@
   <data name="Charter_Hero_Title" xml:space="preserve">
     <value>Аренда яхт по всему миру без комиссий</value>
   </data>
-  <data name="Charter_Hero_Subtitle"><value>Наши агентские расходы оплачивают владельцы</value></data>
-<data name="Charter_Hero_CTA"><value>Как это работает</value></data>
-<data name="Charter_Benefits_Title"><value>Почему нам доверяют</value></data>
-<data name="Charter_Benefit1_Title"><value>Никаких комиссий</value></data>
-<data name="Charter_Benefit1_Text"><value>Все комиссии оплачивают владельцы, не вы.</value></data>
-<data name="Charter_Benefit2_Title"><value>Лучший выбор</value></data>
-<data name="Charter_Benefit2_Text"><value>Отборные яхты от ведущих компаний.</value></data>
-<data name="Charter_Benefit3_Title"><value>Гарантия безопасности</value></data>
-<data name="Charter_Benefit3_Text"><value>Все договора проверены для вашей защиты.</value></data>
-<data name="Charter_Process_Title"><value>Как арендовать</value></data>
-<data name="Charter_Contact_Title"><value>Готовы арендовать?</value></data>
-<data name="Charter_Contact_Button"><value>Связаться с нами</value></data>
-<data name="Charter_Form_Title"><value>Форма заявки</value></data>
-<data name="Charter_Form_Name"><value>Ваше имя</value></data>
-<data name="Charter_Form_Phone"><value>Телефон</value></data>
-<data name="Charter_Form_Email"><value>Ваш e-mail</value></data>
-<data name="Charter_Form_Country"><value>Страна аренды</value></data>
-<data name="Charter_Form_Type"><value>Тип яхты</value></data>
-<data name="Charter_Type_Mono"><value>Парусная одномачтовая</value></data>
-<data name="Charter_Type_Cat"><value>Катамаран</value></data>
-<data name="Charter_Type_Motor"><value>Моторная яхта</value></data>
-<data name="Charter_Form_Button"><value>Отправить заявку</value></data>
-<data name="Charter_Form_Success"><value>Спасибо! Мы свяжемся с вами в ближайшее время.</value></data>
-<data name="Charter_Process1_Title" xml:space="preserve">
+  <data name="Charter_Hero_Subtitle" xml:space="preserve">
+    <value>Наши агентские расходы оплачивают владельцы</value>
+  </data>
+  <data name="Charter_Hero_CTA" xml:space="preserve">
+    <value>Как это работает</value>
+  </data>
+  <data name="Charter_Benefits_Title" xml:space="preserve">
+    <value>Почему нам доверяют</value>
+  </data>
+  <data name="Charter_Benefit1_Title" xml:space="preserve">
+    <value>Никаких комиссий</value>
+  </data>
+  <data name="Charter_Benefit1_Text" xml:space="preserve">
+    <value>Все комиссии оплачивают владельцы, не вы.</value>
+  </data>
+  <data name="Charter_Benefit2_Title" xml:space="preserve">
+    <value>Лучший выбор</value>
+  </data>
+  <data name="Charter_Benefit2_Text" xml:space="preserve">
+    <value>Отборные яхты от ведущих компаний.</value>
+  </data>
+  <data name="Charter_Benefit3_Title" xml:space="preserve">
+    <value>Гарантия безопасности</value>
+  </data>
+  <data name="Charter_Benefit3_Text" xml:space="preserve">
+    <value>Все договора проверены для вашей защиты.</value>
+  </data>
+  <data name="Charter_Process_Title" xml:space="preserve">
+    <value>Как арендовать</value>
+  </data>
+  <data name="Charter_Contact_Title" xml:space="preserve">
+    <value>Готовы арендовать?</value>
+  </data>
+  <data name="Charter_Contact_Button" xml:space="preserve">
+    <value>Связаться с нами</value>
+  </data>
+  <data name="Charter_Form_Title" xml:space="preserve">
+    <value>Форма заявки</value>
+  </data>
+  <data name="Charter_Form_Name" xml:space="preserve">
+    <value>Ваше имя</value>
+  </data>
+  <data name="Charter_Form_Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="Charter_Form_Email" xml:space="preserve">
+    <value>Ваш e-mail</value>
+  </data>
+  <data name="Charter_Form_Country" xml:space="preserve">
+    <value>Страна аренды</value>
+  </data>
+  <data name="Charter_Form_Type" xml:space="preserve">
+    <value>Тип яхты</value>
+  </data>
+  <data name="Charter_Type_Mono" xml:space="preserve">
+    <value>Парусная одномачтовая</value>
+  </data>
+  <data name="Charter_Type_Cat" xml:space="preserve">
+    <value>Катамаран</value>
+  </data>
+  <data name="Charter_Type_Motor" xml:space="preserve">
+    <value>Моторная яхта</value>
+  </data>
+  <data name="Charter_Form_Button" xml:space="preserve">
+    <value>Отправить заявку</value>
+  </data>
+  <data name="Charter_Form_Success" xml:space="preserve">
+    <value>Спасибо! Мы свяжемся с вами в ближайшее время.</value>
+  </data>
+  <data name="Charter_Process1_Title" xml:space="preserve">
     <value>Шаг 1: Предварительный подбор (1 день)</value>
   </data>
   <data name="Charter_Process2_Title" xml:space="preserve">
@@ -217,5 +263,11 @@
   </data>
   <data name="Charter_Process5_Agency" xml:space="preserve">
     <value>После возвращения яхты и завершения формальностей мы незамедлительно защищаем ваши интересы при любых спорах по депозиту или неожиданным сборам, добиваясь возврата каждого евро, и оказываем послепродажную поддержку, чтобы вы могли полностью расслабиться.</value>
+  </data>
+  <data name="PageTitle_Charter" xml:space="preserve">
+    <value>Аренда яхты в Черногории — подбор под ваши цели | VibeOfTheWave</value>
+  </data>
+  <data name="Meta_Description_Charter" xml:space="preserve">
+    <value>Подберите яхту для аренды в Черногории с VibeOfTheWave! Индивидуальный подбор, поддержка на всех этапах, лучшие цены и проверенные партнёры. Начните морское путешествие с нами — мы найдём идеальную яхту под ваши задачи.</value>
   </data>
 </root>

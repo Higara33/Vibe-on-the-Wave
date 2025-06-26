@@ -61,7 +61,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на About.
+        ///   Ищет локализованную строку, похожую на Yacht Charter in Montenegro.
         /// </summary>
         internal static string Nav_Bareboat_Сharter {
             get {
@@ -142,7 +142,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vibe on the Waves.
+        ///   Ищет локализованную строку, похожую на Vibe of the Wave.
         /// </summary>
         internal static string Site_Title {
             get {

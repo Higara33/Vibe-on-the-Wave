@@ -138,4 +138,11 @@
   <data name="Hero_Title" xml:space="preserve">
     <value>Добро пожаловать на сайт</value>
   </data>
+  <data name="Meta_Description_Index" xml:space="preserve">
+    <value>Яхтинг в Черногории с VibeOfTheWave: чартер яхт без капитана, обучение на шкипера, авторские яхтенные туры. Откройте Адриатику, учитесь управлять яхтой и наслаждайтесь морем!
+</value>
+  </data>
+  <data name="PageTitle_Index" xml:space="preserve">
+    <value>Яхтинг в Черногории — чартер, обучение, туры | VibeOfTheWave</value>
+  </data>
 </root>
