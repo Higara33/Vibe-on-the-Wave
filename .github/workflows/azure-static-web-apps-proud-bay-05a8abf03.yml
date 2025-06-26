@@ -40,7 +40,7 @@ jobs:
           action: upload
 
           # вот тут — готовые статика-артефакты, а не исходники
-          app_artifact_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish/wwwroot"
+          app_artifact_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish"
           skip_app_build: true
 
           # готовые функции с host.json и .azurefunctions
