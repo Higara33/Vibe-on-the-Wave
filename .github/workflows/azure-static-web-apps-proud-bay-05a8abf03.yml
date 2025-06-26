@@ -25,3 +25,5 @@ jobs:
 
           app_location: "MyLandingPage"
           api_location: "FunctionEmailApi"
+
+          output_location: "bin/Release/net8.0/wwwroot"
