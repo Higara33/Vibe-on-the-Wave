@@ -29,11 +29,6 @@ jobs:
             -c Release \
             -o FunctionEmailApi/bin/Release/net8.0/publish
 
-      - name: Copy SWA config into front-artifact
-        run: |
-          cp staticwebapp.config.json \
-             MyLandingPage/bin/Release/net8.0/browser-wasm/publish/wwwroot/
-
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
