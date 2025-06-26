@@ -10,3 +10,6 @@
     font-family: Arial;
     color: #0c5dd3
 }
+.navmenu-header{
+    z-index: 100
+}
