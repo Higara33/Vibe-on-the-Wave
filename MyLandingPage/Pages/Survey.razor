@@ -11,9 +11,9 @@
 @inject IStringLocalizer<Shared.ContactSection> CS
 @inject NavigationManager NavigationManager
 
-<div class="container py-5">
-    <h1 class="mb-4">@L["Survey_Header", GetProgramDisplayName(program)]</h1>
-    <p class="lead mb-5">@L["Survey_Intro"]</p>
+<div class="py-5">
+    <h1 class="container mb-4">@L["Survey_Header", GetProgramDisplayName(program)]</h1>
+    <p class="container lead mb-5">@L["Survey_Intro"]</p>
 
     @* ===== Шаг 1 ===== *@
     @if (step == 1)
@@ -22,12 +22,15 @@
             <DataAnnotationsValidator />
             <ValidationSummary />
 
-            <h4>@L["Step1_Title"]</h4>
-            <p>@L["Step1_Question"]</p>
-            <InputText @bind-Value="m1.Experience" class="form-control mb-2" />
-            <ValidationMessage For="@(() => m1.Experience)" />
+            <div class="w-100 survey-img-1"></div>
+            <div class="container mt-3">
+                <h4>@L["Step1_Title"]</h4>
+                <p>@L["Step1_Question"]</p>
+                <InputText @bind-Value="m1.Experience" class="form-control mb-2" />
+                <ValidationMessage For="@(() => m1.Experience)" />
 
-            <button type="submit" class="btn btn-primary mt-3">@L["Next"] ➔</button>
+                <button type="submit" class="btn btn-primary mt-3">@L["Next"] ➔</button>
+            </div>
         </EditForm>
     }
     @* ===== Шаг 2 ===== *@
@@ -37,14 +40,17 @@
             <DataAnnotationsValidator />
             <ValidationSummary />
 
-            <h4>@L["Step2_Title"]</h4>
-            <p>@L["Step2_Question"]</p>
-            <InputText @bind-Value="m2.Goals" class="form-control mb-2" />
-            <ValidationMessage For="@(() => m2.Goals)" />
+            <div class="w-100 survey-img-1"></div>
+            <div class="container mt-3">
+                <h4>@L["Step2_Title"]</h4>
+                <p>@L["Step2_Question"]</p>
+                <InputText @bind-Value="m2.Goals" class="form-control mb-2" />
+                <ValidationMessage For="@(() => m2.Goals)" />
 
-            <div class="mt-3">
-                <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep1">← @L["Back"]</button>
-                <button type="submit" class="btn btn-primary">@L["Next"] ➔</button>
+                <div class="mt-3">
+                    <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep1">← @L["Back"]</button>
+                    <button type="submit" class="btn btn-primary">@L["Next"] ➔</button>
+                </div>
             </div>
         </EditForm>
     }
@@ -55,14 +61,17 @@
             <DataAnnotationsValidator />
             <ValidationSummary />
 
-            <h4>@L["Step3_Title"]</h4>
-            <p>@L["Step3_Question"]</p>
-            <InputText @bind-Value="m3.Dates" class="form-control mb-2" />
-            <ValidationMessage For="@(() => m3.Dates)" />
+            <div class="w-100 survey-img-1"></div>
+            <div class="container mt-3">
+                <h4>@L["Step3_Title"]</h4>
+                <p>@L["Step3_Question"]</p>
+                <InputText @bind-Value="m3.Dates" class="form-control mb-2" />
+                <ValidationMessage For="@(() => m3.Dates)" />
 
-            <div class="mt-3">
-                <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep2">← @L["Back"]</button>
-                <button type="submit" class="btn btn-primary">@L["Next"] ➔</button>
+                <div class="mt-3">
+                    <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep2">← @L["Back"]</button>
+                    <button type="submit" class="btn btn-primary">@L["Next"] ➔</button>
+                </div>
             </div>
         </EditForm>
     }
@@ -73,14 +82,17 @@
             <DataAnnotationsValidator />
             <ValidationSummary />
 
-            <h4>@L["Step4_Title"]</h4>
-            <p>@L["Step4_Question"]</p>
-            <InputText @bind-Value="m4.GroupSize" class="form-control mb-2" />
-            <ValidationMessage For="@(() => m4.GroupSize)" />
+            <div class="w-100 survey-img-1"></div>
+            <div class="container mt-3">
+                <h4>@L["Step4_Title"]</h4>
+                <p>@L["Step4_Question"]</p>
+                <InputText @bind-Value="m4.GroupSize" class="form-control mb-2" />
+                <ValidationMessage For="@(() => m4.GroupSize)" />
 
-            <div class="mt-3">
-                <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep3">← @L["Back"]</button>
-                <button type="submit" class="btn btn-primary">@L["Next"] ➔</button>
+                <div class="mt-3">
+                    <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep3">← @L["Back"]</button>
+                    <button type="submit" class="btn btn-primary">@L["Next"] ➔</button>
+                </div>
             </div>
         </EditForm>
     }
@@ -91,14 +103,17 @@
             <DataAnnotationsValidator />
             <ValidationSummary />
 
-            <h4>@L["Step5_Title"]</h4>
-            <p>@L["Step5_Question"]</p>
-            <InputText @bind-Value="m5.ContactInfo" class="form-control mb-2" />
-            <ValidationMessage For="@(() => m5.ContactInfo)" />
+            <div class="w-100 survey-img-1"></div>
+            <div class="container mt-3">
+                <h4>@L["Step5_Title"]</h4>
+                <p>@L["Step5_Question"]</p>
+                <InputText @bind-Value="m5.ContactInfo" class="form-control mb-2" />
+                <ValidationMessage For="@(() => m5.ContactInfo)" />
 
-            <div class="mt-3">
-                <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep4">← @L["Back"]</button>
-                <button type="submit" class="btn btn-success">✔ @L["Submit"]</button>
+                <div class="mt-3">
+                    <button type="button" class="btn btn-secondary me-2" @onclick="GoToStep4">← @L["Back"]</button>
+                    <button type="submit" class="btn btn-success">✔ @L["Submit"]</button>
+                </div>
             </div>
         </EditForm>
     }
