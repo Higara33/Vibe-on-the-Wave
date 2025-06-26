@@ -29,9 +29,9 @@ jobs:
             -c Release \
             -o FunctionEmailApi/bin/Release/net8.0/publish
 
-      - name: Publish Azure Function API
+      - name: Function API CHECK
         run: |
-          ls -la FunctionEmailApi/bin/Release/net8.0/publish 
+          ls -la FunctionEmailApi
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
@@ -48,4 +48,4 @@ jobs:
           skip_app_build: true
 
           # готовые функции с host.json и .azurefunctions
-          api_location: "FunctionEmailApi/bin/Release/net8.0/publish"
+          api_location: "FunctionEmailApi"
