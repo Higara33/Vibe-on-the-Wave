@@ -136,6 +136,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Content Update="wwwroot\staticwebapp.config.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <EmbeddedResource Update="Resources\Pages.BareboatCharter.ru.resx">
 	    <Generator></Generator>
 	  </EmbeddedResource>

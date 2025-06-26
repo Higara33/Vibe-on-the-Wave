@@ -1,0 +1,51 @@
+name: Azure Static Web Apps CI/CD
+
+on:
+  push:
+    branches:
+      - prod
+
+jobs:
+  build_and_deploy_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Publish Blazor WebAssembly
+        run: |
+          dotnet publish MyLandingPage/MyLandingPage.csproj \
+            -c Release \
+            -o MyLandingPage/bin/Release/net8.0/browser-wasm/publish
+
+      - name: Publish Azure Function API
+        run: |
+          dotnet publish FunctionEmailApi/FunctionEmailApi.csproj \
+            -c Release \
+            -o FunctionEmailApi/bin/Release/net8.0/publish
+
+      - name: Function API CHECK
+        run: |
+          ls -la FunctionEmailApi
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          # токен для деплоя
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_PROUD_BAY_05A8ABF03 }}
+          # нужен, чтобы Action имел доступ к PR-метаданным (опционально, но полезно)
+          repo_token:                       ${{ secrets.GITHUB_TOKEN }}
+
+          action: upload
+
+          # вот тут — готовые статика-артефакты, а не исходники
+          app_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish/wwwroot"
+          skip_app_build: true
+
+          # готовые функции с host.json и .azurefunctions
+          api_location: "FunctionEmailApi"

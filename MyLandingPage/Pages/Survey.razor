@@ -166,7 +166,7 @@
         };
 
         // 3) Асинхронный вызов API
-        var response = await Http.PostAsJsonAsync("api/SendMail", dto);
+        var response = await Http.PostAsJsonAsync("/api/SendMail", dto);
 
         if (response.IsSuccessStatusCode)
         {

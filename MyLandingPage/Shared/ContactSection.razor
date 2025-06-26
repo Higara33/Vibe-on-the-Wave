@@ -182,7 +182,7 @@
                 IsHtml = true
             };
 
-            var response = await Http.PostAsJsonAsync("api/SendMail", dto);
+            var response = await Http.PostAsJsonAsync("/api/SendMail", dto);
             if (response.IsSuccessStatusCode)
             {
                 isSent = true;
