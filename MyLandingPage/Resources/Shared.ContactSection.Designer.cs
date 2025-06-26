@@ -70,7 +70,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на ul. Morskaya 1, 0 km from marinas.
+        ///   Ищет локализованную строку, похожую на Jeremenkova 1410/14 Praha 4.
         /// </summary>
         internal static string Contact_Address_Value {
             get {
@@ -79,7 +79,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Email.
+        ///   Ищет локализованную строку, похожую на E-mail.
         /// </summary>
         internal static string Contact_Email_Title {
             get {
@@ -88,7 +88,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на annushcz@gmail.com.
+        ///   Ищет локализованную строку, похожую на duha3222@gmail.com.
         /// </summary>
         internal static string Contact_Email_Value {
             get {
@@ -97,7 +97,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на https://www.google.com/maps?q=50.0463574,14.4390276&amp;z=16&amp;;output=embed.
+        ///   Ищет локализованную строку, похожую на https://www.google.com/maps?q=50.0463574,14.4390276&amp;z=16&amp;output=embed.
         /// </summary>
         internal static string Contact_Map_Embed {
             get {

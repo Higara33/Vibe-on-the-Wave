@@ -1,0 +1,30 @@
+{
+  "version": "2.0",
+
+  "extensions": {
+    "http": {
+      "routePrefix": "api"
+    }
+  },
+
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      },
+      "enableLiveMetricsFilters": true
+    }
+  },
+
+  "host": {
+    "cors": {
+      "allowedOrigins": [
+        "http://localhost:5000",
+        "https://localhost:5001",
+        "https://localhost:44335"
+      ],
+      "supportCredentials": false
+    }
+  }
+}

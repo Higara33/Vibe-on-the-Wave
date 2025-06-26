@@ -3,12 +3,13 @@
 
 @using Microsoft.JSInterop
 @using Microsoft.Extensions.Localization
-@using MyLandingPage.Services.Interfaces
+@using System.Net.Http.Json
+
 @inject IStringLocalizer<Pages.Charter> L
 @inject IJSRuntime JS
 @inject IStringLocalizer<Shared.ContactSection> CS
-@inject IEmailService EmailService
 @inject NavigationManager NavigationManager
+@inject HttpClient Http
 
 <!-- Hero-блок -->
 <section class="position-relative text-white text-center d-flex align-items-center justify-content-center"
@@ -145,13 +146,34 @@
   CharterRequest req = new();
   bool formSent;
 
-  async Task OnSubmit() {
-    var subject = $"Charter request from {req.Name}";
-    var body = $"Name: {req.Name}\nPhone: {req.Phone}\nEmail: {req.Email}\n" +
-               $"Country: {req.Country}\nYacht: {req.YachtType}";
-    await EmailService.SendEmailAsync(CS["Contact_Email_Value"], subject, body);
-    formSent = true;
-  }
+    async Task OnSubmit()
+    {
+        var subject = $"Charter request from {req.Name}";
+        var body = $"Name: {req.Name}\n" +
+                      $"Phone: {req.Phone}\n" +
+                      $"Email: {req.Email}\n" +
+                      $"Country: {req.Country}\n" +
+                      $"Yacht: {req.YachtType}";
+
+        var dto = new
+        {
+            To = CS["Contact_Email_Value"].Value,
+            Subject = subject,
+            Body = body,
+            IsHtml = false
+        };
+
+        var response = await Http.PostAsJsonAsync("api/SendMail", dto);
+        if (response.IsSuccessStatusCode)
+        {
+            formSent = true;
+        }
+        else
+        {
+            var error = await response.Content.ReadAsStringAsync();
+            Console.Error.WriteLine($"Mail API error: {error}");
+        }
+    }
 
     [Parameter]
     public string? culture { get; set; }

@@ -5,14 +5,14 @@
 @using Microsoft.AspNetCore.Components
 @using Microsoft.JSInterop
 @using Microsoft.Extensions.Localization
-@using MyLandingPage.Services.Interfaces
 @using System.ComponentModel.DataAnnotations
+@using System.Net.Http.Json
 
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JS
 @inject IStringLocalizer<Pages.Tours> L
 @inject IStringLocalizer<Shared.ContactSection> CS
-@inject IEmailService EmailService
+@inject HttpClient Http
 
 <style>
     /* Hero styling */
@@ -228,16 +228,32 @@
     {
         var subject = $"Tour request from {request.Name}";
         var body =
-          $"Name: {request.Name}\n" +
-          $"Phone: {request.Phone}\n" +
-          $"Email: {request.Email}\n" +
-          $"Date: {request.Date:yyyy-MM-dd}\n" +
-          $"Guests: {request.Guests}";
-        await EmailService.SendEmailAsync(
-          CS["Contact_Email_Value"],
-          subject,
-          body
-        );
-        formSent = true;
+            $"Name: {request.Name}\n" +
+            $"Phone: {request.Phone}\n" +
+            $"Email: {request.Email}\n" +
+            $"Date: {request.Date:yyyy-MM-dd}\n" +
+            $"Guests: {request.Guests}";
+
+        // Формируем DTO для API
+        var dto = new
+        {
+            To = CS["Contact_Email_Value"].Value, // ваш e-mail из локализации
+            Subject = subject,
+            Body = body,
+            IsHtml = false
+        };
+
+        // POST /api/SendMail
+        var resp = await Http.PostAsJsonAsync("api/SendMail", dto);
+        if (resp.IsSuccessStatusCode)
+        {
+            formSent = true;
+        }
+        else
+        {
+            // можно вывести ошибку, например:
+            var error = await resp.Content.ReadAsStringAsync();
+            Console.Error.WriteLine($"Mail API error: {error}");
+        }
     }
 }

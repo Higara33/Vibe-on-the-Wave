@@ -4,7 +4,11 @@
 @using System.Globalization
 @using Microsoft.AspNetCore.Components.Forms
 @using System.ComponentModel.DataAnnotations
+@using System.Net.Http.Json
+
+@inject HttpClient Http
 @inject IStringLocalizer<Pages.Survey> L
+@inject IStringLocalizer<Shared.ContactSection> CS
 @inject NavigationManager NavigationManager
 
 <div class="container py-5">
@@ -140,10 +144,40 @@
     void GoToStep4() => step = 4;
     void GoToStep5() => step = 5;
 
-    void Submit()
+    private async Task Submit()
     {
-        // Здесь вы можете собрать данные из m1…m5 и отправить
-        step = 6;
+        // 1) Собирать данные из моделей m1…m5
+        var subject = $"Survey submission for {program}";
+        var body =
+            $"Program: {program}\n" +
+            $"Experience: {m1.Experience}\n" +
+            $"Goals: {m2.Goals}\n" +
+            $"Dates: {m3.Dates}\n" +
+            $"GroupSize: {m4.GroupSize}\n" +
+            $"ContactInfo: {m5.ContactInfo}\n";
+
+        // 2) DTO для API
+        var dto = new
+        {
+            To = CS["Contact_Email_Value"].Value,   // e-mail получателя из локализации
+            Subject = subject,
+            Body = body,
+            IsHtml = false
+        };
+
+        // 3) Асинхронный вызов API
+        var response = await Http.PostAsJsonAsync("api/SendMail", dto);
+
+        if (response.IsSuccessStatusCode)
+        {
+            step = 6;    // перейти к «Спасибо»
+        }
+        else
+        {
+            var error = await response.Content.ReadAsStringAsync();
+            Console.Error.WriteLine($"Mail API error: {error}");
+            // TODO: можно показать уведомление об ошибке
+        }
     }
 
     void GoHome() => NavigationManager.NavigateTo($"{culture}", false);
