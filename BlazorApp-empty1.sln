@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLandingPage", "MyLandingPage\MyLandingPage.csproj", "{0003F332-D730-1DBF-8E74-DAD5274A85B5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionEmailApi", "FunctionEmailApi\FunctionEmailApi.csproj", "{3D9F0DB9-0E23-44B2-B2C7-4751A3E2598E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{0003F332-D730-1DBF-8E74-DAD5274A85B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0003F332-D730-1DBF-8E74-DAD5274A85B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0003F332-D730-1DBF-8E74-DAD5274A85B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D9F0DB9-0E23-44B2-B2C7-4751A3E2598E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9F0DB9-0E23-44B2-B2C7-4751A3E2598E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9F0DB9-0E23-44B2-B2C7-4751A3E2598E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9F0DB9-0E23-44B2-B2C7-4751A3E2598E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D9F0DB9-0E23-44B2-B2C7-4751A3E2598E} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0BAA9D6B-CE7F-42EC-857A-5C058B0D4AC8}

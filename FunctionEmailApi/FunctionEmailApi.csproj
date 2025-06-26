@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+    <OutputType>Exe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="MailKit" Version="4.13.0" />
+    <!-- Application Insights isn't enabled by default. See https://aka.ms/AAt8mw4. -->
+    <!-- <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.22.0" /> -->
+    <!-- <PackageReference Include="Microsoft.Azure.Functions.Worker.ApplicationInsights" Version="2.0.0" /> -->
+	  <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.16.0" OutputItemType="Analyzer" />
+
+	  <!-- Core Functions Worker -->
+	  <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.16.0" />
+
+	  <!-- HTTP trigger support -->
+	  <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
+  </ItemGroup>
+
+	<Import Project="$(NuGetPackageRoot)microsoft.azure.functions.worker.sdk\1.16.0\build\native\Microsoft.Azure.Functions.Worker.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.azure.functions.worker.sdk\1.16.0\build\native\Microsoft.Azure.Functions.Worker.Sdk.props')" />
+	<Import Project="$(NuGetPackageRoot)microsoft.azure.functions.worker.sdk\1.16.0\build\native\Microsoft.Azure.Functions.Worker.Sdk.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.azure.functions.worker.sdk\1.16.0\build\native\Microsoft.Azure.Functions.Worker.Sdk.targets')" />
+</Project>
