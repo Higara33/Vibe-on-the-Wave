@@ -55,19 +55,20 @@
         <div class="row gy-4">
             @for (int i = 1; i <= 5; i++)
             {
-                <div class="col-md-6 col-lg-4 d-flex">
+                <div class="col-md-6 col-lg-4">
                     <div class="charter-step-card d-flex flex-column w-100">
                         <div class="step-badge">@i</div>
                         <h5 class="step-title text-center">@L[$"Charter_Process{i}_Title"]</h5>
+                        <div class="d-flex flex-column">
+                            <div class="step-block user-block">
+                                <strong>@L[$"Charter_Process{i}_User_Label"]</strong>
+                                <p>@L[$"Charter_Process{i}_User"]</p>
+                            </div>
 
-                        <div class="step-block user-block">
-                            <strong>@L[$"Charter_Process{i}_User_Label"]</strong>
-                            <p>@L[$"Charter_Process{i}_User"]</p>
-                        </div>
-
-                        <div class="step-block agency-block mt-auto">
-                            <strong>@L[$"Charter_Process{i}_Agency_Label"]</strong>
-                            <p>@L[$"Charter_Process{i}_Agency"]</p>
+                            <div class="step-block agency-block">
+                                <strong>@L[$"Charter_Process{i}_Agency_Label"]</strong>
+                                <p>@L[$"Charter_Process{i}_Agency"]</p>
+                            </div>
                         </div>
                     </div>
                 </div>
