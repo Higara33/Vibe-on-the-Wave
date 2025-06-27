@@ -1,3 +1,4 @@
+
 name: Azure Static Web Apps CI/CD
 
 on:
@@ -22,17 +23,14 @@ jobs:
           dotnet publish MyLandingPage/MyLandingPage.csproj \
             -c Release \
             -o MyLandingPage/bin/Release/net8.0/browser-wasm/publish
-
       - name: Publish Azure Function API
         run: |
           dotnet publish FunctionEmailApi/FunctionEmailApi.csproj \
             -c Release \
             -o FunctionEmailApi/bin/Release/net8.0/publish
-
       - name: Function API CHECK
         run: |
           ls -la FunctionEmailApi
-
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -47,5 +45,5 @@ jobs:
           app_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish/wwwroot"
           skip_app_build: true
 
-          api_location: "FunctionEmailApi/bin/Release/net8.0/publish"
-          skip_api_build: true
+          # готовые функции с host.json и .azurefunctions
+          api_location: "FunctionEmailApi"
