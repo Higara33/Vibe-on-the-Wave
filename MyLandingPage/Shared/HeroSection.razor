@@ -8,8 +8,19 @@
         <h1 class="display-4 fw-bold">@L["Hero_Headline"]</h1>
         <p class="lead mt-3">@L["Hero_Subheadline"]</p>
         <button class="btn btn-primary btn-lg mt-4"
-                @onclick='() => NavigationManager.NavigateTo(" programs")'>
+                @onclick="@GoToPrograms">
             @L["Hero_CTA"]
         </button>
     </div>
 </section>
+
+@code {
+    private void GoToPrograms()
+    {
+        var uri = new Uri(NavigationManager.Uri);
+        var segments = uri.AbsolutePath.Split('/', StringSplitOptions.RemoveEmptyEntries);
+        var supportedLangs = new[] { "en", "ru" };
+        var lang = supportedLangs.Contains(segments.FirstOrDefault()) ? segments.First() : "en";
+        NavigationManager.NavigateTo($"/{lang}/programs");
+    }
+}
