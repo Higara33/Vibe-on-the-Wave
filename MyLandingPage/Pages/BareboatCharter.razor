@@ -152,6 +152,16 @@
     </div>
 </section>
 
+<!-- CTA без затемнения -->
+<section id="bareboat-contact-cta" class="py-5 text-center text-white">
+    <div class="container">
+        <h2 class="fw-bold mb-4">@L["Bareboat_Contact_Title"]</h2>
+        <button class="btn btn-light btn-lg" @onclick='() => JS.InvokeVoidAsync("scrollToSection", "bareboat-form")'>
+            @L["Bareboat_Contact_Button"]
+        </button>
+    </div>
+</section>
+
 <!-- Дополнительные опции -->
 <section id="bareboat-extras" class="py-5 bg-light diagonal">
     <div class="container">
@@ -169,16 +179,6 @@
                 </div>
             }
         </div>
-    </div>
-</section>
-
-<!-- CTA без затемнения -->
-<section id="bareboat-contact-cta" class="py-5 text-center text-white">
-    <div class="container">
-        <h2 class="fw-bold mb-4">@L["Bareboat_Contact_Title"]</h2>
-        <button class="btn btn-light btn-lg" @onclick='() => JS.InvokeVoidAsync("scrollToSection", "bareboat-form")'>
-            @L["Bareboat_Contact_Button"]
-        </button>
     </div>
 </section>
 

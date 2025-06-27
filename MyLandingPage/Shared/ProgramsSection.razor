@@ -1,7 +1,10 @@
 ﻿@namespace MyLandingPage.Shared
+
 @using Microsoft.Extensions.Localization
 @using Microsoft.AspNetCore.Components.Routing
+
 @inject IStringLocalizer<Shared.ProgramsSection> L
+@inject NavigationManager NavigationManager
 
 <section id="programs-section" class="py-5">
     <div class="container">
@@ -38,7 +41,7 @@
                                     </button>
 
                                     <!-- Кнопка Select course -->
-                                    <NavLink class="btn btn-primary" href="survey/sail">
+                                    <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/sail")">
                                         @L["Programs_SelectCourse"]
                                     </NavLink>
                                 </div>
@@ -87,7 +90,7 @@
                                         @onclick="() => isInfoOpen_power_standard = true">
                                     @L["Programs_InfoLink"] ➾
                                 </button>
-                                <NavLink class="btn btn-primary" href="survey/power">
+                                <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/power")">
                                     @L["Programs_SelectCourse"]
                                 </NavLink>
                             </div>
@@ -114,7 +117,7 @@
                                         @onclick="() => isInfoOpen_catamaran_comingsoon = true">
                                     @L["Programs_InfoLink"] ➾
                                 </button>
-                                <NavLink class="btn btn-primary" href="survey/catamaran">
+                                <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/catamaran")">
                                     @L["Programs_SelectCourse"]
                                 </NavLink>
                             </div>
@@ -145,7 +148,7 @@
                                     @onclick="() => showVariants_sailpower = !showVariants_sailpower">
                                 @L["Programs_InfoLink"] ➾
                             </button>
-                            <NavLink class="btn btn-primary" href="survey/sailpower">
+                            <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/sailpower")">
                                 @L["Programs_SelectCourse"]
                             </NavLink>
                         </div>
@@ -190,7 +193,7 @@
                                     @onclick="() => isInfoOpen_individual_comingsoon = true">
                                 @L["Programs_InfoLink"] ➾
                             </button>
-                            <NavLink class="btn btn-primary" href="survey/individual">
+                            <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/individual")">
                                 @L["Programs_SelectCourse"]
                             </NavLink>
                         </div>
@@ -225,7 +228,7 @@
                                     @L["Programs_InfoLink"] ➾
                                 </button>
                                 <!-- Подобрать курс -->
-                                <NavLink class="btn btn-primary" href="survey/sail">
+                                <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/sail")"">
                                     @L["Programs_SelectCourse"]
                                 </NavLink>
                             </div>
@@ -251,7 +254,7 @@
                                     @L["Programs_InfoLink"] ➾
                                 </button>
                                 <!-- Подобрать курс -->
-                                <NavLink class="btn btn-primary" href="survey/power">
+                                <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/power")">
                                     @L["Programs_SelectCourse"]
                                 </NavLink>
                             </div>
@@ -277,7 +280,7 @@
                                         @onclick="() => isInfoOpen_catamaran_comingsoon = true">
                                     @L["Programs_InfoLink"] ➾
                                 </button>
-                                <NavLink class="btn btn-primary" href="survey/catamaran">
+                                <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/catamaran")">
                                     @L["Programs_SelectCourse"]
                                 </NavLink>
                             </div>
@@ -322,7 +325,7 @@
                                     @onclick="() => isInfoOpen_level_coastal = true">
                                 @L["Programs_InfoLink"] ➾
                             </button>
-                            <NavLink class="btn btn-primary" href="survey/levelup">
+                            <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/levelup")">
                                 @L["Programs_SelectCourse"]
                             </NavLink>
                             </div>
@@ -352,7 +355,7 @@
                                     @onclick="() => isInfoOpen_level_ocean = true">
                                 @L["Programs_InfoLink"] ➾
                             </button>
-                            <NavLink class="btn btn-primary" href="survey/levelup">
+                            <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/levelup")">
                                 @L["Programs_SelectCourse"]
                             </NavLink>
                             </div>
@@ -382,7 +385,7 @@
                                     @onclick="() => isInfoOpen_level_weekend = true">
                                 @L["Programs_InfoLink"] ➾
                             </button>
-                            <NavLink class="btn btn-primary" href="survey/levelup">
+                            <NavLink class="btn btn-primary" href="@($"{CurrentCulture}/survey/levelup")">
                                 @L["Programs_SelectCourse"]
                             </NavLink>
                             </div>
@@ -423,4 +426,15 @@
     bool isInfoOpen_level_coastal;
     bool isInfoOpen_level_ocean;
     bool isInfoOpen_level_weekend;
+
+    private string CurrentCulture
+    {
+        get
+        {
+            var uri = new Uri(NavigationManager.Uri);
+            var segments = uri.AbsolutePath.Split('/', StringSplitOptions.RemoveEmptyEntries);
+            var supportedLangs = new[] { "en", "ru" };
+            return supportedLangs.Contains(segments.FirstOrDefault()) ? $"/{segments.First()}" : "/en";
+        }
+    }
 }
