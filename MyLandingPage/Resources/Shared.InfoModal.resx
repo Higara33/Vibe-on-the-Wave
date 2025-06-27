@@ -151,7 +151,7 @@
     <value>10 days</value>
   </data>
   <data name="sail_standard_Price" xml:space="preserve">
-    <value>1 450 €</value>
+    <value>1 850 €</value>
   </data>
   <data name="sail_vip_Title" xml:space="preserve">
     <value>Program “VIP”</value>
@@ -169,7 +169,7 @@
     <value>7 days</value>
   </data>
   <data name="sail_vip_Price" xml:space="preserve">
-    <value>6 050 €</value>
+    <value>6 450 €</value>
   </data>
   <data name="sail_vip_Subtitle" xml:space="preserve">
     <value>Individual &amp; intensive for busy people</value>
@@ -196,7 +196,7 @@
     <value>3 days</value>
   </data>
   <data name="power_standard_Price" xml:space="preserve">
-    <value>1 350 €</value>
+    <value>1 750 €</value>
   </data>
   <data name="power_motorplus_Title" xml:space="preserve">
     <value>Program “Motor+”</value>
@@ -238,7 +238,7 @@
     <value>13 days</value>
   </data>
   <data name="sailpower_standard_Price" xml:space="preserve">
-    <value>2 300 €</value>
+    <value>2 700 €</value>
   </data>
   <data name="sailpower_vip_Title" xml:space="preserve">
     <value>Program “Power + Sail VIP”</value>
@@ -259,7 +259,7 @@
     <value>10 days</value>
   </data>
   <data name="sailpower_vip_Price" xml:space="preserve">
-    <value>8 060 €</value>
+    <value>8 460 €</value>
   </data>
   <data name="sail_advanced_Title" xml:space="preserve">
     <value>Program “Sail+”</value>
@@ -280,7 +280,7 @@
     <value>7 days</value>
   </data>
   <data name="sail_advanced_Price" xml:space="preserve">
-    <value>1 150 €</value>
+    <value>1 550 €</value>
   </data>
   <data name="power_advanced_Title" xml:space="preserve">
     <value>Program “Motor+”</value>
@@ -301,7 +301,7 @@
     <value>5 days</value>
   </data>
   <data name="power_advanced_Price" xml:space="preserve">
-    <value>850 €</value>
+    <value>1 250 €</value>
   </data>
   <data name="catamaran_comingsoon_Title" xml:space="preserve">
     <value>Coming soon</value>
@@ -330,11 +330,21 @@
   <data name="individual_comingsoon_Subtitle" xml:space="preserve">
     <value>We are working on this course. Please check back later.</value>
   </data>
-  <data name="individual_comingsoon_Option1" xml:space="preserve"><value>—</value></data>
-  <data name="individual_comingsoon_Option2" xml:space="preserve"><value>—</value></data>
-  <data name="individual_comingsoon_Option3" xml:space="preserve"><value>—</value></data>
-  <data name="individual_comingsoon_Duration" xml:space="preserve"><value>—</value></data>
-  <data name="individual_comingsoon_Price" xml:space="preserve"><value>—</value></data>
+  <data name="individual_comingsoon_Option1" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="individual_comingsoon_Option2" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="individual_comingsoon_Option3" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="individual_comingsoon_Duration" xml:space="preserve">
+    <value>—</value>
+  </data>
+  <data name="individual_comingsoon_Price" xml:space="preserve">
+    <value>—</value>
+  </data>
   <data name="level_coastal_Title" xml:space="preserve">
     <value>Yachtmaster Coastal Course</value>
   </data>
@@ -354,7 +364,7 @@
     <value>7 days</value>
   </data>
   <data name="level_coastal_Price" xml:space="preserve">
-    <value>1 150 €</value>
+    <value>1 550 €</value>
   </data>
   <data name="level_ocean_Title" xml:space="preserve">
     <value>Atlantic Passage Training</value>
@@ -375,7 +385,7 @@
     <value>3 weeks</value>
   </data>
   <data name="level_ocean_Price" xml:space="preserve">
-    <value>2 750 €</value>
+    <value>3 150 €</value>
   </data>
   <data name="level_weekend_Title" xml:space="preserve">
     <value>Weekend Sailing Workshops</value>
@@ -396,6 +406,6 @@
     <value>4 hours</value>
   </data>
   <data name="level_weekend_Price" xml:space="preserve">
-    <value>70 €</value>
+    <value>470 €</value>
   </data>
 </root>

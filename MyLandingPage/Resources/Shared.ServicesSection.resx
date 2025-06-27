@@ -121,11 +121,38 @@
     <value>What We Offer</value>
   </data>
   <data name="Services_List" xml:space="preserve">
-  <value>
+    <value>
     yacht-school::Yacht School::Become a certified sailor with our comprehensive courses|
     yacht-charter::Yacht Charter::Charter a yacht for your own adventure|
     yachting-in-montenegro::Yachting in Montenegro::Bareboat charter from Porto Montenegro|
     tours-celebrations::Tours &amp; Celebrations::Host your celebration on a yacht – captain, route and vessel provided. You bring the fun
   </value>
-</data>
+  </data>
+  <data name="Service1_Title" xml:space="preserve">
+    <value>Yacht School</value>
+  </data>
+  <data name="Service1_Desc" xml:space="preserve">
+    <value>Learn to sail from scratch and earn international certification.</value>
+  </data>
+  <data name="Service2_Title" xml:space="preserve">
+    <value>Yacht Charter</value>
+  </data>
+  <data name="Service2_Desc" xml:space="preserve">
+    <value>Rent modern yachts and catamarans with full service and support.</value>
+  </data>
+  <data name="Service3_Title" xml:space="preserve">
+    <value>Yacht Tours</value>
+  </data>
+  <data name="Service3_Desc" xml:space="preserve">
+    <value>Unique routes, adventures, and sea holidays for families and friends.</value>
+  </data>
+  <data name="Service4_Title" xml:space="preserve">
+    <value>Bareboat Charter Montenegro</value>
+  </data>
+  <data name="Service4_Desc" xml:space="preserve">
+    <value>Rent a yacht without a skipper for experienced sailors. Sail Montenegro on your own!</value>
+  </data>
+  <data name="Service_LearnMore" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
 </root>

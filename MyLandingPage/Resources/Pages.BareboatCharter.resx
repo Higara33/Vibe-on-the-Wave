@@ -136,7 +136,7 @@
     <value>8 identical sailing yachts (and one motor yacht) at 5★ Porto Montenegro marina</value>
   </data>
   <data name="Bareboat_Rate1" xml:space="preserve">
-    <value>until March 30 — 1 900 €</value>
+    <value>until March 30 — 2 300 €</value>
   </data>
   <data name="Bareboat_Rates_Subtitle" xml:space="preserve">
     <value>Price for 1 week of charter. Standard charter week is from 17:00 Saturday to 10:00 next Saturday.</value>
@@ -148,25 +148,25 @@
     <value>Yachting in Montenegro</value>
   </data>
   <data name="Bareboat_Rate2" xml:space="preserve">
-    <value>Mar 30 – Apr 22 — 2 400 €</value>
+    <value>Mar 30 – Apr 22 — 2 700 €</value>
   </data>
   <data name="Bareboat_Rate3" xml:space="preserve">
-    <value>Apr 22 – Jun 15 — 2 900 €</value>
+    <value>Apr 22 – Jun 15 — 3 300 €</value>
   </data>
   <data name="Bareboat_Rate4" xml:space="preserve">
-    <value>Jun 15 – Jun 29 — 3 300 €</value>
+    <value>Jun 15 – Jun 29 — 3 700 €</value>
   </data>
   <data name="Bareboat_Rate5" xml:space="preserve">
-    <value>Jun 29 – Aug 24 — 3 900 €</value>
+    <value>Jun 29 – Aug 24 — 4 300 €</value>
   </data>
   <data name="Bareboat_Rate6" xml:space="preserve">
-    <value>Aug 24 – Oct 5 — 3 300 €</value>
+    <value>Aug 24 – Oct 5 — 3 700 €</value>
   </data>
   <data name="Bareboat_Rate7" xml:space="preserve">
-    <value>Oct 5 – Nov 9 — 2 600 €</value>
+    <value>Oct 5 – Nov 9 — 3 000 €</value>
   </data>
   <data name="Bareboat_Rate8" xml:space="preserve">
-    <value>from Nov 9 — 1 900 €</value>
+    <value>from Nov 9 — 2 300 €</value>
   </data>
   <data name="Bareboat_Included_Title" xml:space="preserve">
     <value>Included in price</value>
@@ -223,25 +223,25 @@
     <value>Additionally</value>
   </data>
   <data name="Bareboat_Extra_Skipper_Title" xml:space="preserve">
-    <value>Skipper – €140 per day (plus meals)</value>
+    <value>Skipper – €540 per day (plus meals)</value>
   </data>
   <data name="Bareboat_Extra_Skipper_Text" xml:space="preserve">
     <value>If you don’t have a skipper license, you can rent with a captain.</value>
   </data>
   <data name="Bareboat_Extra_Gennaker_Title" xml:space="preserve">
-    <value>Gennaker – €200 per week (deposit €1000)</value>
+    <value>Gennaker – €600 per week (deposit €1000)</value>
   </data>
   <data name="Bareboat_Extra_Gennaker_Text" xml:space="preserve">
     <value>Halyard and sheets are provided.</value>
   </data>
   <data name="Bareboat_Extra_Fishing_Title" xml:space="preserve">
-    <value>Fishing gear – €50 per week</value>
+    <value>Fishing gear – €450 per week</value>
   </data>
   <data name="Bareboat_Extra_Fishing_Text" xml:space="preserve">
     <value>Includes a trolling rod with reel and line, a set of lures, a gaff, and a rod holder for the rail.</value>
   </data>
   <data name="Bareboat_Extra_Poker_Title" xml:space="preserve">
-    <value>Poker set – €10 per week</value>
+    <value>Poker set – €50 per week</value>
   </data>
   <data name="Bareboat_Extra_Poker_Text" xml:space="preserve">
     <value>If you have nothing to do in the evenings.</value>

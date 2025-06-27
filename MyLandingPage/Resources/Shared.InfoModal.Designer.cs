@@ -61,6 +61,69 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string catamaran_comingsoon_Duration {
+            get {
+                return ResourceManager.GetString("catamaran_comingsoon_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string catamaran_comingsoon_Option1 {
+            get {
+                return ResourceManager.GetString("catamaran_comingsoon_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string catamaran_comingsoon_Option2 {
+            get {
+                return ResourceManager.GetString("catamaran_comingsoon_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string catamaran_comingsoon_Option3 {
+            get {
+                return ResourceManager.GetString("catamaran_comingsoon_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string catamaran_comingsoon_Price {
+            get {
+                return ResourceManager.GetString("catamaran_comingsoon_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We are working on this course. Please check back later..
+        /// </summary>
+        internal static string catamaran_comingsoon_Subtitle {
+            get {
+                return ResourceManager.GetString("catamaran_comingsoon_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coming soon.
+        /// </summary>
+        internal static string catamaran_comingsoon_Title {
+            get {
+                return ResourceManager.GetString("catamaran_comingsoon_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Close.
         /// </summary>
         internal static string Close {
@@ -84,6 +147,258 @@ namespace MyLandingPage.Resources {
         internal static string Duration_Label {
             get {
                 return ResourceManager.GetString("Duration_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string individual_comingsoon_Duration {
+            get {
+                return ResourceManager.GetString("individual_comingsoon_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string individual_comingsoon_Option1 {
+            get {
+                return ResourceManager.GetString("individual_comingsoon_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string individual_comingsoon_Option2 {
+            get {
+                return ResourceManager.GetString("individual_comingsoon_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string individual_comingsoon_Option3 {
+            get {
+                return ResourceManager.GetString("individual_comingsoon_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на —.
+        /// </summary>
+        internal static string individual_comingsoon_Price {
+            get {
+                return ResourceManager.GetString("individual_comingsoon_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на We are working on this course. Please check back later..
+        /// </summary>
+        internal static string individual_comingsoon_Subtitle {
+            get {
+                return ResourceManager.GetString("individual_comingsoon_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coming soon.
+        /// </summary>
+        internal static string individual_comingsoon_Title {
+            get {
+                return ResourceManager.GetString("individual_comingsoon_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 7 days.
+        /// </summary>
+        internal static string level_coastal_Duration {
+            get {
+                return ResourceManager.GetString("level_coastal_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 7 days training.
+        /// </summary>
+        internal static string level_coastal_Option1 {
+            get {
+                return ResourceManager.GetString("level_coastal_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 240 nautical miles.
+        /// </summary>
+        internal static string level_coastal_Option2 {
+            get {
+                return ResourceManager.GetString("level_coastal_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на For experienced skippers.
+        /// </summary>
+        internal static string level_coastal_Option3 {
+            get {
+                return ResourceManager.GetString("level_coastal_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 1 550 €.
+        /// </summary>
+        internal static string level_coastal_Price {
+            get {
+                return ResourceManager.GetString("level_coastal_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Advance to the next licensing level and prepare for long-distance sail voyages..
+        /// </summary>
+        internal static string level_coastal_Subtitle {
+            get {
+                return ResourceManager.GetString("level_coastal_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yachtmaster Coastal Course.
+        /// </summary>
+        internal static string level_coastal_Title {
+            get {
+                return ResourceManager.GetString("level_coastal_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 3 weeks.
+        /// </summary>
+        internal static string level_ocean_Duration {
+            get {
+                return ResourceManager.GetString("level_ocean_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 3 weeks onboard.
+        /// </summary>
+        internal static string level_ocean_Option1 {
+            get {
+                return ResourceManager.GetString("level_ocean_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 300+ nautical miles.
+        /// </summary>
+        internal static string level_ocean_Option2 {
+            get {
+                return ResourceManager.GetString("level_ocean_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на For those seeking real challenges.
+        /// </summary>
+        internal static string level_ocean_Option3 {
+            get {
+                return ResourceManager.GetString("level_ocean_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 3 150 €.
+        /// </summary>
+        internal static string level_ocean_Price {
+            get {
+                return ResourceManager.GetString("level_ocean_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Historic ocean voyage: Balearics → Gibraltar → Madeira → Canary Islands..
+        /// </summary>
+        internal static string level_ocean_Subtitle {
+            get {
+                return ResourceManager.GetString("level_ocean_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Atlantic Passage Training.
+        /// </summary>
+        internal static string level_ocean_Title {
+            get {
+                return ResourceManager.GetString("level_ocean_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 4 hours.
+        /// </summary>
+        internal static string level_weekend_Duration {
+            get {
+                return ResourceManager.GetString("level_weekend_Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 4 hours intensive.
+        /// </summary>
+        internal static string level_weekend_Option1 {
+            get {
+                return ResourceManager.GetString("level_weekend_Option1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Practical drills.
+        /// </summary>
+        internal static string level_weekend_Option2 {
+            get {
+                return ResourceManager.GetString("level_weekend_Option2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Open for all levels.
+        /// </summary>
+        internal static string level_weekend_Option3 {
+            get {
+                return ResourceManager.GetString("level_weekend_Option3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 470 €.
+        /// </summary>
+        internal static string level_weekend_Price {
+            get {
+                return ResourceManager.GetString("level_weekend_Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Short focused sessions to refine your sailing skills..
+        /// </summary>
+        internal static string level_weekend_Subtitle {
+            get {
+                return ResourceManager.GetString("level_weekend_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Weekend Sailing Workshops.
+        /// </summary>
+        internal static string level_weekend_Title {
+            get {
+                return ResourceManager.GetString("level_weekend_Title", resourceCulture);
             }
         }
         
@@ -133,7 +448,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 850 €.
+        ///   Ищет локализованную строку, похожую на 1 250 €.
         /// </summary>
         internal static string power_advanced_Price {
             get {
@@ -259,7 +574,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 1 350 €.
+        ///   Ищет локализованную строку, похожую на 1 750 €.
         /// </summary>
         internal static string power_standard_Price {
             get {
@@ -340,7 +655,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 1 150 €.
+        ///   Ищет локализованную строку, похожую на 1 550 €.
         /// </summary>
         internal static string sail_advanced_Price {
             get {
@@ -403,7 +718,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 1 450 €.
+        ///   Ищет локализованную строку, похожую на 1 850 €.
         /// </summary>
         internal static string sail_standard_Price {
             get {
@@ -466,7 +781,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 6 050 €.
+        ///   Ищет локализованную строку, похожую на 6 450 €.
         /// </summary>
         internal static string sail_vip_Price {
             get {
@@ -529,7 +844,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 2 300 €.
+        ///   Ищет локализованную строку, похожую на 2 700 €.
         /// </summary>
         internal static string sailpower_standard_Price {
             get {
@@ -592,7 +907,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 8 060 €.
+        ///   Ищет локализованную строку, похожую на 8 460 €.
         /// </summary>
         internal static string sailpower_vip_Price {
             get {
