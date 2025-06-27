@@ -466,7 +466,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mar 30 – Apr 22 — 2 700 €.
+        ///   Ищет локализованную строку, похожую на Mar 30 – Apr 22 — 2 800 €.
         /// </summary>
         internal static string Bareboat_Rate2 {
             get {

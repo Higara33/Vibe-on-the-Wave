@@ -61,7 +61,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Our agency is paid by owners, not you..
+        ///   Ищет локализованную строку, похожую на Our agency is paid by owners of yacht, not you..
         /// </summary>
         internal static string Charter_Benefit1_Text {
             get {
