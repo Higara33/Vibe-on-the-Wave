@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MyLandingPage",
   "resources": {
-    "hash": "sha256-Ax9WcFVpDc2eP4lyBZ0gNfb6c4sBo7rt+BlOQXDm2Do=",
+    "hash": "sha256-GSmyge9E243CuiWFNN1aU5n8bNgynaqwWUTJn0tMogk=",
     "jsModuleNative": {
       "dotnet.native.8.0.17.qnqnu9is6n.js": "sha256-YyxJV6dv935qHoQAmjB+2qRjHeGpm4SyWxE0T/KvsIE="
     },
@@ -40,7 +40,7 @@
       "Microsoft.JSInterop.wasm": "sha256-V3mW1978evAkzJZa/BmJy9gj8VXZ+fBeJCpo/ik+2p4=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-3ZhhLqIl/a3sQpZRtZoP3l0PQlX+2Joo9fqnzbZmm6c=",
       "Microsoft.Net.Http.Headers.wasm": "sha256-jfXK+cfJd/PteHB+5Bay/NDY9b9VLvVw6G/Bm262Lpo=",
-      "MyLandingPage.wasm": "sha256-Y3kuvIsItRJCLnb2hHJ1H9936JADG4xt4Y4NRa+gK/c=",
+      "MyLandingPage.wasm": "sha256-8f2FNTMDgHlmZ6teA9mzj3wG8OfxGbil8REIM4Nmh2k=",
       "netstandard.wasm": "sha256-YGoE4sNvuIQzGRc2eg6yH312Q73glFvI0IvVkjOKKLk=",
       "System.Buffers.wasm": "sha256-2xRMo5+XIMOmPkn0CpPBh4sRZhsn/wukzZ2Vk6GgmSc=",
       "System.Collections.Concurrent.wasm": "sha256-HumZfnn4TbFcuG079JbIocxoB3YTzoKR5an5nAFFpJw=",
@@ -55,7 +55,7 @@
       "System.Diagnostics.DiagnosticSource.wasm": "sha256-VUVUswYo0IAWd2zNoa821Ut858egeXlm2blXcZP+Ais=",
       "System.IO.Compression.wasm": "sha256-TuUWwCIQS7HTv2yMFK3Oaw5OZhE7s/Vx63cSkVCCMp8=",
       "System.Linq.Expressions.wasm": "sha256-0cz+NZZY+b2Lr79BarqNVLE/k2s+ZPEr5/4nrlW8MSA=",
-      "System.Linq.wasm": "sha256-4s98YbiMJbdb7/IrCcytgLGBSr7/v0f8EaOCSpg0/n4=",
+      "System.Linq.wasm": "sha256-NGL8OQcbZkpKyxSe6bcp7SnS9okZfzFMFT1uhiQUBDs=",
       "System.Memory.wasm": "sha256-xBzJowOs5HK97GThiRpNGv9+4Tg91nMy6NK8AMkJPXg=",
       "System.Net.Http.Json.wasm": "sha256-YYfrUWcQkBkmChTpZ/v93iyOMhH2A73KDSVq31gWz6o=",
       "System.Net.Http.wasm": "sha256-iYTeOIWrkLAdGTln9CliVtQPPLlaqNrtz334zsD4A4A=",
@@ -86,7 +86,7 @@
     },
     "satelliteResources": {
       "ru": {
-        "MyLandingPage.resources.wasm": "sha256-ItVq8jB/SJJRZhRcHIwr8ktADQnV+s5UtY4wfpnwoFk="
+        "MyLandingPage.resources.wasm": "sha256-wP+hWHEghLcdjq+RsgwbIwujU/8kPogsRaRCGC60MTU="
       }
     }
   },
