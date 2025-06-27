@@ -23,11 +23,7 @@ jobs:
           dotnet publish MyLandingPage/MyLandingPage.csproj \
             -c Release \
             -o MyLandingPage/bin/Release/net8.0/browser-wasm/publish
-      - name: Publish Azure Function API
-        run: |
-          dotnet publish FunctionEmailApi/FunctionEmailApi.csproj \
-            -c Release \
-            -o FunctionEmailApi/bin/Release/net8.0/publish
+
       - name: Function API CHECK
         run: |
           ls -la FunctionEmailApi
