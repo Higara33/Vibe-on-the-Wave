@@ -139,7 +139,7 @@
     <value>Уверенный старт</value>
   </data>
   <data name="Programs_LevelUp_Title" xml:space="preserve">
-    <value />
+    <value>LEVEL UP</value>
   </data>
   <data name="Programs_Power_Title" xml:space="preserve">
     <value>Bareboat Skipper Power IYT</value>
@@ -183,11 +183,26 @@
   <data name="Survey_Complete" xml:space="preserve">
     <value>Ваши ответы сохранены.</value>
   </data>
+  <data name="Survey_Dates_Required" xml:space="preserve">
+    <value>Пожалуйста выберете ваши даты</value>
+  </data>
+  <data name="Survey_Experience_Required" xml:space="preserve">
+    <value>Пожалуйста расскажите нам о своем опыте</value>
+  </data>
+  <data name="Survey_Goals_Required" xml:space="preserve">
+    <value>Пожалуйста расскажите нам о своих целях</value>
+  </data>
+  <data name="Survey_GroupSize_Required" xml:space="preserve">
+    <value>Пожалуйста укажите размер предпочитаемой группы</value>
+  </data>
   <data name="Survey_Header" xml:space="preserve">
     <value>Начало опроса «{0}»</value>
   </data>
   <data name="Survey_Intro" xml:space="preserve">
     <value>Пожалуйста, ответьте на 5 вопросов для подбора курса.</value>
+  </data>
+  <data name="Survey_Contact _Required" xml:space="preserve">
+    <value>Пожалуйста оставьте контактную информацию</value>
   </data>
   <data name="ThankYou" xml:space="preserve">
     <value>Спасибо!</value>

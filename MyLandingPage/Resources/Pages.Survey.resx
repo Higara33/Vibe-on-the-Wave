@@ -183,11 +183,26 @@
   <data name="Survey_Complete" xml:space="preserve">
     <value>Your responses have been recorded.</value>
   </data>
+  <data name="Survey_Dates_Required" xml:space="preserve">
+    <value>Please choose your dates</value>
+  </data>
+  <data name="Survey_Experience_Required" xml:space="preserve">
+    <value>Please tell us your experience</value>
+  </data>
+  <data name="Survey_Goals_Required" xml:space="preserve">
+    <value>Please specify your goals</value>
+  </data>
+  <data name="Survey_GroupSize_Required" xml:space="preserve">
+    <value>Please specify group size</value>
+  </data>
   <data name="Survey_Header" xml:space="preserve">
     <value>Start your “{0}” survey</value>
   </data>
   <data name="Survey_Intro" xml:space="preserve">
     <value>Please answer these 5 quick questions to tailor your course.</value>
+  </data>
+  <data name="Survey_Contact _Required" xml:space="preserve">
+    <value>Please leave contact info</value>
   </data>
   <data name="ThankYou" xml:space="preserve">
     <value>Thank You!</value>

@@ -259,6 +259,42 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Please choose your dates.
+        /// </summary>
+        internal static string Survey_Dates_Required {
+            get {
+                return ResourceManager.GetString("Survey_Dates_Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Please tell us your experience.
+        /// </summary>
+        internal static string Survey_Experience_Required {
+            get {
+                return ResourceManager.GetString("Survey_Experience_Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Please specify your goals.
+        /// </summary>
+        internal static string Survey_Goals_Required {
+            get {
+                return ResourceManager.GetString("Survey_Goals_Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Please specify group size.
+        /// </summary>
+        internal static string Survey_GroupSize_Required {
+            get {
+                return ResourceManager.GetString("Survey_GroupSize_Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Start your “{0}” survey.
         /// </summary>
         internal static string Survey_Header {
@@ -273,6 +309,15 @@ namespace MyLandingPage.Resources {
         internal static string Survey_Intro {
             get {
                 return ResourceManager.GetString("Survey_Intro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Please leave contact info.
+        /// </summary>
+        internal static string Survey_Сontact__Required {
+            get {
+                return ResourceManager.GetString("Survey_Сontact _Required", resourceCulture);
             }
         }
         

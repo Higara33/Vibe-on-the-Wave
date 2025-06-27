@@ -776,3 +776,16 @@ a {
 .swiper.mySwiper {
     width: 100%;
 }
+
+.validation-message, .input-validation-error, .validation-summary-errors {
+    color: #d9534f;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-size: 1.03rem;
+    list-style: none;
+}
+
+.validation-message {
+    padding-left: 0.1em;
+}
