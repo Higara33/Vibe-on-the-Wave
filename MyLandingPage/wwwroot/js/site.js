@@ -47,3 +47,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        centeredSlides: true,
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+    });
+});
+
+window.initSwiper = function () {
+    if (window._mySwiper) {
+        window._mySwiper.destroy(true, true); // если уже инициализирован, пересоздаём
+    }
+    window._mySwiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        centeredSlides: true,
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+    });
+};

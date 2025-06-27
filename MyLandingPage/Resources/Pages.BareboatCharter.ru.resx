@@ -136,7 +136,7 @@
     <value>8 одинаковых парусных яхт (и одна моторная) в марине Porto Montenegro (5★)</value>
   </data>
   <data name="Bareboat_Rate1" xml:space="preserve">
-    <value>по 30 марта — 1 900 €</value>
+    <value>по 30 марта — 2 300 €</value>
   </data>
   <data name="Bareboat_Rates_Subtitle" xml:space="preserve">
     <value>Цена за 1 неделю аренды. Стандартная чартерная неделя — с 17:00 субботы до 10:00 следующей субботы.</value>
@@ -148,25 +148,25 @@
     <value>Яхтинг в Черногории</value>
   </data>
   <data name="Bareboat_Rate2" xml:space="preserve">
-    <value>с 30 марта по 22 апреля — 2 400 €</value>
+    <value>с 30 марта по 22 апреля — 2 700 €</value>
   </data>
   <data name="Bareboat_Rate3" xml:space="preserve">
-    <value>с 22 апреля по 15 июня — 2 900 €</value>
+    <value>с 22 апреля по 15 июня — 3 300 €</value>
   </data>
   <data name="Bareboat_Rate4" xml:space="preserve">
-    <value>с 15 по 29 июня — 3 300 €</value>
+    <value>с 15 по 29 июня — 3 700 €</value>
   </data>
   <data name="Bareboat_Rate5" xml:space="preserve">
-    <value>с 29 июня по 24 августа — 3 900 €</value>
+    <value>с 29 июня по 24 августа — 4 300 €</value>
   </data>
   <data name="Bareboat_Rate6" xml:space="preserve">
-    <value>с 24 августа по 5 октября — 3 300 €</value>
+    <value>с 24 августа по 5 октября — 3 700 €</value>
   </data>
   <data name="Bareboat_Rate7" xml:space="preserve">
-    <value>с 5 по 9 ноября — 2 600 €</value>
+    <value>с 5 по 9 ноября — 3 000 €</value>
   </data>
   <data name="Bareboat_Rate8" xml:space="preserve">
-    <value>с 9 ноября — 1 900 €</value>
+    <value>с 9 ноября — 2 300 €</value>
   </data>
   <data name="Bareboat_Included_Title" xml:space="preserve">
     <value>Включено в стоимость</value>
@@ -223,25 +223,25 @@
     <value>Дополнительно</value>
   </data>
   <data name="Bareboat_Extra_Skipper_Title" xml:space="preserve">
-    <value>Шкипер – 140 € в день (плюс питание)</value>
+    <value>Шкипер – 540 € в день (плюс питание)</value>
   </data>
   <data name="Bareboat_Extra_Skipper_Text" xml:space="preserve">
     <value>Если у вас нет прав на управление яхтой, вы можете арендовать яхту вместе с капитаном.</value>
   </data>
   <data name="Bareboat_Extra_Gennaker_Title" xml:space="preserve">
-    <value>Геннакер – 200 € в неделю (депозит 1000 €)</value>
+    <value>Геннакер – 600 € в неделю (депозит 1000 €)</value>
   </data>
   <data name="Bareboat_Extra_Gennaker_Text" xml:space="preserve">
     <value>Проводка и брасы присутствуют.</value>
   </data>
   <data name="Bareboat_Extra_Fishing_Title" xml:space="preserve">
-    <value>Оборудование для рыбалки – 50 € в неделю</value>
+    <value>Оборудование для рыбалки – 450 € в неделю</value>
   </data>
   <data name="Bareboat_Extra_Fishing_Text" xml:space="preserve">
     <value>В комплекте: троллинговое удилище с катушкой и тросом, набор воблеров, багор и стакан для крепления удилища на леерной стойке.</value>
   </data>
   <data name="Bareboat_Extra_Poker_Title" xml:space="preserve">
-    <value>Набор для покера – 10 € в неделю</value>
+    <value>Набор для покера – 50 € в неделю</value>
   </data>
   <data name="Bareboat_Extra_Poker_Text" xml:space="preserve">
     <value>Если нечем заняться по вечерам.</value>

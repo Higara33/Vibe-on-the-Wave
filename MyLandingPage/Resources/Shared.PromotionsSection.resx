@@ -136,7 +136,7 @@
   <value>Early Bird</value>
 </data>
 <data name="Promo2_Text" xml:space="preserve">
-  <value>Book 3 months in advance and get 15% off.</value>
+  <value>Book 3 months in advance and get 5% off.</value>
 </data>
 <data name="Promo2_Button" xml:space="preserve">
   <value>Learn More</value>
@@ -145,7 +145,7 @@
   <value>Family Discount</value>
 </data>
 <data name="Promo3_Text" xml:space="preserve">
-  <value>Groups of 2+ get an extra 10% off.</value>
+  <value>Groups of 4+ get an extra 10% off.</value>
 </data>
 <data name="Promo3_Button" xml:space="preserve">
   <value>Learn More</value>

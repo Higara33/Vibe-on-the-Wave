@@ -70,7 +70,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Jeremenkova 1410/14 Praha 4.
+        ///   Ищет локализованную строку, похожую на Jeremenkova 410/14, Podolí, 147 00 Praha 4 .
         /// </summary>
         internal static string Contact_Address_Value {
             get {
@@ -97,7 +97,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на https://www.google.com/maps?q=50.0463574,14.4390276&amp;z=16&amp;output=embed.
+        ///   Ищет локализованную строку, похожую на https://www.google.com/maps?q=50.0461022,14.4163180&amp;z=16&amp;output=embed.
         /// </summary>
         internal static string Contact_Map_Embed {
             get {

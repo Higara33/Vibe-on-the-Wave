@@ -61,6 +61,96 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Learn More.
+        /// </summary>
+        internal static string Promo1_Button {
+            get {
+                return ResourceManager.GetString("Promo1_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sign up with 4 friends and the 5th learns for free!.
+        /// </summary>
+        internal static string Promo1_Text {
+            get {
+                return ResourceManager.GetString("Promo1_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Five for Four.
+        /// </summary>
+        internal static string Promo1_Title {
+            get {
+                return ResourceManager.GetString("Promo1_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Learn More.
+        /// </summary>
+        internal static string Promo2_Button {
+            get {
+                return ResourceManager.GetString("Promo2_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Book 3 months in advance and get 5% off..
+        /// </summary>
+        internal static string Promo2_Text {
+            get {
+                return ResourceManager.GetString("Promo2_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Early Bird.
+        /// </summary>
+        internal static string Promo2_Title {
+            get {
+                return ResourceManager.GetString("Promo2_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Learn More.
+        /// </summary>
+        internal static string Promo3_Button {
+            get {
+                return ResourceManager.GetString("Promo3_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Groups of 4+ get an extra 10% off..
+        /// </summary>
+        internal static string Promo3_Text {
+            get {
+                return ResourceManager.GetString("Promo3_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Family Discount.
+        /// </summary>
+        internal static string Promo3_Title {
+            get {
+                return ResourceManager.GetString("Promo3_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Don&apos;t miss our special offers — learn more and save today!.
+        /// </summary>
+        internal static string Promotions_Subtitle {
+            get {
+                return ResourceManager.GetString("Promotions_Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Current Promotions &amp; Discounts.
         /// </summary>
         internal static string Promotions_Title {

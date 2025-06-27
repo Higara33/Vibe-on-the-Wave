@@ -139,7 +139,7 @@
     <value>Адрес</value>
   </data>
   <data name="Contact_Address_Value" xml:space="preserve">
-    <value>Jeremenkova 1410/14 Praha 4</value>
+    <value>Jeremenkova 410/14, Podolí, 147 00 Praha 4 </value>
   </data>
   <data name="Social_Facebook" xml:space="preserve">
     <value>https://facebook.com/yourpage</value>
@@ -163,7 +163,7 @@
     <value>Отправить сообщение</value>
   </data>
   <data name="Contact_Map_Embed" xml:space="preserve">
-    <value>https://www.google.com/maps?q=50.0463574,14.4390276&amp;z=16&amp;output=embed</value>
+    <value>https://www.google.com/maps?q=50.0461022,14.4163180&amp;z=16&amp;output=embed</value>
   </data>
   <data name="Form_SuccessMessage" xml:space="preserve">
     <value>Спасибо, {0}! Ваше сообщение отправлено.</value>

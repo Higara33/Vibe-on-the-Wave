@@ -214,7 +214,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fishing gear – €50 per week.
+        ///   Ищет локализованную строку, похожую на Fishing gear – €450 per week.
         /// </summary>
         internal static string Bareboat_Extra_Fishing_Title {
             get {
@@ -232,7 +232,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Gennaker – €200 per week (deposit €1000).
+        ///   Ищет локализованную строку, похожую на Gennaker – €600 per week (deposit €1000).
         /// </summary>
         internal static string Bareboat_Extra_Gennaker_Title {
             get {
@@ -250,7 +250,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Poker set – €10 per week.
+        ///   Ищет локализованную строку, похожую на Poker set – €50 per week.
         /// </summary>
         internal static string Bareboat_Extra_Poker_Title {
             get {
@@ -268,7 +268,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Skipper – €140 per day (plus meals).
+        ///   Ищет локализованную строку, похожую на Skipper – €540 per day (plus meals).
         /// </summary>
         internal static string Bareboat_Extra_Skipper_Title {
             get {
@@ -457,7 +457,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на until March 30 — 1 900 €.
+        ///   Ищет локализованную строку, похожую на until March 30 — 2 300 €.
         /// </summary>
         internal static string Bareboat_Rate1 {
             get {
@@ -466,7 +466,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mar 30 – Apr 22 — 2 400 €.
+        ///   Ищет локализованную строку, похожую на Mar 30 – Apr 22 — 2 700 €.
         /// </summary>
         internal static string Bareboat_Rate2 {
             get {
@@ -475,7 +475,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Apr 22 – Jun 15 — 2 900 €.
+        ///   Ищет локализованную строку, похожую на Apr 22 – Jun 15 — 3 300 €.
         /// </summary>
         internal static string Bareboat_Rate3 {
             get {
@@ -484,7 +484,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Jun 15 – Jun 29 — 3 300 €.
+        ///   Ищет локализованную строку, похожую на Jun 15 – Jun 29 — 3 700 €.
         /// </summary>
         internal static string Bareboat_Rate4 {
             get {
@@ -493,7 +493,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Jun 29 – Aug 24 — 3 900 €.
+        ///   Ищет локализованную строку, похожую на Jun 29 – Aug 24 — 4 300 €.
         /// </summary>
         internal static string Bareboat_Rate5 {
             get {
@@ -502,7 +502,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Aug 24 – Oct 5 — 3 300 €.
+        ///   Ищет локализованную строку, похожую на Aug 24 – Oct 5 — 3 700 €.
         /// </summary>
         internal static string Bareboat_Rate6 {
             get {
@@ -511,7 +511,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Oct 5 – Nov 9 — 2 600 €.
+        ///   Ищет локализованную строку, похожую на Oct 5 – Nov 9 — 3 000 €.
         /// </summary>
         internal static string Bareboat_Rate7 {
             get {
@@ -520,7 +520,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на from Nov 9 — 1 900 €.
+        ///   Ищет локализованную строку, похожую на from Nov 9 — 2 300 €.
         /// </summary>
         internal static string Bareboat_Rate8 {
             get {
