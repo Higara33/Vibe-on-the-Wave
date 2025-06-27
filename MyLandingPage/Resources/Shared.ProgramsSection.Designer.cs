@@ -97,7 +97,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на —.
+        ///   Ищет локализованную строку, похожую на Information coming soon..
         /// </summary>
         internal static string Programs_Catamaran_Text {
             get {
@@ -232,7 +232,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на —.
+        ///   Ищет локализованную строку, похожую на Information coming soon..
         /// </summary>
         internal static string Programs_Individual_Text {
             get {
@@ -277,7 +277,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 1 150 €.
+        ///   Ищет локализованную строку, похожую на 1 550 €.
         /// </summary>
         internal static string Programs_LevelUp_Coastal_Price {
             get {
@@ -331,7 +331,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 2 750 €.
+        ///   Ищет локализованную строку, похожую на 3 150 €.
         /// </summary>
         internal static string Programs_LevelUp_Ocean_Price {
             get {
@@ -385,7 +385,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 70 €.
+        ///   Ищет локализованную строку, похожую на 470 €.
         /// </summary>
         internal static string Programs_LevelUp_Weekend_Price {
             get {
@@ -457,7 +457,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 1 350 €.
+        ///   Ищет локализованную строку, похожую на 1 750 €.
         /// </summary>
         internal static string Programs_Power_Price {
             get {
@@ -502,7 +502,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 850 €.
+        ///   Ищет локализованную строку, похожую на 1 250 €.
         /// </summary>
         internal static string Programs_PowerAdvanced_Price {
             get {
@@ -574,7 +574,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 1 450 €.
+        ///   Ищет локализованную строку, похожую на 1 850 €.
         /// </summary>
         internal static string Programs_Sail_Price {
             get {
@@ -619,7 +619,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 1 150 €.
+        ///   Ищет локализованную строку, похожую на 1 550 €.
         /// </summary>
         internal static string Programs_SailAdvanced_Price {
             get {
@@ -673,7 +673,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 2 300 €.
+        ///   Ищет локализованную строку, похожую на 2 700 €.
         /// </summary>
         internal static string Programs_SailPower_Price {
             get {

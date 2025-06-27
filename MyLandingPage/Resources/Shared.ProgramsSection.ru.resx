@@ -130,7 +130,7 @@
     <value>—</value>
   </data>
   <data name="Programs_Catamaran_Text" xml:space="preserve">
-    <value>—</value>
+    <value>Информация скоро появится.</value>
   </data>
   <data name="Programs_Catamaran_Title" xml:space="preserve">
     <value>Bareboat Skipper Catamaran IYT</value>
@@ -151,7 +151,7 @@
     <value>Индивидуальное обучение</value>
   </data>
   <data name="Programs_Individual_Text" xml:space="preserve">
-    <value>—</value>
+    <value>Информация скоро появится.</value>
   </data>
   <data name="Programs_Individual_Title" xml:space="preserve">
     <value>Индивидуальное обучение</value>
@@ -184,7 +184,7 @@
     <value>3 недели</value>
   </data>
   <data name="Programs_LevelUp_Ocean_Price" xml:space="preserve">
-    <value>2 750 €</value>
+    <value>3 150 €</value>
   </data>
   <data name="Programs_LevelUp_Ocean_Text" xml:space="preserve">
     <value>Большой поход по маршруту: Балеары – Гибралтар – Мадейра – Канары.</value>
@@ -202,7 +202,7 @@
     <value>4 часа</value>
   </data>
   <data name="Programs_LevelUp_Weekend_Price" xml:space="preserve">
-    <value>70 €</value>
+    <value>470 €</value>
   </data>
   <data name="Programs_LevelUp_Weekend_Text" xml:space="preserve">
     <value>Освойте новое или отточите своё мастерство в коротких интенсивных сессиях.</value>
@@ -223,7 +223,7 @@
     <value>5 дней</value>
   </data>
   <data name="Programs_PowerAdvanced_Price" xml:space="preserve">
-    <value>850 €</value>
+    <value>1 250 €</value>
   </data>
   <data name="Programs_PowerAdvanced_Text" xml:space="preserve">
     <value>Оттачиваем навыки работы на моторных яхтах, швартовки станут предсказуемыми.</value>
@@ -241,7 +241,7 @@
     <value>до 4 студентов в группе</value>
   </data>
   <data name="Programs_Power_Price" xml:space="preserve">
-    <value>1 350 €</value>
+    <value>1 750 €</value>
   </data>
   <data name="Programs_Power_Text" xml:space="preserve">
     <value>Максимальная скорость и независимость от ветра. Отличный вариант для тех, кто хочет доплыть быстро и комфортно.</value>
@@ -262,7 +262,7 @@
     <value>7 дней</value>
   </data>
   <data name="Programs_SailAdvanced_Price" xml:space="preserve">
-    <value>1 150 €</value>
+    <value>1 550 €</value>
   </data>
   <data name="Programs_SailAdvanced_Text" xml:space="preserve">
     <value>Дообучение на парусные яхты и подготовка к самостоятельным чартерам.</value>
@@ -280,7 +280,7 @@
     <value>до 5 студентов в группе</value>
   </data>
   <data name="Programs_SailPower_Price" xml:space="preserve">
-    <value>2 300 €</value>
+    <value>2 700 €</value>
   </data>
   <data name="Programs_SailPower_Text" xml:space="preserve">
     <value>Совмещённая программа для универсальной лицензии на парус и мотор.</value>
@@ -298,7 +298,7 @@
     <value>до 5 студентов в группе</value>
   </data>
   <data name="Programs_Sail_Price" xml:space="preserve">
-    <value>1 450 €</value>
+    <value>1 850 €</value>
   </data>
   <data name="Programs_Sail_Text" xml:space="preserve">
     <value>Самый массовый и универсальный сегмент для начинающих капитанов. Лучше начать с него.</value>

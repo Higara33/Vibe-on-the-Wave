@@ -128,4 +128,31 @@
       montenegro::Яхтинг в Черногории::Дневные и многодневные маршруты.
     </value>
   </data>
+  <data name="Service1_Title" xml:space="preserve">
+    <value>Яхтенная школа</value>
+  </data>
+  <data name="Service1_Desc" xml:space="preserve">
+    <value>Научитесь управлять парусной яхтой с нуля и получите международный сертификат.</value>
+  </data>
+  <data name="Service2_Title" xml:space="preserve">
+    <value>Аренда яхт</value>
+  </data>
+  <data name="Service2_Desc" xml:space="preserve">
+    <value>Аренда современных яхт и катамаранов с сервисом и поддержкой.</value>
+  </data>
+  <data name="Service3_Title" xml:space="preserve">
+    <value>Яхт-туры</value>
+  </data>
+  <data name="Service3_Desc" xml:space="preserve">
+    <value>Яркие маршруты, приключения и морской отдых для друзей и семьи.</value>
+  </data>
+  <data name="Service4_Title" xml:space="preserve">
+    <value>Аренда яхты в Монтенегро</value>
+  </data>
+  <data name="Service4_Desc" xml:space="preserve">
+    <value>Аренда яхты без капитана для опытных шкиперов. Исследуйте Черногорию сами!</value>
+  </data>
+  <data name="Service_LearnMore" xml:space="preserve">
+    <value>Подробнее</value>
+  </data>
 </root>

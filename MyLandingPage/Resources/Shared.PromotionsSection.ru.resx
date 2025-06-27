@@ -136,7 +136,7 @@
   <value>Раннее бронирование</value>
 </data>
 <data name="Promo2_Text" xml:space="preserve">
-  <value>Бронируйте за 3 месяца — скидка 15%.</value>
+  <value>Бронируйте за 3 месяца — скидка 5%.</value>
 </data>
 <data name="Promo2_Button" xml:space="preserve">
   <value>Узнать подробнее</value>
@@ -145,7 +145,7 @@
   <value>Семейная скидка</value>
 </data>
 <data name="Promo3_Text" xml:space="preserve">
-  <value>Группы от 2 человек — дополнительная скидка 10%.</value>
+  <value>Группы от 4 человек — дополнительная скидка 10%.</value>
 </data>
 <data name="Promo3_Button" xml:space="preserve">
   <value>Узнать подробнее</value>

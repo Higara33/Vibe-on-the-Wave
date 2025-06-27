@@ -61,6 +61,101 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Learn more.
+        /// </summary>
+        internal static string Service_LearnMore {
+            get {
+                return ResourceManager.GetString("Service_LearnMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Learn to sail from scratch and earn international certification..
+        /// </summary>
+        internal static string Service1_Desc {
+            get {
+                return ResourceManager.GetString("Service1_Desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yacht School.
+        /// </summary>
+        internal static string Service1_Title {
+            get {
+                return ResourceManager.GetString("Service1_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rent modern yachts and catamarans with full service and support..
+        /// </summary>
+        internal static string Service2_Desc {
+            get {
+                return ResourceManager.GetString("Service2_Desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yacht Charter.
+        /// </summary>
+        internal static string Service2_Title {
+            get {
+                return ResourceManager.GetString("Service2_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Unique routes, adventures, and sea holidays for families and friends..
+        /// </summary>
+        internal static string Service3_Desc {
+            get {
+                return ResourceManager.GetString("Service3_Desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yacht Tours.
+        /// </summary>
+        internal static string Service3_Title {
+            get {
+                return ResourceManager.GetString("Service3_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rent a yacht without a skipper for experienced sailors. Sail Montenegro on your own!.
+        /// </summary>
+        internal static string Service4_Desc {
+            get {
+                return ResourceManager.GetString("Service4_Desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bareboat Charter Montenegro.
+        /// </summary>
+        internal static string Service4_Title {
+            get {
+                return ResourceManager.GetString("Service4_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 
+        ///    yacht-school::Yacht School::Become a certified sailor with our comprehensive courses|
+        ///    yacht-charter::Yacht Charter::Charter a yacht for your own adventure|
+        ///    yachting-in-montenegro::Yachting in Montenegro::Bareboat charter from Porto Montenegro|
+        ///    tours-celebrations::Tours &amp; Celebrations::Host your celebration on a yacht – captain, route and vessel provided. You bring the fun
+        ///  .
+        /// </summary>
+        internal static string Services_List {
+            get {
+                return ResourceManager.GetString("Services_List", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на What We Offer.
         /// </summary>
         internal static string Services_Title {

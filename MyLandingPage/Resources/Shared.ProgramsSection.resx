@@ -130,7 +130,7 @@
     <value>—</value>
   </data>
   <data name="Programs_Catamaran_Text" xml:space="preserve">
-    <value>—</value>
+    <value>Information coming soon.</value>
   </data>
   <data name="Programs_Catamaran_Title" xml:space="preserve">
     <value>Bareboat Skipper Catamaran IYT</value>
@@ -151,7 +151,7 @@
     <value>Individual Training</value>
   </data>
   <data name="Programs_Individual_Text" xml:space="preserve">
-    <value>—</value>
+    <value>Information coming soon.</value>
   </data>
   <data name="Programs_Individual_Title" xml:space="preserve">
     <value>Individual Training</value>
@@ -166,7 +166,7 @@
     <value>7 days</value>
   </data>
   <data name="Programs_LevelUp_Coastal_Price" xml:space="preserve">
-    <value>1 150 €</value>
+    <value>1 550 €</value>
   </data>
   <data name="Programs_LevelUp_Coastal_Text" xml:space="preserve">
     <value>Advance to the next level of certification and prepare for long-distance sailing voyages.</value>
@@ -184,7 +184,7 @@
     <value>3 weeks</value>
   </data>
   <data name="Programs_LevelUp_Ocean_Price" xml:space="preserve">
-    <value>2 750 €</value>
+    <value>3 150 €</value>
   </data>
   <data name="Programs_LevelUp_Ocean_Text" xml:space="preserve">
     <value>Historic ocean passage: Balearics – Gibraltar – Madeira – Canary Islands.</value>
@@ -202,7 +202,7 @@
     <value>4 hours</value>
   </data>
   <data name="Programs_LevelUp_Weekend_Price" xml:space="preserve">
-    <value>70 €</value>
+    <value>470 €</value>
   </data>
   <data name="Programs_LevelUp_Weekend_Text" xml:space="preserve">
     <value>Learn new techniques or perfect your skills in short, focused sessions.</value>
@@ -223,7 +223,7 @@
     <value>5 days</value>
   </data>
   <data name="Programs_PowerAdvanced_Price" xml:space="preserve">
-    <value>850 €</value>
+    <value>1 250 €</value>
   </data>
   <data name="Programs_PowerAdvanced_Text" xml:space="preserve">
     <value>Master power yachts and make docking predictable, not a gamble.</value>
@@ -241,7 +241,7 @@
     <value>up to 4 students per group</value>
   </data>
   <data name="Programs_Power_Price" xml:space="preserve">
-    <value>1 350 €</value>
+    <value>1 750 €</value>
   </data>
   <data name="Programs_Power_Text" xml:space="preserve">
     <value>Maximum speed and independence from wind. Perfect for those who want to get comfortable fast.</value>
@@ -262,7 +262,7 @@
     <value>7 days</value>
   </data>
   <data name="Programs_SailAdvanced_Price" xml:space="preserve">
-    <value>1 150 €</value>
+    <value>1 550 €</value>
   </data>
   <data name="Programs_SailAdvanced_Text" xml:space="preserve">
     <value>Upgrade your skills on sailing yachts and prepare for independent charters.</value>
@@ -280,7 +280,7 @@
     <value>up to 5 students per group</value>
   </data>
   <data name="Programs_SailPower_Price" xml:space="preserve">
-    <value>2 300 €</value>
+    <value>2 700 €</value>
   </data>
   <data name="Programs_SailPower_Text" xml:space="preserve">
     <value>Combined program for a universal license on both sail and power yachts.</value>
@@ -298,7 +298,7 @@
     <value>up to 5 students per group</value>
   </data>
   <data name="Programs_Sail_Price" xml:space="preserve">
-    <value>1 450 €</value>
+    <value>1 850 €</value>
   </data>
   <data name="Programs_Sail_Text" xml:space="preserve">
     <value>The most popular and universal segment for beginner skippers. Best way to start.</value>
