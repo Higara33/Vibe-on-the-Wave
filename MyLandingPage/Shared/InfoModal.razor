@@ -1,5 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.Extensions.Localization
+
+@inject NavigationManager NavigationManager
 @inject IStringLocalizer<Shared.InfoModal> L
 
 @if (IsOpen)
@@ -35,7 +37,7 @@
                         ✕ @L["Close"]
                     </button>
                     <NavLink class="btn btn-primary"
-                             href="@($"survey/{BaseProgram}")">
+                             href="@($"{CurrentCulture}/survey/{BaseProgram}")">
                         @L["Programs_SelectCourse"]
                     </NavLink>
                 </div>
@@ -54,4 +56,15 @@
     string BaseProgram => Program.Split('_')[0];
 
     Task Close() => IsOpenChanged.InvokeAsync(false);
+
+    private string CurrentCulture
+    {
+        get
+        {
+            var uri = new Uri(NavigationManager.Uri);
+            var segments = uri.AbsolutePath.Split('/', StringSplitOptions.RemoveEmptyEntries);
+            var supportedLangs = new[] { "en", "ru" };
+            return supportedLangs.Contains(segments.FirstOrDefault()) ? $"/{segments.First()}" : "/en";
+        }
+    }
 }
