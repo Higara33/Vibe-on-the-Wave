@@ -132,11 +132,20 @@
   <data name="PageTitle_Survey" xml:space="preserve">
     <value>Yachting Survey — Select Program | VibeOfTheWave</value>
   </data>
+  <data name="Programs_Catamaran_Title" xml:space="preserve">
+    <value>Bareboat Skipper Catamaran IYT</value>
+  </data>
   <data name="Programs_ConfidentStart_Title" xml:space="preserve">
     <value>Confident Start</value>
   </data>
+  <data name="Programs_LevelUp_Title" xml:space="preserve">
+    <value>LEVEL UP</value>
+  </data>
   <data name="Programs_Power_Title" xml:space="preserve">
     <value>Bareboat Skipper Power IYT</value>
+  </data>
+  <data name="Programs_SailPower_Title" xml:space="preserve">
+    <value>Bareboat Skipper Power &amp; Sail IYT</value>
   </data>
   <data name="Step1_Question" xml:space="preserve">
     <value>How experienced are you with sailing?</value>

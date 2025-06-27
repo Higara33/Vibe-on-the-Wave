@@ -106,6 +106,15 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Bareboat Skipper Catamaran IYT.
+        /// </summary>
+        internal static string Programs_Catamaran_Title {
+            get {
+                return ResourceManager.GetString("Programs_Catamaran_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Confident Start.
         /// </summary>
         internal static string Programs_ConfidentStart_Title {
@@ -115,11 +124,29 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на LEVEL UP.
+        /// </summary>
+        internal static string Programs_LevelUp_Title {
+            get {
+                return ResourceManager.GetString("Programs_LevelUp_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Bareboat Skipper Power IYT.
         /// </summary>
         internal static string Programs_Power_Title {
             get {
                 return ResourceManager.GetString("Programs_Power_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bareboat Skipper Power &amp; Sail IYT.
+        /// </summary>
+        internal static string Programs_SailPower_Title {
+            get {
+                return ResourceManager.GetString("Programs_SailPower_Title", resourceCulture);
             }
         }
         
