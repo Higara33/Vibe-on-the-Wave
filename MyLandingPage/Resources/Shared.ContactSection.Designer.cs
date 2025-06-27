@@ -106,6 +106,25 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Home marina.
+        /// </summary>
+        internal static string Contact_Marina_Title {
+            get {
+                return ResourceManager.GetString("Contact_Marina_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Montenegro, Tivat
+        ///Porto Montenegro.
+        /// </summary>
+        internal static string Contact_Marina_Value {
+            get {
+                return ResourceManager.GetString("Contact_Marina_Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Phone.
         /// </summary>
         internal static string Contact_Phone_Title {
