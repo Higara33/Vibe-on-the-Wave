@@ -124,7 +124,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на For those short on time, we offer full-day yacht rental (Day Charter) in Montenegro. Enjoy a day at sea exploring the coast with an experienced skipper. Prices start from €600 per day (skipper included)..
+        ///   Ищет локализованную строку, похожую на For those short on time, we offer full-day yacht rental (Day Charter) in Montenegro. Enjoy a relaxing day at sea, exploring the stunning coast with an experienced skipper..
         /// </summary>
         internal static string Bareboat_Day_Text {
             get {
@@ -214,7 +214,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fishing gear – €450 per week.
+        ///   Ищет локализованную строку, похожую на Fishing gear .
         /// </summary>
         internal static string Bareboat_Extra_Fishing_Title {
             get {
@@ -232,7 +232,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Gennaker – €600 per week (deposit €1000).
+        ///   Ищет локализованную строку, похожую на Gennaker .
         /// </summary>
         internal static string Bareboat_Extra_Gennaker_Title {
             get {
@@ -250,7 +250,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Poker set – €50 per week.
+        ///   Ищет локализованную строку, похожую на Poker set .
         /// </summary>
         internal static string Bareboat_Extra_Poker_Title {
             get {
@@ -268,7 +268,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Skipper – €540 per day (plus meals).
+        ///   Ищет локализованную строку, похожую на Skipper .
         /// </summary>
         internal static string Bareboat_Extra_Skipper_Title {
             get {
@@ -430,7 +430,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Final cleaning – 140 €.
+        ///   Ищет локализованную строку, похожую на Final cleaning.
         /// </summary>
         internal static string Bareboat_NotIncluded_Item1 {
             get {
@@ -561,6 +561,15 @@ namespace MyLandingPage.Resources {
         internal static string Bareboat_Title {
             get {
                 return ResourceManager.GetString("Bareboat_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на For those seeking an extended sailing experience, we offer weekly yacht rental in Montenegro. Spend an unforgettable week exploring scenic bays and islands accompanied by an experienced skipper..
+        /// </summary>
+        internal static string Bareboat_Week_Text {
+            get {
+                return ResourceManager.GetString("Bareboat_Week_Text", resourceCulture);
             }
         }
         

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Promotions_Title" xml:space="preserve">
-    <value>Current Promotions &amp; Discounts</value>
+    <value>Current Promotions &amp; Discounts on training courses</value>
   </data>
   <data name="Promotions_Subtitle" xml:space="preserve">
   <value>Don't miss our special offers — learn more and save today!</value>

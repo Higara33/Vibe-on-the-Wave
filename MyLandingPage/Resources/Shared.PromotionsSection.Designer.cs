@@ -151,7 +151,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Current Promotions &amp; Discounts.
+        ///   Ищет локализованную строку, похожую на Current Promotions &amp; Discounts on training courses.
         /// </summary>
         internal static string Promotions_Title {
             get {

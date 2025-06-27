@@ -82,7 +82,7 @@
             <!-- Недельный чартер -->
             <div class="col-md-6">
                 <div class="card rounded-lg shadow-sm">
-                    <div class="card-header bg-primary text-white text-center d-flex align-items-center justify-content-center">
+                    @* <div class="card-header bg-primary text-white text-center d-flex align-items-center justify-content-center">
                         <i class="bi bi-calendar-week fs-2 me-2"></i>
                         <h5 class="mb-0">@L["Bareboat_Rates_Week_Title"]</h5>
                     </div>
@@ -91,7 +91,14 @@
                         {
                             <li class="list-group-item">@L[$"Bareboat_Rate{i}"]</li>
                         }
-                    </ul>
+                    </ul> *@
+                    <div class="card-header bg-primary text-white text-center d-flex align-items-center justify-content-center">
+                        <i class="bi bi-calendar-week fs-2 me-2"></i>
+                        <h5 class="mt-1 mb-0">@L["Bareboat_Rates_Week_Title"]</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>@L["Bareboat_Week_Text"]</p>
+                    </div>
                 </div>
             </div>
             <!-- Дневной чартер -->
@@ -140,7 +147,7 @@
 
         <!-- Депозит и скидки -->
         <div class="mt-4 text-center">
-            <p><strong>@L["Bareboat_Deposit_Title"]</strong> @L["Bareboat_Deposit_Text"]</p>
+            @* <p><strong>@L["Bareboat_Deposit_Title"]</strong> @L["Bareboat_Deposit_Text"]</p> *@
             <h5 class="fw-bold mt-4 mb-3">@L["Bareboat_Discounts_Title"]</h5>
             <ul class="list-inline">
                 <li class="list-inline-item me-4"><strong>15%</strong> @L["Bareboat_Discount_Alumni"]</li>

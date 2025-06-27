@@ -193,7 +193,7 @@
     <value>Not included in price</value>
   </data>
   <data name="Bareboat_NotIncluded_Item1" xml:space="preserve">
-    <value>Final cleaning – 140 €</value>
+    <value>Final cleaning</value>
   </data>
   <data name="Bareboat_NotIncluded_Item2" xml:space="preserve">
     <value>Fuel (return with full tank)</value>
@@ -223,25 +223,25 @@
     <value>Additionally</value>
   </data>
   <data name="Bareboat_Extra_Skipper_Title" xml:space="preserve">
-    <value>Skipper – €540 per day (plus meals)</value>
+    <value>Skipper </value>
   </data>
   <data name="Bareboat_Extra_Skipper_Text" xml:space="preserve">
     <value>If you don’t have a skipper license, you can rent with a captain.</value>
   </data>
   <data name="Bareboat_Extra_Gennaker_Title" xml:space="preserve">
-    <value>Gennaker – €600 per week (deposit €1000)</value>
+    <value>Gennaker </value>
   </data>
   <data name="Bareboat_Extra_Gennaker_Text" xml:space="preserve">
     <value>Halyard and sheets are provided.</value>
   </data>
   <data name="Bareboat_Extra_Fishing_Title" xml:space="preserve">
-    <value>Fishing gear – €450 per week</value>
+    <value>Fishing gear </value>
   </data>
   <data name="Bareboat_Extra_Fishing_Text" xml:space="preserve">
     <value>Includes a trolling rod with reel and line, a set of lures, a gaff, and a rod holder for the rail.</value>
   </data>
   <data name="Bareboat_Extra_Poker_Title" xml:space="preserve">
-    <value>Poker set – €50 per week</value>
+    <value>Poker set </value>
   </data>
   <data name="Bareboat_Extra_Poker_Text" xml:space="preserve">
     <value>If you have nothing to do in the evenings.</value>
@@ -274,7 +274,7 @@
     <value>Thank you! Your request has been sent. We will contact you shortly.</value>
   </data>
   <data name="Bareboat_Day_Text" xml:space="preserve">
-    <value>For those short on time, we offer full-day yacht rental (Day Charter) in Montenegro. Enjoy a day at sea exploring the coast with an experienced skipper. Prices start from €600 per day (skipper included).</value>
+    <value>For those short on time, we offer full-day yacht rental (Day Charter) in Montenegro. Enjoy a relaxing day at sea, exploring the stunning coast with an experienced skipper.</value>
   </data>
   <data name="Bareboat_Day_Title" xml:space="preserve">
     <value>Day Yacht Charter</value>
@@ -290,5 +290,8 @@
   </data>
   <data name="Meta_Description_BareboatCharter" xml:space="preserve">
     <value>Rent a yacht without skipper in Montenegro! Bareboat charters for experienced sailors: large fleet, transparent rates, full support, and expert advice. Plan your own sailing adventure with VibeOfTheWave.</value>
+  </data>
+  <data name="Bareboat_Week_Text" xml:space="preserve">
+    <value>For those seeking an extended sailing experience, we offer weekly yacht rental in Montenegro. Spend an unforgettable week exploring scenic bays and islands accompanied by an experienced skipper.</value>
   </data>
 </root>

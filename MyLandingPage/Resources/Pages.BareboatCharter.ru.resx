@@ -193,7 +193,7 @@
     <value>Не включено в стоимость</value>
   </data>
   <data name="Bareboat_NotIncluded_Item1" xml:space="preserve">
-    <value>Финальная уборка – 140 €</value>
+    <value>Финальная уборка</value>
   </data>
   <data name="Bareboat_NotIncluded_Item2" xml:space="preserve">
     <value>Топливо (возврат с полным баком)</value>
@@ -223,25 +223,25 @@
     <value>Дополнительно</value>
   </data>
   <data name="Bareboat_Extra_Skipper_Title" xml:space="preserve">
-    <value>Шкипер – 540 € в день (плюс питание)</value>
+    <value>Шкипер</value>
   </data>
   <data name="Bareboat_Extra_Skipper_Text" xml:space="preserve">
     <value>Если у вас нет прав на управление яхтой, вы можете арендовать яхту вместе с капитаном.</value>
   </data>
   <data name="Bareboat_Extra_Gennaker_Title" xml:space="preserve">
-    <value>Геннакер – 600 € в неделю (депозит 1000 €)</value>
+    <value>Геннакер</value>
   </data>
   <data name="Bareboat_Extra_Gennaker_Text" xml:space="preserve">
     <value>Проводка и брасы присутствуют.</value>
   </data>
   <data name="Bareboat_Extra_Fishing_Title" xml:space="preserve">
-    <value>Оборудование для рыбалки – 450 € в неделю</value>
+    <value>Оборудование для рыбалки </value>
   </data>
   <data name="Bareboat_Extra_Fishing_Text" xml:space="preserve">
     <value>В комплекте: троллинговое удилище с катушкой и тросом, набор воблеров, багор и стакан для крепления удилища на леерной стойке.</value>
   </data>
   <data name="Bareboat_Extra_Poker_Title" xml:space="preserve">
-    <value>Набор для покера – 50 € в неделю</value>
+    <value>Набор для покера</value>
   </data>
   <data name="Bareboat_Extra_Poker_Text" xml:space="preserve">
     <value>Если нечем заняться по вечерам.</value>
@@ -274,7 +274,7 @@
     <value>Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.</value>
   </data>
   <data name="Bareboat_Day_Text" xml:space="preserve">
-    <value>Для тех, кто ограничен во времени, мы предлагаем аренду яхты на целый день в Черногории. Проведите день в море, исследуя побережье с опытным шкипером. Цены начинаются от 600 € в день (шкипер включён).</value>
+    <value>For those short on time, we offer full-day yacht rental (Day Charter) in Montenegro. Enjoy a relaxing day at sea, exploring the stunning coast with an experienced skipper.</value>
   </data>
   <data name="Bareboat_Day_Title" xml:space="preserve">
     <value>Аренда яхты на день</value>
@@ -290,5 +290,8 @@
   </data>
   <data name="Meta_Description_BareboatCharter" xml:space="preserve">
     <value>Аренда яхты без капитана (bareboat) в Черногории для опытных яхтсменов. Большой выбор яхт, понятные тарифы, поддержка и консультации. Спланируйте самостоятельное морское путешествие с VibeOfTheWave!</value>
+  </data>
+  <data name="Bareboat_Week_Text" xml:space="preserve">
+    <value>Если вы хотите полноценно погрузиться в атмосферу морского отдыха, мы предлагаем аренду яхты на неделю в Черногории. Проведите незабываемое путешествие, исследуя живописные бухты и острова с опытным капитаном.</value>
   </data>
 </root>
