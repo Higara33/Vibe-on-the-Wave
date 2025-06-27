@@ -47,5 +47,5 @@ jobs:
           app_location: "MyLandingPage/bin/Release/net8.0/browser-wasm/publish/wwwroot"
           skip_app_build: true
 
-          # готовые функции с host.json и .azurefunctions
-          api_location: "FunctionEmailApi"
+          api_location: "FunctionEmailApi/bin/Release/net8.0/publish"
+          skip_api_build: true
