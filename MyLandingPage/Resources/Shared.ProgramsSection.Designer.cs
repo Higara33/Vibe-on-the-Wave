@@ -709,7 +709,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Types of Training at Sail Band Sailing School.
+        ///   Ищет локализованную строку, похожую на Types of Training at our Sailing School.
         /// </summary>
         internal static string Programs_Subtitle {
             get {

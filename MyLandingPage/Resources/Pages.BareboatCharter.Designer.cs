@@ -160,7 +160,7 @@ namespace MyLandingPage.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на discount for Sail Band Sailing School alumni.
+        ///   Ищет локализованную строку, похожую на discount for our Sailing School alumni.
         /// </summary>
         internal static string Bareboat_Discount_Alumni {
             get {
